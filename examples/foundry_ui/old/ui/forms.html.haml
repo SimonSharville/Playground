@@ -1,0 +1,403 @@
+#forms.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+  .row
+    .col-xs-12
+      %h1 UI guidelines for forms
+      %p Below are some of the basic form elemnts and how to create them.
+
+
+      .row
+        .col-xs-6.ui-article
+          %form
+            .bs-callout.bs-callout-warning
+              %h2 Notes
+              %h4 Don't mix form groups with input groups
+              %p Do not mix form groups directly with input groups. Instead, nest the input group inside of the form group.
+            .panel.panel-info.perforated
+              .panel-heading 
+                %h3 Panel 1
+              .panel-body
+                %p This is a plain form in an Info Panel. The <em>.form-group</em> sits within the <em>.panel-body</em>. 
+                .form-group
+                  %label This is a Label
+                  %p Below is an <em>input</em> with a class of <em>.form-control</em>.
+                  %input.form-control{value: 'Some stuff in here...'}
+                  %p.help-block This is a <em>.help-block</em> paragraph
+                      
+                .form-group
+                  %label This is also a Label
+                  %input.form-control{value: 'So says John...'}
+                  %p Forms that sit within a single panel can be separated by a perforation. The top, overiding Panel should have the class of <em>.perforated</em> added to it, Then below the .panel-body as a new DIV of <em>.panel-perforation</em>. The following Panel needs to sit under the previous Panel (not inside it), this can have a heading or not, BUT if you wish further perforations below this, it will also need the <em>.perforated</em> class added. Further information can be found on the Perforations page.
+              .panel-perforation
+            .panel.panel-default.perforated
+              .panel-heading 
+                %h3 Panel 2
+              .panel-body
+                %p Duis a sapien ac ex vehicula sodales quis non velit. Vivamus rutrum feugiat tempor. Nunc laoreet dolor quis nisl placerat fermentum. Nam nisi lorem, accumsan eu sapien eu, feugiat tincidunt eros. Fusce rhoncus mauris tempus sagittis faucibus.
+                .row
+                  .col-xs-6
+                    .form-group
+                      %label Label Anything
+                      %input.form-control{value: 'Some stuff in here...'}
+                      %p.help-block This is a help-block paragraph
+                      
+                    .form-group
+                      %label A label here
+                      %input.form-control{value: 'So says John...'}
+                  .col-xs-6
+                    %p Duis a sapien ac ex vehicula sodales quis non velit. Vivamus rutrum feugiat tempor. Nunc laoreet dolor quis nisl placerat fermentum. Nam nisi lorem, accumsan eu sapien eu, feugiat tincidunt eros. Fusce rhoncus mauris tempus sagittis faucibus.
+              .panel-perforation
+            .panel.panel-info.perforated
+              .panel-body
+                %h3 Panel 3
+                %p While this has no panel heading it is still  another panel.
+              .panel-perforation
+            .panel.panel-info
+              .panel-heading 
+                %h3 Panel 4
+              .panel-body
+                %p Duis a sapien ac ex vehicula sodales quis non velit. Vivamus rutrum feugiat tempor. Nunc laoreet dolor quis nisl placerat fermentum. Nam nisi lorem, accumsan eu sapien eu, feugiat tincidunt eros. Fusce rhoncus mauris tempus sagittis faucibus.
+                
+
+        .col-xs-6.ui-article
+          %h2 How to build a form
+          .panel.panel-default.perforation
+            .panel-heading
+            .panel-body
+              .form-group
+                %p A basic form starts with a <em>.panel-default</em>, containing a <em>.panel-heading</em> and a <em>.panel-body</em>. Within the .panel-body, place a <em>.form-group</em>.
+                %p The  Panel Heading can be left empty like this, thereby giving it a darker line to hang from.
+                %p Here are some basic form elements:
+                %label This is a label
+                
+                %input.form-control{value: 'This is an Form Control (%input.form-control)'}
+                %p.help-block This is a <em>.help-block</em> paragraph
+            .panel-perforation
+          .panel.panel-default.perforated
+            .panel-heading
+              %h3 Your details
+            .panel-body
+              %h4 Address
+              %p This is a form-horizontal, it places the lables to the left of the Input fields.
+              .form-horizontal
+                .form-group
+                  %label.col-xs-4.control-label House Number
+                  .col-xs-8
+                    %input.form-control{value: ''}
+                .form-group
+                  %label.col-xs-4.control-label Street
+                  .col-xs-8
+                    %input.form-control{value: ''}
+                .form-group
+                  %label.col-xs-4.control-label Town/City
+                  .col-xs-8
+                    %input.form-control{value: ''}
+                .form-group
+                  %label.col-xs-4.control-label Postcode
+                  .col-xs-8
+                    %input.form-control{value: ''}
+            .panel-perforation
+          .panel.panel-default.perforated
+            .panel-body
+              .form-group
+              %h4 Date of birth <em>%h4</em>
+              %input.form-control{value: '', type: 'date'}
+            .panel-perforation
+        
+          .panel.panel-default.perforated
+            .panel-body
+              %h4 Checkboxes and Radio buttons
+              .form-group
+                .checkbox
+                  %label
+                    %input{:type => "checkbox", :value => ""}/
+                    Option one checkbox
+                .checkbox.disabled
+                  %label
+                    %input{:disabled => "disabled", :type => "checkbox", :value => ""}/
+                    Option two is a disabled checkbox
+                .radio
+                  %label
+                    %input#optionsRadios1{:checked => "checked", :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                    Option one is a radio button, which will toggle with the one below.
+                .radio
+                  %label
+                    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                    Option teo is a radio button, which will toggle with the one above.
+                .radio.disabled
+                  %label
+                    %input#optionsRadios3{:disabled => "disabled", :name => "optionsRadios", :type => "radio", :value => "option3"}/
+                    Option three is a disabled radio button
+
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"}
+      .row
+        .col-xs-12
+          %h1 More forms
+          %p Below are more form types.
+        = bootstrap_form_tag url: '#' do |f|
+          .col-xs-6.ui-article
+            .panel.panel-default
+              .panel-heading
+                %h3 Horizontal Forms
+              .panel-body
+                %h4 Instructions
+                %p The width of horizonal forms can be controlled by changing the <strong>col_css_class</strong> attribute to bootstrap column width classes that add up to 12. 
+                %p The first three below are set to <em>label_col: "col-sm-4", control_col: "col-sm-8"</em>
+                %p The following field is NOT within a form_field_group.
+                = f.fields_for :form_fields, wrapper: false, layout: :horizontal do |ff|
+                  .form-horizontal
+                    = ff.text_field :value, label: 'Text Field', class: "", label_col: "col-sm-4", control_col: "col-sm-8"
+                  .form-horizontal
+                    = ff.email_field :email, value: 'thing@example.com', label: "Email:", layout: :horizontal, label_col: "col-sm-4", control_col: "col-sm-8", icon: 'user'
+
+                  .form-horizontal
+                    %p Here's a paragraph between two horizontal form fields.
+                    = ff.text_field :value, control_col: "col-sm-8", label: 'Question', layout: :horizontal, label_col: "col-sm-4"
+
+                  %h4 Attachment Field
+                  %p The below Input Group is wrapped in a class of <em>.attachment-fields</em>, so that all the elements are grouped togther.
+                  .attachment-fields
+                    .form-group
+                      .input-group
+                        .input-group-btn
+                          .btn.btn-info.btn-file{type: "file"}
+                            .glyphicon.glyphicon-folder-open
+                              Browse
+                        %input.form-control{:readonly => "readonly", :type => "text"}/
+                        .input-group-btn
+                          %a.btn.btn-danger.remove_fields.dynamic{:href => "#"}
+                            %span.glyphicon.glyphicon-remove
+
+
+          .col-xs-6.ui-article
+            .panel.panel-default
+              .panel-heading
+                %h3 Input Groups
+              .panel-body
+                %p Here is a variety of input groups that can be used. For further info see: 
+                %a{"href" => "http://getbootstrap.com/components/#input-groups", "target" => "blank"} 
+                  Bootstrap Input Groups
+                %p
+
+                %h4 Basic example
+                .input-group
+                  %span#basic-addon1.input-group-addon @
+                  %input.form-control{"aria-describedby" => "basic-addon1", :placeholder => "Username", :type => "text"}/
+                %p
+                .input-group
+                  %input.form-control{"aria-describedby" => "basic-addon2", :placeholder => "Recipient's username", :type => "text"}/
+                  %span#basic-addon2.input-group-addon @example.com
+                %p
+                .input-group
+                  %span.input-group-addon $
+                  %input.form-control{"aria-label" => "Amount (to the nearest dollar)", :type => "text"}/
+                  %span.input-group-addon .00
+                %br
+
+                %h4 Checkboxes and radio addons
+                .row
+                  .col-lg-6
+                    .input-group
+                      %span.input-group-addon
+                        %input{"aria-label" => "...", :type => "checkbox"}/
+                      %input.form-control{"aria-label" => "...", :type => "text"}/
+                  .col-lg-6
+                    .input-group
+                      %span.input-group-addon
+                        %input{"aria-label" => "...", :type => "radio"}/
+                      %input.form-control{"aria-label" => "...", :type => "text"}/
+                %br
+
+                %h4 Button addons
+                %p Buttons in input groups are a bit different and require one extra level of nesting. Instead of <em>.input-group-addon</em>, you'll need to use <em>.input-group-btn</em> to wrap the buttons. This is required due to default browser styles that cannot be overridden.
+                .row
+                  .col-lg-6
+                    .input-group
+                      %span.input-group-btn
+                        %button.btn.btn-primary{:type => "button"} Go!
+                      %input.form-control{:placeholder => "Search for...", :type => "text"}/
+                  .col-lg-6
+                    .input-group
+                      %input.form-control{:placeholder => "Search for...", :type => "text"}/
+                      %span.input-group-btn
+                        %button.btn.btn-primary{:type => "button"} Go!
+                %br
+
+                %h4 Buttons with dropdowns
+                .row
+                  .col-lg-6
+                    .input-group
+                      .input-group-btn
+                        %button.btn.btn-primary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                          Action
+                          %span.caret
+                        %ul.dropdown-menu
+                          %li
+                            %a{:href => "#"} Action
+                          %li
+                            %a{:href => "#"} Another action
+                          %li
+                            %a{:href => "#"} Something else here
+                          %li.divider{:role => "separator"}
+                          %li
+                            %a{:href => "#"} Separated link
+                      %input.form-control{"aria-label" => "...", :type => "text"}/
+
+                  .col-lg-6
+                    .input-group
+                      %input.form-control{"aria-label" => "...", :type => "text"}/
+                      .input-group-btn
+                        %button.btn.btn-primary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                          Action
+                          %span.caret
+                        %ul.dropdown-menu.dropdown-menu-right
+                          %li
+                            %a{:href => "#"} Action
+                          %li
+                            %a{:href => "#"} Another action
+                          %li
+                            %a{:href => "#"} Something else here
+                          %li.divider{:role => "separator"}
+                          %li
+                            %a{:href => "#"} Separated link
+
+              // I HAVE REMOVED THESE AS THEY ARE MESSY TO STYLE (SS. 2015-08-06)
+              / %span
+              /   Browse
+              /   %input{:type => "file"}/
+
+              / = f.file_field 'A File Field'
+              / // Based upon http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/
+              / %h3 Just a browse button
+              / %span
+              /   Browse
+              /   %input{type: "file"}
+              
+              / %h3 As an input group
+              / .input-group
+              /   %span.input-group-btn
+              /     %span.btn.btn-primary.btn-file
+              /       =glyph 'folder-open'
+              /       &nbsp;Browse…
+              /       %input{:multiple => "multiple", :type => "file"}/
+              /   %input.form-control{:readonly => "readonly", :type => "text"}
+              /   %span.input-group-btn
+              /     %button.btn.btn-danger{type: "button"}
+              /       =glyph 'remove'
+
+              
+              / %h3 Using the Rails Bootstrap Form helper gem
+              / %p i.e. Don't use the rbf gem for file fields. It doesn't even work when you hide the label.
+              / .input-group
+              /   %span.input-group-btn
+              /     %span.btn.btn-primary.btn-file
+              /       = f.file_field 'A File Field'
+              /   %input.form-control{:readonly => "readonly", :type => "text"}
+
+
+
+
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"}
+
+      .row
+        .ui-article.col-xs-12
+          %h1 Form Rating Groups
+          .panel.panel-default
+            .panel-body
+              .panel.panel-rating
+                .panel-heading
+                  %h3 Form Ratings
+                  %p This is an example of a Form Rating Group using radio buttons.
+                  %p Everything sits within a .panel with the class of <em>.panel-rating</em>. Any Headings and Descriptions (like this) should be within the <em>.panel-heading</em>.
+                  Inside the <em>.panel-body</em> sits a DIV with the class of<em> .rating-container</em> and within that sits the table.
+                  Below that sits a <em>DIV</em> with the class of <em>.rating-score</em>. This contains the <em>.rating-total</em>, below that <em>.rating-number</em> and below that .rating-percentage. 
+                  The <em>.rating-container</em> DIV can be set to expand full column width if no <em>.rating-score</em> is needed.
+                  The Table should have a class of <em>.table-fixed</em> added if you wish all columns to be spaced evenly.
+                .panel-body
+                  .rating-container
+                    = render 'ui/tables/ui_table_rating_radio'
+                  .rating-score
+                    .rating-total
+                      Total
+                    .rating-number
+                      10
+                    .rating-percentage
+                      100% (10/10)
+
+
+      .row
+        .ui-article.col-xs-12
+          %h1 Form Star Rating Groups
+          // Based on http://codepen.io/rogie/pen/GIfqc
+          .panel.panel-default
+            .panel-body
+              .panel.panel-rating
+                .panel-heading
+                  %h3 Star Ratings
+                  %p This is an example of various star rating styles.
+                .panel-body
+                  .star-container
+                    %table.table.table-fixed
+
+                      %tbody
+                        %tr
+                          %td Star rates
+                          %td.stars
+                            %span.glyphicon.glyphicon-star 
+                            %span.glyphicon.glyphicon-star 
+                            %span.glyphicon.glyphicon-star 
+                            %span.glyphicon.glyphicon-star-empty 
+                            %span.glyphicon.glyphicon-star-empty 
+                          %td 
+                            %p Good
+                        %tr
+                          %td Heart rates
+                          %td.stars
+                            %span.glyphicon.glyphicon-heart 
+                            %span.glyphicon.glyphicon-heart-empty 
+                            %span.glyphicon.glyphicon-heart-empty 
+                            %span.glyphicon.glyphicon-heart-empty 
+                            %span.glyphicon.glyphicon-heart-empty
+                          %td 
+                            %p Bad
+                        %tr
+                          %td Thumb Rate
+                          %td.stars
+                            %span.glyphicon.glyphicon-thumbs-up 
+                            %span.glyphicon.glyphicon-thumbs-up 
+                            %span.glyphicon.glyphicon-thumbs-up 
+                            %span.glyphicon.glyphicon-thumbs-up 
+                            %span.glyphicon.glyphicon-thumbs-down
+                          %td 
+                            %p Pretty good
+                        %tr
+                          %td Tick Rate
+                          %td.stars
+                            %span.glyphicon.glyphicon-check 
+                            %span.glyphicon.glyphicon-check 
+                            %span.glyphicon.glyphicon-check
+                            %span.glyphicon.glyphicon-check 
+                            %span.glyphicon.glyphicon-unchecked
+                          %td 
+                            %p Excellent
+                  .rating-score
+                    .rating-total
+                      Total
+                    .rating-number
+                      8
+                    .rating-percentage
+                      Pretty good
+
+                
+
+                  
+                  
+
+

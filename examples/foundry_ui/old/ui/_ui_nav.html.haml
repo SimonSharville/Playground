@@ -1,0 +1,30 @@
+#UI_Nav
+  .container
+    %H1 UI Guidelines
+    %ul.nav.nav-pills
+      %li{:role => "presentation", :class => current_page?("overview") ? 'active' : nil}
+        %a{:href => "overview"} Overview
+      %li{:role => "presentation", :class => current_page?("/ui/panels") ? 'active' : nil}
+        %a{:href => "/ui/panels"} Panels
+      %li{:role => "presentation", :class => current_page?("/ui/forms") ? 'active' : nil}
+        %a{:href => "/ui/forms"} Forms
+      %li{:role => "presentation", :class => current_page?("/ui/perforations") ? 'active' : nil}
+        %a{:href => "/ui/perforations"} Perforations
+      %li{:class => "questionsets", :class => current_page?("/ui/questionsets") ? 'active' : nil}
+        %a{:href => "/ui/questionsets"} Question Sets
+      %li{:role => "presentation", :class => current_page?("/ui/tables") ? 'active' : nil}
+        %a{:href => "/ui/tables"} Tables
+      %li{:role => "presentation", :class => current_page?("/ui/buttons") ? 'active' : nil}
+        %a{:href => "/ui/buttons"} Buttons & Links
+      %li{:role => "presentation", :class => current_page?("/ui/vertical_tabs") ? 'active' : nil}
+        %a{:href => "/ui/vertical_tabs"} Vertical Tabs
+      %li{:role => "presentation", :class => current_page?("/ui/various") ? 'active' : nil}
+        %a{:href => "/ui/various"} Various
+      %li{:role => "presentation", :class => current_page?("/ui/navs") ? 'active' : nil}
+        %a{:href => "/ui/navs"} Navs
+
+
+
+            
+
+

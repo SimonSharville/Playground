@@ -1,0 +1,209 @@
+#forms2.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+
+  .row
+    %h1.ui-article.col-xs-12 
+      Forms 2
+    / .row
+    = bootstrap_form_tag url: '#' do |f|
+      .col-xs-6
+        .panel.panel-default
+          .panel-heading
+            %h3 Question Set 1
+            %p To be completed by: Somebody
+          .panel-body
+            %h4 Markdown Instructions
+            %p All question sets are contained within a panel. The width of the question set can be controlled by changing the <strong>col_css_class</strong> attribute to a bootstrap column width class like 'col-xs-6'.
+            %h4 Form Fields - 'shared/documents/form_field'
+            %p The following field is NOT within a form_field_group.
+            = f.fields_for :form_fields, wrapper: false, layout: :horizontal do |ff|
+              .form-horizontal
+                = ff.text_field :value, label: 'Text Field', class: ""
+              .form-horizontal
+                = ff.email_field :email, value: 'thing@example.com', label: "Email:", layout: :horizontal, label_col: "col-sm-4", control_col: "col-sm-8", icon: 'user'
+
+              
+              .form-horizontal
+                %p Here's a paragraph between two horizontal form fields.
+                = ff.text_field :value, control_col: "col-sm-8", label: 'Default Layout', layout: :horizontal, label_col: "col-sm-4"
+              .form-default
+                %p Form field with the label hidden and an icon. Icons DO NOT WORK when hide_label is true because the icon span is position: absolute top: 25px relative to the label.
+                = ff.email_field :email, value: 'thing@example.com', hide_label: true, label: "Email:", layout: :default, icon: 'user'
+            
+            = f.fields_for 'made_up_thing', wrapper: true do |ff|
+              = ff.text_field :foo, value: 'bar'
+      .col-xs-6
+        .panel.panel-default.panel-info.perforated
+          .panel-heading
+            %h3 Question Set 2
+            %p To be completed by: Somebody
+          .panel-body
+            %h4 A perforate panel-info Question Set.
+            %p The panel that a question set is within can be changed by altering the question_set.css_class attribute to something like 'panel-info'.          
+          .panel-perforation
+      .col-xs-6
+        .panel.panel-default
+          .panel-heading
+            %h3 File Field Q Set 3
+            %p To be completed by: Somebody
+          .panel-body
+            %h4 A panel following a perforation.
+            %p The panel that follows a perforated panel will sit directly the perforated one.
+            = f.file_field 'A File Field'
+            
+            // Based upon http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/
+            %h3 Just a browse button
+            %span.btn.btn-default.btn-file
+              Browse
+              %input{type: "file"}
+            
+            %h3 As an input group
+            .input-group
+              %span.input-group-btn
+                %span.btn.btn-primary.btn-file
+                  =glyph 'folder-open'
+                  &nbsp;Browse…
+                  %input{:multiple => "multiple", :type => "file"}/
+              %input.form-control{:readonly => "readonly", :type => "text"}
+              %span.input-group-btn
+                %button.btn.btn-danger{type: "button"}
+                  =glyph 'remove'
+
+            
+            %h3 Using the Rails Bootstrap Form helper gem
+            %p i.e. Don't use the rbf gem for file fields. It doesn't even work when you hide the label.
+            .input-group
+              %span.input-group-btn
+                %span.btn.btn-primary.btn-file
+                  = f.file_field 'A File Field'
+              %input.form-control{:readonly => "readonly", :type => "text"}
+            
+          .panel-perforation
+    .row
+      .col-xs-12
+        %form
+          .panel.panel-default
+            .panel-heading
+              %h3 Form written without bootstrap_form_tag
+            .panel-body
+              .form-horizontal
+                .form-group.has-feedback
+                  %label.col-sm-2.control-label{for: "exampleInputEmail1"}Email address
+                  .col-sm-5
+                    %input.form-control{type:"email", id:"exampleInputEmail1", placeholder:"Enter email"}
+                    %span.glyphicon.glyphicon-user.form-control-feedback
+              %h4 Here is a long spiel about this that and the other.
+              %p This is a paragraph between the two form-groups.
+              .form-group
+                %label.col-sm-2.control-label{for: "exampleInputPassword1"}Password      
+                .col-sm-10
+                  %input.form-control{type:"password", id:"exampleInputPassword1", placeholder:"Password"}
+
+    .row
+      .ui-article.col-xs-12
+        %h1 Form Rating Groups
+        .panel.panel-default
+          .panel-body
+            .panel.panel-rating
+              .panel-heading
+                %h3 Form Ratings
+                %p This is an example of a Form Rating Group using radio buttons.
+                %p Everything sits within a .panel with the class of <em>.panel-rating</em>. Any Headings and Descriptions (like this) should be within the <em>.panel-heading</em>.
+                Inside the <em>.panel-body</em> sits a DIV with the class of<em> .rating-container</em> and within that sits the table.
+                Below that sits a <em>DIV</em> with the class of <em>.rating-score</em>. This contains the <em>.rating-total</em>, below that <em>.rating-number</em> and below that .rating-percentage. 
+                The <em>.rating-container</em> DIV can be set to expand full column width if no <em>.rating-score</em> is needed.
+                The Table should have a class of <em>.table-fixed</em> added if you wish all columns to be spaced evenly.
+              .panel-body
+                .rating-container
+                  = render 'ui/tables/ui_table_rating_radio'
+                .rating-score
+                  .rating-total
+                    Total
+                  .rating-number
+                    10
+                  .rating-percentage
+                    100% (10/10)
+
+
+    .row
+      .ui-article.col-xs-12
+        %h1 Form Star Rating Groups
+        // Based on http://codepen.io/rogie/pen/GIfqc
+        .panel.panel-default
+          .panel-body
+            .panel.panel-rating
+              .panel-heading
+                %h3 Star Ratings
+                %p This is an example of various star rating styles.
+              .panel-body
+                .star-container
+                  %table.table.table-fixed
+
+                    %tbody
+                      %tr
+                        %td Star rates
+                        %td.stars
+                          %span.glyphicon.glyphicon-star 
+                          %span.glyphicon.glyphicon-star 
+                          %span.glyphicon.glyphicon-star 
+                          %span.glyphicon.glyphicon-star-empty 
+                          %span.glyphicon.glyphicon-star-empty 
+                        %td 
+                          %p Good
+                      %tr
+                        %td Heart rates
+                        %td.stars
+                          %span.glyphicon.glyphicon-heart 
+                          %span.glyphicon.glyphicon-heart-empty 
+                          %span.glyphicon.glyphicon-heart-empty 
+                          %span.glyphicon.glyphicon-heart-empty 
+                          %span.glyphicon.glyphicon-heart-empty
+                        %td 
+                          %p Bad
+                      %tr
+                        %td Thumb Rate
+                        %td.stars
+                          %span.glyphicon.glyphicon-thumbs-up 
+                          %span.glyphicon.glyphicon-thumbs-up 
+                          %span.glyphicon.glyphicon-thumbs-up 
+                          %span.glyphicon.glyphicon-thumbs-up 
+                          %span.glyphicon.glyphicon-thumbs-down
+                        %td 
+                          %p Pretty good
+                      %tr
+                        %td Tick Rate
+                        %td.stars
+                          %span.glyphicon.glyphicon-check 
+                          %span.glyphicon.glyphicon-check 
+                          %span.glyphicon.glyphicon-check
+                          %span.glyphicon.glyphicon-check 
+                          %span.glyphicon.glyphicon-unchecked
+                        %td 
+                          %p Excellent
+                .rating-score
+                  .rating-total
+                    Total
+                  .rating-number
+                    8
+                  .rating-percentage
+                    Pretty good
+
+      .ui-article.col-xs-12
+        %h2 Code / Pre blocks
+        %pre &lt;p&gt;Sample text here...&lt;/p&gt;
+
+                    
+
+                                
+
+
+    / %script{:src => "//assets/star-rating.js?t=1"}
+    %script{:src => "//assets/star-rating.js"}
+
+
+
+
+

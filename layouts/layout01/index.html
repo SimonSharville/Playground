@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout 01</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../font-awesome-4.4.0/css/font-awesome.min.css">
+    
+    
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+  
+    <div class="container"> <!-- Container-->
+      <div class="row">
+        <div class="col-xs-14">
+          <div class="runningHeader">
+            <p>The Newspaper | Saturday 13 June 2105</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-2 pageNumber pull-right">
+          <p>15</p>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-xs-14 col-sm-10 col-md-8">
+            <div class="standfirst">
+              <h2><strong>Layout01</strong> A layout mimicking a Guardian newspaper article </h2>
+            </div>
+           </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-14">
+          <img src="images/spaghetti.jpg" class="img-responsive" alt="Spaghetti photo">
+          <div class="row photoCaption">
+            <p>Photo © <a href="http://www.simonsharville.co.uk" target="_blank">Simon Sharville </a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row story"> <!-- Story-->
+        <div class="col-xs-14 col-sm-4 article">
+          <p><span class="dropcap">T</span><strong>his layout</strong> was built in Bootstrap using 14 columns with a gutter width of 16px.</br>
+          <strong>The reason</strong> for 14 columns is that I wanted a final layout of 7 columns and always use double that.</p>
+        </div>    
+        <div class="col-xs-14 col-sm-4 article col">
+          <p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. Maecenas vulputate lobortis nunc. Maecenas cursus dui tempus purus lobortis, vel tempus massa aliquam. Etiam ac ex non tortor efficitur scelerisque. Morbi mauris sapien, accumsan in scelerisque sed, gravida ut elit. Duis sit amet nibh ligula. </br><strong>Vestibulum pharetra</strong> dui non tempus pharetra. Morbi elementum, sem at commodo faucibus, mi purus porttitor odio, quis maximus sapien elit sit amet dui. Nam ac urna vestibulum nibh mollis ornare.</p>
+        </div>   
+        <div class="col-xs-14 col-sm-4 col-sm-push-2 article">
+          <p><strong>Vivamus ac posuere neque.</strong> Proin sit amet dui tempor nisl vulputate porttitor. </br><strong>Duis venenatis</strong> mi risus, id dignissim lectus lobortis et. Nunc justo quam, euismod at augue laoreet, porttitor commodo dui. Maecenas porta tristique nisl a fermentum. Aenean ultrices luctus dolor a eleifend. Praesent eu commodo purus. Sed finibus eleifend cursus. Donec suscipit neque ut ornare volutpat. Etiam et iaculis lectus. Sed dignissim a justo eu tempus.</p>
+        </div> 
+        
+        <div class="col-xs-14 col-sm-2 col-sm-pull-4 pullout">
+          <div class="pulloutInset clearfix">
+              <div class="col-xs-7 col-sm-14 inset1 ">
+                <i class="fa fa-cog fa-spin fa-3x pull-left"></i>
+                <p>Maecenas vulputate lobortis nunc. Maecenas cursus dui tempus purus lobortis, vel tempus massa aliquam. </p>
+              </div> 
+              <div class="col-xs-7 col-sm-14 inset2">
+                <i class="fa fa-cog fa-spin fa-3x pull-left"></i>
+                <p>Maecenas vulputate lobortis nunc. Maecenas cursus dui tempus purus lobortis, vel tempus massa aliquam. Aenean ultrices luctus dolor a eleifend. </p>
+              </div> 
+
+          </div> 
+        </div>
+      </div><!-- End Story-->
+      
+      
+      
+    
+    </div> <!-- End Container-->  
+  
+  
+  
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>

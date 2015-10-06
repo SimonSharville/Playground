@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  background:#ddd;
+  font-family: 'Roboto Slab', serif; /* 100 300 400 700*/
+}
+
+.container{
+  background:white; 
+  padding-left:32px;
+  padding-right:32px;
+  padding-bottom:70px;
+  background-image:url(../../../images/paper/natural-paper.png); //www.transparenttextures.com
+}
+
+.row{
+  /*padding-left:16px;*/
+  /*padding-right:16px;*/
+}
+
+
+/* TYPESTYLES ============================================================ */
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+p{
+  font-weight: 300; 
+  margin-bottom:0px;
+}
+br{
+  line-height:2em;
+}
+
+.dropcap {
+font-size: 300%;
+float: left;   
+line-height: 0.8em;
+padding: 15px 2px 0 17px;       
+color: white;         
+font-family: Serif;    
+font-weight: 100;
+position: relative;
+left: -3px;
+background:orange;
+width: 60px;
+height: 60px;
+border-radius:30px;
+margin-right:5px;
+}
+
+a:link {
+  text-decoration:none;
+  color: orange;   
+}
+
+/* STRUCTURE ============================================================ */
+
+.runningHeader{
+  padding-top:30px;
+  padding-bottom:10px;
+  border-bottom: 3px solid black;
+}
+
+.runningHeader p { line-height: 0.5em; }
+
+
+.pageNumber{
+  text-align:right;
+  border-left: 1px solid black;
+  padding-top:15px;
+}
+
+.pageNumber p{
+  font-size: 1.2em;
+}
+
+
+.standfirst{
+  padding-top: 50px;
+}
+
+img{
+  margin-bottom:16px; 
+}
+
+.story{
+  display: flex; /* you need this to make the colmns full height of row */
+}
+
+.article{
+  border-left: 1px solid #ddd;
+}
+.article:first-child{
+  border-left: 0px;
+}
+
+.pullout{
+   border-left: 1px solid #ddd;
+}
+
+.pulloutInset{
+}
+
+.pulloutInset i {
+        color:#999;
+      }
+
+.pulloutInset p {
+  font-size: 0.8em;
+}
+
+.inset1{
+  
+}
+.inset2{
+   margin-top:20px;
+}
+
+.photoCaption{
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform:rotate(270deg);
+    transform: rotate(270deg);
+  font-size: 0.8em;
+  position:absolute;
+  left: -64px;
+  bottom:74px;
+  
+}
+
+/*.inset p:before{
+   font-family: FontAwesome;
+      content: "\f061";
+      width: 100px;
+}*/
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+    
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1199px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 991px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+      
+      .story{
+        display: inline-block;
+      }
+      .article{ 
+        border-left: 0px; 
+        display:inline-block;
+      }
+      
+      .pullout{ 
+         border-left: 0px; 
+         display:inline-block;
+      }
+      
+      .pulloutInset{ 
+         border-left: 0px; 
+         margin-top:20px;
+         padding-top:16px;
+         border-top: 1px solid #ddd;
+         margin-bottom:20px;
+         padding-bottom:16px;
+         border-bottom: 1px solid #ddd;
+         display:flex;
+      }
+      
+      .pulloutInset i {
+        float:left; /* This stops the text running around the icon */
+      }
+      
+      .pulloutInset p {
+        overflow: hidden; /* This stops the text running around the icon */
+      }
+      
+      .inset1{
+        padding-left:0px;
+        padding-right:4px;
+      }
+      
+      .inset2{
+         margin-top:00px;
+         padding-left:4px;
+         padding-right:0px;
+      }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 479px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 319px) {
+        
+    }

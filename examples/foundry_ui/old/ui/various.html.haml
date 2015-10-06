@@ -1,0 +1,353 @@
+#various.ui-guidelines
+
+  .uinav
+    / = render 'ui_nav'
+
+  .row
+    .ui-article.col-xs-12
+      %h1 Pagination
+      // from http://bootsnipp.com/snippets/featured/rounded-pagination
+      .panel.panel-default
+        .panel-body
+          .row.col-xs-6.row.col-sm-6.row.col-md-4.row.col-lg-4
+            %p This show the style for the pagination. Which should always float right at the top of a page.
+          .pagination-container
+            %ul.pagination.pull-right
+              %li.disabled
+                %span.glyphicon.glyphicon-fast-backward.first
+                  %a{:href => "#" }
+              %li.disabled
+                %span.glyphicon.glyphicon-backward.previous
+              %li.active
+                %a{:href => "#"}
+                  1
+                  / %span.sr-only (current)
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %span.glyphicon.glyphicon-forward.next
+              %li
+                %span.glyphicon.glyphicon-fast-forward.first
+
+
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+
+
+  .row
+    .ui-article.col-xs-12
+      %h1 UI guidelines for alerts
+
+      .alert.alert-success
+        %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h3 Success
+        %p This is an axample of a Success Alert <em>.alert.alert-success</em>
+        %p The title should be set to <em>.h3 </em> Text should be set to <em>.p</em>
+
+      .alert.alert-info
+        %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h3 Info
+        %p This is an axample of a Info Alert <em>.alert.alert-info</em>
+        %p The title should be set to <em>.h3 </em> Text should be set to <em>.p</em>
+
+      .alert.alert-warning
+        %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h3 Warning
+        %p This is an axample of a Warning Alert <em>.alert.alert-warning</em>
+        %p The title should be set to <em>.h3 </em> Text should be set to <em>.p</em>
+
+      .alert.alert-danger
+        %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h3 Danger
+        %p This is an axample of a Danger Alert <em>.alert.alert-danger</em>
+        %p The title should be set to <em>.h3 </em> Text should be set to <em>.p</em>
+
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+
+  .row
+    .ui-article.col-xs-12
+      %h1 Noticeboard
+    .col-xs-3
+      .panel.panel-default.panel-collapse.noticeboard
+        .panel-heading
+          Noticeboard <span class="badge">42</span>
+
+        .panel-heading
+          %a{"data-target" => "#todo", "data-toggle" => "collapse", :href => "#todo"}
+            To Do
+            %span.badge.todo 12
+        #todo.panel-body.collapse.in
+          .notice-article
+            .notice-date Thu, 23 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .notice-article
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .divide-dots
+          .notice-article
+            .notice-date Wed, 22 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .panel-footer
+            View all notices
+            %a{:href => " "} 
+
+        .panel-heading
+          %a{"data-target" => "#waiting", "data-toggle" => "collapse", :href => "#waiting", "class" => ""}
+            Waiting
+            %span.badge.waiting 20
+        #waiting.panel-body.collapse
+          .notice-article
+            .notice-date Thu, 23 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .notice-article
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .divide-dots
+          .notice-article
+            .notice-date Wed, 22 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .panel-footer
+            View all notices
+            %a{:href => " "} 
+
+        .panel-heading
+          %a{"data-target" => "#reference", "data-toggle" => "collapse", :href => "#reference", "class" => ""}
+            Reference
+            %span.badge.reference 10
+        #reference.panel-body.collapse
+          .notice-article
+            .notice-date Thu, 23 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .notice-article
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .divide-dots
+          .notice-article
+            .notice-date Wed, 22 July 2015
+            .notice-time 07:10AM
+            .notice-text Miss Trixie Franklin signed off their Practice Hours : Practice Hours, Jun 15 
+            .notice-link
+              %a{:href => " "}
+          .panel-footer
+            View all notices
+            %a{:href => " "}       
+
+
+    .col-xs-9
+      %h2 How to build
+      %p First of all the main panel should have a class of <em>.noticeboard</em> added to it.
+      It has a top <em>.panel-heading</em> with just the H3 heading of Noticeboard, this has <em>.badge</em> attached that calculates the total of the badges in the following 3 sections (To Do, Waiting and Reference).
+      %br
+      %br
+      %h3 Sections
+      %p Each sections has no <em>.panel</em>, just a <em>.panel-heading</em> followed by a <em>.panel-body</em>, with a <em>.panel-footer</em> sitting WITHIN the <em>.panel-body</em>, so that footer is hidden when the panel collapses.
+      Each Panel Heading has a data-toggle <em>.collapse</em>, and a data-target and href of it's ID (#todo, #waiting or #reference). Each Section Panel Body also needs the relative ID added to it as well as the class of <em>.collapse</em>. The first section (To Do) should also have the class of <em>.in</em> added to it's Panel Body, so that it is open at refresh.
+      %br
+      Each panel header also had a badge with a class of it's ID name. (<em>.todo</em>, <em>.waiting</em> or <em>.reference</em>)
+      %br
+      %br
+      %p Each Section has the articles within the Panel Body in this order.
+      <em>.notice-article</em> and within that, 
+      %br 
+      &nbsp;&nbsp;<em>.notice-date</em> (only at the top), 
+      %br 
+      &nbsp;&nbsp;<em>.notice-text</em> 
+      %br 
+      &nbsp;&nbsp;<em>.notice-link</em>
+      %br
+      %br
+      %p Each article is serapted by a DIV with a class of <em>.divide-dots</em>.
+      %br
+      %p And finishes of with a Panel Footer with the Panel Body. 
+
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+
+  .row
+    .ui-article.col-xs-12
+      %h1 Searchbar
+      .panel.panel-info.perforated
+        .panel-body
+          #search_container
+            .input-group.stylish-input-group
+              %input.form-control{:placeholder => "Search", :type => "text"}/
+              %span.input-group-addon
+                %a{:type => "submit"}
+                  %span.glyphicon.glyphicon-search
+        .panel-perforation
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+
+  .row
+    .ui-article.col-xs-12
+      %h1 Page Header
+      #UI-page-header
+        .jumbotron
+          %img{:alt => "Header foundry01", :src => "/assets/headers/Header_Foundry01.png"}/
+        .navbar.navbar-default
+          .navbar-header
+            %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-UI", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+          #bs-example-navbar-collapse-UI.collapse.navbar-collapse
+            %ul.nav.navbar-nav
+              %li
+                %a{}
+                  %span.glyphicon.glyphicon-home
+              %li
+                %a{} Dashboard
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Documents
+                  %span.caretreplace
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{} My Documents
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a{}
+                  %span.glyphicon.glyphicon-log-out
+                  Log Out
+              %li.dropdown
+                %a.dropdown-toggle.navbar-brand.usericon{"data-toggle" => "dropdown", :role => "button"}
+                  %img{:alt => "Download (2)", :src => "http://s3-eu-west-1.amazonaws.com/mangoswiss-foundry-development/users/avatars/5438/5985/6c69/3428/0d19/0000/thumb/download_(2).jpeg?1435666553"}/
+                %ul.dropdown-menu
+                  %li
+                    %a{}
+                      %span.translation_missing{:title => "translation missing: en.users.dashboard.edit_my_details"} Edit My Details
+                  %li
+                    %a{} Site
+                  %li
+                    %a{} Admin
+                  %li
+
+
+    .ui-article.col-xs-12
+      #UI-page-header
+        .jumbotron
+          %img{:alt => "Header foundry01", :src => "/assets/headers/Header_Foundry01.png"}/
+        .navbar.navbar-default
+          .navbar-header
+            %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-UI2", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+          #bs-example-navbar-collapse-UI2.collapse.navbar-collapse
+            %ul.nav.navbar-nav
+              %li
+                %a{}
+                  %span.glyphicon.glyphicon-home
+              %li
+                %a{} Dashboard
+              %li
+                %a{} Roles
+              %li
+                %a{} Users
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Policies
+                  %span.caretreplace
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{} Policies
+                  %li
+                    %a{} Policy Reports
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Documents
+                  %span.caretreplace
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{} My Documents
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Document Reports
+                  %span.caretreplace
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{} Report One
+                  %li
+                    %a{} Report Two
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Groups
+                  %span.caretreplace
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{} Departments
+                  %li
+                    %a{} Nursing Departments
+                %li
+                  %a{} Activity Log
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a{}
+                  %span.glyphicon.glyphicon-log-out
+                  Log Out
+              %li.dropdown
+                %a.dropdown-toggle.navbar-brand.usericon{"data-toggle" => "dropdown", :role => "button"}
+                  %img{:alt => "Download (2)", :src => "http://s3-eu-west-1.amazonaws.com/mangoswiss-foundry-development/users/avatars/5438/5985/6c69/3428/0d19/0000/thumb/download_(2).jpeg?1435666553"}/
+                %ul.dropdown-menu
+                  %li
+                    %a{}
+                      %span.translation_missing{:title => "translation missing: en.users.dashboard.edit_my_details"} Edit My Details
+                  %li
+                    %a{} Site
+                  %li
+                    %a{} Admin
+                  %li
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+%h3 Vertical Tabs based upon stacked nav pills
+
+.row.vertical-tabs
+  .col-xs-3.vertical-tabs-nav-wrapper
+    %h3 The Menu as .nav-stacked
+
+    %ul.nav.nav-pills.nav-stacked.nav-vertical-tabs
+      %li.active(role='presentation')
+        %a.clearfix{:href => "#item1", 'data-toggle' => "tab"}
+          .row
+            .col-xs-2.h1.number 01
+            .col-xs-10 Menu Item 1
+      %li(role='presentation')
+        %a.clearfix{:href => "#item2", 'data-toggle' => "tab"}
+          .row
+            .col-xs-2.h1.number 02
+            .col-xs-10 Menu Item 2
+      %li(role='presentation')
+        %a.clearfix{:href => "#item3", 'data-toggle' => "tab"}
+          .row
+            .col-xs-2.h1.number= glyph 'file'
+            .col-xs-10 Menu Item 3
+      %li(role='presentation')
+        %a.clearfix{:href => "#item4", 'data-toggle' => "tab"}
+          .row
+            .col-xs-2.h1.number 04
+            .col-xs-10 Menu Item 4 that's a really long one that should go over 3 lines
+  .col-xs-9.vertical-tab-view.tab-content
+    #item1.tab-pane.active
+      %h3 Item 1
+      .panel.panel-default
+        .panel-heading A Panel
+        .panel-body The body
+        .panel-footer A footer
+    #item2.tab-pane
+      %h3 Item 2
+      .panel.panel-default
+        .panel-heading A Panel
+        .panel-body The body
+        .panel-footer A footer
+    #item3.tab-pane
+      %h3 Item 3
+      %p Phasellus ultricies erat non mi maximus, id vehicula neque sagittis. Aliquam vehicula pharetra magna, quis efficitur velit aliquam porttitor. In elementum nisl vel arcu porttitor vehicula. Suspendisse bibendum dapibus eros. Aliquam felis sem, scelerisque ut pretium at, bibendum quis nunc.
+      %p Maecenas commodo luctus lectus, vitae aliquet elit feugiat sed. Ut congue felis tortor, ut scelerisque purus fringilla ac. Etiam aliquam, mi eget semper faucibus, est mauris consequat ligula, at finibus nisl lectus sit amet dui. Duis vitae aliquet nibh. Quisque at venenatis magna, id dignissim tellus. Suspendisse vitae nunc neque.
+    #item4.tab-pane
+      %h3 Item 4
+      %p The fourth.
+// :javascript
+//   $(document).ready(function() {
+//     $('.vertical-tabs a').click(function (e) {
+//       e.preventDefault();
+//       $(this).tab('show');
+//     });
+//   });
+
+
+
+#vertical-tabs.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+  .ui-article.sard-ui
+    %h3 Simon's Vertical Tabs
+    %h1 UI guidelines for Vertical Tabs
+    %br
+
+    #vertical-tabs02
+      / .col-xs-12
+
+      .ui-article.row.bhoechie-tab-container
+        / Overall container
+        .col-xs-3.col-md-2.bhoechie-tab-menu
+          / Menu
+          .list-group
+            %a.list-group-item.active.text-center{:href => "#"}
+              .menu-number
+                01
+              %p.menu-title
+                = succeed "Menu Item One" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                02
+              %p.menu-title
+                = succeed "Menu Item Two" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                12
+              %p.menu-title
+                = succeed "This is a two line menu item" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                32
+              %p.menu-title
+                = succeed "This is a really, really long three line menu item" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                99
+              %p.menu-title
+                = succeed "Menu Item One" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                .glyphicon.glyphicon-file
+              %p.menu-title
+                = succeed "Menu Item One" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              .menu-number
+                .glyphicon.glyphicon-credit-card
+              %p.menu-title
+                = succeed "Menu Item One" do
+                  /
+            %a.list-group-item.text-center{:href => "#"}
+              %p.menu-title
+                = succeed "Menu Item without number or glyphicon" do
+                  /
+        
+
+        .col-xs-9.col-md-10.bhoechie-tab
+          / Main Content
+          .bhoechie-tab-content.active
+            %h3 Vertical Tabs
+            %p Vertical Tabs are made from <em>.bhoechie-tab-menu</em> and <em>.bhoechie-tab</em>. Each area of content  sits withn the .bhoechie-tab-menu-content class.
+
+            %p Menus Tabs have two classes one for the number (<em>.menu-number</em>) and one for the title (<em>.menu-title</em>). A glyphicon can be placed in the .menu-number instead of a number. But I would advise NOT mixing them (as I have done here). Either all numbers or all Glyphicons.
+
+            %p There is also an example of just the title without a number or glypicon.
+
+          .bhoechie-tab-content
+            .panel.panel-default
+              .panel-heading
+                %h3 Panel Default
+              .panel-body
+                %p Aenean ultricies consectetur ante. Vestibulum ac tempor arcu. Etiam et rhoncus metus, id aliquam erat. Morbi non leo in enim convallis auctor a in ipsum. Phasellus sed feugiat lectus.Duis eu justo vel purus semper volutpat sit amet condimentum enim. Morbi ac ultrices mi.
+              .panel-footer
+                Panel Footer
+
+          .bhoechie-tab-content
+            .panel.panel-info
+              .panel-heading
+                %h3 Panel Imfo
+              .panel-body
+                %p Aenean ultricies consectetur ante. Vestibulum ac tempor arcu. Etiam et rhoncus metus, id aliquam erat. Morbi non leo in enim convallis auctor a in ipsum. Phasellus sed feugiat lectus.Duis eu justo vel purus semper volutpat sit amet condimentum enim. Morbi ac ultrices mi.
+              .panel-footer
+                Panel Footer
+
+          .bhoechie-tab-content
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nisl nec turpis aliquam, id gravida augue tempus. Curabitur in odio vehicula, tristique sem ac, aliquam risus. In ornare dui mauris, ac lacinia justo sagittis quis. Nulla at eros pulvinar, bibendum dolor sed, porta felis. Fusce quis eleifend purus, vitae molestie massa. Nullam odio diam, pretium ut feugiat in, porttitor faucibus lectus. Fusce eu hendrerit leo. Nam sagittis purus nunc, sollicitudin fermentum libero maximus quis.
+
+            %p Curabitur vitae neque sed urna vehicula efficitur. Nullam ut purus leo. Vivamus blandit mauris imperdiet magna porta rhoncus. Maecenas eleifend orci eget ipsum fermentum, eu fringilla lectus rhoncus. Nunc vel fermentum arcu, non congue nulla. Quisque convallis dui sed dui dapibus, nec sodales mi volutpat. Cras at sollicitudin neque. In rutrum lectus eget velit vulputate posuere a nec ex. Suspendisse potenti.
+
+            %p Aenean ultricies consectetur ante. Vestibulum ac tempor arcu. Etiam et rhoncus metus, id aliquam erat. Morbi non leo in enim convallis auctor a in ipsum. Phasellus sed feugiat lectus. Duis eu justo vel purus semper volutpat sit amet condimentum enim. Morbi ac ultrices mi.
+
+            %p Curabitur vitae neque sed urna vehicula efficitur. Nullam ut purus leo. Vivamus blandit mauris imperdiet magna porta rhoncus. Maecenas eleifend orci eget ipsum fermentum, eu fringilla lectus rhoncus. Nunc vel fermentum arcu, non congue nulla. Quisque convallis dui sed dui dapibus, nec sodales mi volutpat. Cras at sollicitudin neque. In rutrum lectus eget velit vulputate posuere a nec ex. Suspendisse potenti.
+
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nisl nec turpis aliquam, id gravida augue tempus. Curabitur in odio vehicula, tristique sem ac, aliquam risus. In ornare dui mauris, ac lacinia justo sagittis quis. Nulla at eros pulvinar, bibendum dolor sed, porta felis. Fusce quis eleifend purus, vitae molestie massa. Nullam odio diam, pretium ut feugiat in, porttitor faucibus lectus. Fusce eu hendrerit leo. Nam sagittis purus nunc, sollicitudin fermentum libero maximus quis.
+
+            %p Curabitur vitae neque sed urna vehicula efficitur. Nullam ut purus leo. Vivamus blandit mauris imperdiet magna porta rhoncus. Maecenas eleifend orci eget ipsum fermentum, eu fringilla lectus rhoncus. Nunc vel fermentum arcu, non congue nulla. Quisque convallis dui sed dui dapibus, nec sodales mi volutpat. Cras at sollicitudin neque. In rutrum lectus eget velit vulputate posuere a nec ex. Suspendisse potenti.
+
+            %p Aenean ultricies consectetur ante. Vestibulum ac tempor arcu. Etiam et rhoncus metus, id aliquam erat. Morbi non leo in enim convallis auctor a in ipsum. Phasellus sed feugiat lectus. Duis eu justo vel purus semper volutpat sit amet condimentum enim. Morbi ac ultrices mi.
+
+            %p Curabitur vitae neque sed urna vehicula efficitur. Nullam ut purus leo. Vivamus blandit mauris imperdiet magna porta rhoncus. Maecenas eleifend orci eget ipsum fermentum, eu fringilla lectus rhoncus. Nunc vel fermentum arcu, non congue nulla. Quisque convallis dui sed dui dapibus, nec sodales mi volutpat. Cras at sollicitudin neque. In rutrum lectus eget velit vulputate posuere a nec ex. Suspendisse potenti.
+
+          .bhoechie-tab-content
+            %h3 Headline
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nisl nec turpis aliquam, id gravida augue tempus. Curabitur in odio vehicula, tristique sem ac, aliquam risus. In ornare dui mauris, ac lacinia justo sagittis quis. Nulla at eros pulvinar, bibendum dolor sed, porta felis. Fusce quis eleifend purus, vitae molestie massa. Nullam odio diam, pretium ut feugiat in, porttitor faucibus lectus. Fusce eu hendrerit leo. Nam sagittis purus nunc, sollicitudin fermentum libero maximus quis.
+
+          .bhoechie-tab-content
+            %h3 With glyphicon
+            %p You can also add a glypicon to the menu. Just place it within the <em>.menu-number</em> class.
+
+          .bhoechie-tab-content
+            %h3 Headline
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nisl nec turpis aliquam, id gravida augue tempus. Curabitur in odio vehicula, tristique sem ac, aliquam risus. In ornare dui mauris, ac lacinia justo sagittis quis. Nulla at eros pulvinar, bibendum dolor sed, porta felis. Fusce quis eleifend purus, vitae molestie massa. Nullam odio diam, pretium ut feugiat in, porttitor faucibus lectus. Fusce eu hendrerit leo. Nam sagittis purus nunc, sollicitudin fermentum libero maximus quis.
+
+
+
+
+
+
+  :javascript
+    $(document).ready(function() {
+        $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+            $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+        });
+    });

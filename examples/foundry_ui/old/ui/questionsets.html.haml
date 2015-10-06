@@ -1,0 +1,133 @@
+#questionsets.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+  :scss
+    .form-field > .panel-body {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      &.form-inline .form-group {margin-bottom: 15px;}
+    }
+    
+  .row
+    .col-xs-12.ui-article
+      %h1 Question Sets
+      %p Question Sets are designed an an overall container from groups of forms, so that they can be laid out within it in various configurations.
+      Our elves are still working this out.
+    
+
+      / First column =======================================================
+    = bootstrap_form_tag url: '#' do |f|
+      .col-xs-12
+        .panel.panel-default
+          .panel-heading
+            %h3 Question Set One
+          .panel-body
+            %p
+              This is a standard Default Panel
+            .question-set
+              .form-fields              
+                .form-field.col-sm-4
+                  .panel-body.form-inline= f.text_field :value, label: 'Inline Field', layout: :inline
+                .form-field.col-sm-8
+                  .panel-body.form-horizontal= f.text_field :value, label: 'Text Field', layout: :horizontal
+                .form-field.col-sm-4
+                  .panel-body.form-inline= f.text_field :value, label: 'Inline Field', layout: :inline
+                .form-field.col-sm-8
+                  .panel-body.form-horizontal= f.text_field :value, label: 'Text Field', layout: :horizontal
+
+          .divide-dots
+
+          .panel-body
+            .form-field.col-sm-7
+              .form-group
+                %label Attachment field 
+                .input-group
+                  %span.input-group-btn
+                    %span.btn.btn-primary.btn-file
+                      =glyph 'folder-open'
+                      &nbsp;Browse…
+                      / %input{:multiple => "multiple", :type => "file"}/
+                  %input.form-control{:readonly => "readonly", :type => "text"}
+                  %span.input-group-btn
+                    %button.btn.btn-danger{type: "button"}
+                      =glyph 'remove'
+
+            .form-field.col-sm-5
+              .panel-body.form-default
+                .panel.panel-info
+                  .panel-heading 
+                    %h3 Nested Default Field
+                  .panel-body.form-default= f.text_field :value, label: 'Default Field', layout: :default
+
+          .divide-dots
+
+          .panel-body
+            .form-field.col-sm-8
+              .form-default= f.text_field :value, label: 'Default Field', layout: :default
+
+          .divide-dots
+
+          .panel-body
+            .form-field.col-sm-12
+              .form-horizontal= f.text_field :value, label: 'Text Field', layout: :horizontal
+
+
+            
+              .panel.panel-info.perforated
+                .panel-heading
+                  %h3 Form Field Title
+                = render 'ui/tables/ui_table'
+                .panel-body.form-default= f.text_field :value, label: 'Text Field', layout: :default
+                .panel-perforation
+            .form-field.col-xs-6
+              .panel.panel-default
+                .panel-heading
+                  %h3 Form Field Title
+                .panel-body.form-horizontal= f.text_field :value, label: 'Text Field', layout: :horizontal
+                .panel-footer A Footer
+            .form-field.col-xs-6
+              .panel.panel-info
+                .panel-heading
+                  %h3 Form Field Title
+                .panel-body.form-horizontal= f.text_field :value, label: 'Text Field', layout: :horizontal
+                .panel-footer A Footer
+                
+            .form-field.col-xs-12
+              .panel.panel-info
+                .panel-heading
+                  %h3 Form Field Title
+                .panel-body.form-default= f.text_field :value, label: 'Default Field', layout: :default
+            .form-field.col-xs-6
+              .panel-body.form-default= f.text_field :value, label: 'Default Field', layout: :default
+            .form-field.col-xs-6
+              .panel-body.form-default= f.text_field :value, label: 'Default Field', layout: :default
+          .panel-footer
+            QS Footer
+      .col-xs-4.question-set
+        .panel.panel-default
+          .panel-heading
+            %h3 Question Set 2
+    
+          .panel-body
+            %p
+              %strong Instructions for question set
+              This is a standard Default Panel with no Heading or Footer
+          .row.form-fields
+            .form-field.col-xs-12
+              .panel.panel-info
+                .panel-heading
+                  %h3 Form Field Title
+                .panel-body.form-default
+                  %p Some really lengthy description could go here that would go on and on and on and on until you'd totally forgotten what the point of it was.
+                  = f.text_field :value, label: 'Text Field', layout: :default
+                .panel-perforation
+            .form-field.col-xs-4
+              .panel-body.form-inline= f.text_field :value, label: 'Inline Field', layout: :inline
+          .panel-footer
+            QS footer
+
+
+
+          

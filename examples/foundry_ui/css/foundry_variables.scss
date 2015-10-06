@@ -1,0 +1,88 @@
+
+
+// 	COLOURS ================================================================ 
+	$SARDPink:   #e50073;
+	$SARDRed:    #BF0000;
+	$SARDOrange: #FF6A00;
+	$SARDYellow: #FFB200;
+	$SARDLime:   #A7BF30;
+	$SARDGreen:  #359E00;
+	$SARDTeal:   #004D4D;
+	$SARDTurq:   #00B2B2;
+	$SARDBlue:   #003CB2;
+	$SARDInk:    #00178C;
+	$SARDPurple: #52008C;
+	$SARDPlum:   #990099;
+
+// 	GREYS ===================================================================
+	$SARDGrey19: #100F0F; //dark
+	$SARDGrey18: #201f1f;
+	$SARDGrey17: #302F2E;
+	$SARDGrey16: #403e3e;
+	$SARDGrey15: #514E4D;
+	$SARDGrey14: #615e5d;
+	$SARDGrey13: #716D6C;
+	$SARDGrey12: #817d7c;
+	$SARDGrey11: #918D8B;
+	$SARDGrey10: #a29d9b;
+	$SARDGrey09: #ABA6A5;
+	$SARDGrey08: #b4b0af;
+	$SARDGrey07: #BDBAB9;
+	$SARDGrey06: #c7c4c3;
+	$SARDGrey05: #D0CECD;
+	$SARDGrey04: #d9d7d7;
+	$SARDGrey03: #E3E1E1;
+	$SARDGrey02: #ecebeb; 
+	$SARDGrey01: #F5F5F5; //light
+  
+  
+  /*  FORM Colouring  ========================================================== */
+    
+    $DivideLine       :$SARDGrey03;
+    $NestedDefaultBG      : $SARDGrey04;
+    
+        
+
+/*  TYPOGRAPHY GENERAL ========================================================== */
+
+
+$text-color: #615e5d;
+
+  //letter-spacing
+    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+    $single: 0.0625em; /* 16 * 0.0625 = 1px */
+    $double: 0.125em; /* 16 * 0.125 = 2px */
+  
+  
+
+  
+  h1 {
+    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-size: 3.000em;
+    letter-spacing: $reduced;
+  }
+  
+  h2 {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 1.875em;
+    margin-top:0;
+  }
+  
+  h3 {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 1.600em;
+    margin-top:0;
+  }
+  
+  h4 h5 h6 {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 1.250em;
+  }
+  
+  p {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+  }
+  

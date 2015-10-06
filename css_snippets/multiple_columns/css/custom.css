@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+.three-col {
+       -moz-column-count: 3;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 3;
+       -webkit-column-gap: 20px;
+}

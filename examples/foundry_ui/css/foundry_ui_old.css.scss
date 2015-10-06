@@ -1,0 +1,604 @@
+
+// UI Stylesheets
+
+@import "all/vertical_tabs";
+
+
+
+
+.ui-guidelines {
+
+      // NAVIGATION & STRUCTURE ==========================================================
+
+      ul.nav-pills{
+        border-top: 1px solid $SARDGrey08;
+        border-bottom: 1px solid $SARDGrey08;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+      ul.nav-pills > li.active > a,
+        .nav-pills > li.active > a:hover,
+        .nav-pills > li.active > a:focus {
+          color: white;
+          cursor: default;
+          background-color: $SARDTurq;
+      } 
+
+      .uinav{
+        margin: 30px -10px 0px -10px;
+        padding-bottom:30px;
+      }
+
+      .ui-article {margin-bottom:50px;}
+
+      .divide-dots-ui {
+        background-image: image-url("graphics/dot_white.png");
+        background-repeat: repeat-x;
+        height: 16px;
+        background-position: -4px 0px;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+      .toplink{
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        float: right;
+        margin-top: -48px;
+          a:after {
+            font-family:'Glyphicons Halflings';
+            font-size:1.5em;
+            line-height: 1.8em;
+            content:"\e113";
+            color: $SARDGrey08;
+            padding-left:11px;
+          }
+          a:hover:after{
+            color: $SARDTurq;
+          }
+      }
+
+      // FORMS ==========================================================
+
+      .form-group {
+        .form-group.compulsory label:after {
+          content:" *";
+        }
+
+        .checkbox{
+          label{
+            font-size: 1.000em;
+            font-weight:normal;
+            line-height:1.400em;
+          }
+        }
+
+        .radio{
+          label{
+            font-size: 1.000em;
+            font-weight:normal;
+            line-height:1.400em;
+          }
+        }
+
+        .attachment-fields{
+          .btn{
+          -webkit-box-shadow: none!IMPORTANT;
+          -moz-box-shadow: none!IMPORTANT;
+          box-shadow: none!IMPORTANT;
+          }
+        }
+      } // END form-group
+
+
+      // Based upon http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
+      
+      .btn-file {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-file input[type=file] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 100%;
+          min-height: 100%;
+          font-size: 100px;
+          text-align: right;
+          filter: alpha(opacity=0);
+          opacity: 0;
+          outline: none;
+          background: white;
+          cursor: inherit;
+          display: block;
+      }
+
+
+
+      
+      
+      // COLOURS ==========================================================
+
+      .colour-swatch{
+        display:inline-block;
+        width: 100px;
+        margin-bottom: 5px;
+        h6 {margin: 5px;}
+
+        &.SARDTurq {min-height: 100px; background-color: $SARDTurq;}
+        &.SARDTeal {min-height: 100px; background-color: $SARDTeal; color:white;}
+        &.SARDGreen {min-height: 100px; background-color: $SARDGreen; color:white;}
+        &.SARDYellow {min-height: 100px; background-color: $SARDYellow;}
+        &.SARDOrange {min-height: 100px; background-color: $SARDOrange;}
+        &.SARDRed {min-height: 100px; background-color: $SARDRed; color:white;}
+        &.SARDPink {min-height: 100px; background-color: $SARDPink;}
+        &.SARDPurple {min-height: 100px; background-color: $SARDPurple; color:white;}
+        &.SARDLime {min-height: 100px; background-color: $SARDLime;}
+        &.SARDBlue {min-height: 100px; background-color: $SARDBlue; color:white;}
+        &.SARDInk {min-height: 100px; background-color: $SARDInk; color:white;}
+        &.SARDPlum {min-height: 100px; background-color: $SARDPlum; color:white;}
+
+        &.SARDGrey01 {min-height: 100px; background-color: $SARDGrey01; border: 1px solid $SARDGrey08;}
+        &.SARDGrey02 {min-height: 100px; background-color: $SARDGrey02;}
+        &.SARDGrey03 {min-height: 100px; background-color: $SARDGrey03;}
+        &.SARDGrey04 {min-height: 100px; background-color: $SARDGrey04;}
+        &.SARDGrey05 {min-height: 100px; background-color: $SARDGrey05;}
+        &.SARDGrey06 {min-height: 100px; background-color: $SARDGrey06;}
+        &.SARDGrey07 {min-height: 100px; background-color: $SARDGrey07;}
+        &.SARDGrey08 {min-height: 100px; background-color: $SARDGrey08;}
+        &.SARDGrey09 {min-height: 100px; background-color: $SARDGrey09;}
+        &.SARDGrey10 {min-height: 100px; background-color: $SARDGrey10; color:white;}
+        &.SARDGrey11 {min-height: 100px; background-color: $SARDGrey11; color:white;}
+        &.SARDGrey12 {min-height: 100px; background-color: $SARDGrey12; color:white;}
+        &.SARDGrey13 {min-height: 100px; background-color: $SARDGrey13; color:white;}
+        &.SARDGrey14 {min-height: 100px; background-color: $SARDGrey14; color:white;}
+        &.SARDGrey15 {min-height: 100px; background-color: $SARDGrey15; color:white;}
+        &.SARDGrey16 {min-height: 100px; background-color: $SARDGrey16; color:white;}
+        &.SARDGrey17 {min-height: 100px; background-color: $SARDGrey17; color:white;}
+        &.SARDGrey18 {min-height: 100px; background-color: $SARDGrey18; color:white;}
+        &.SARDGrey19 {min-height: 100px; background-color: $SARDGrey19; color:white;}
+      }
+
+
+      //  TYPOGRAPHY =================================================================================
+
+      em {color:darken($SARDPink, 10%);}
+      strong { font-weight: bold!IMPORTANT; color:black;}
+
+
+      //  LINKS =================================================================================
+      
+      a{ text-decoration:none!IMPORTANT; }
+
+      .panel-default {
+        >.panel-heading{
+          a         { color:$SARDGrey18; }
+          a:visited { color:$SARDGrey16; }
+          a:hover   { color:$SARDGrey01; }
+          a:focus   { color:$SARDGrey01; }
+          a:active  { color:$SARDTeal; }
+        }
+        >.panel-body{
+          a         { color:$SARDTurq; }
+          a:visited { color:$SARDTurq; }
+          a:hover   { color:$SARDOrange; }
+          a:focus   { color:$SARDOrange; }
+          a:active  { color:$SARDTeal; }
+        }
+         >.panel-footer{
+          a         { color:$SARDGrey01; }
+          a:visited { color:$SARDGrey01; }
+          a:hover   { color:$SARDOrange; }
+          a:focus   { color:$SARDOrange; }
+          a:active  { color:$SARDGrey01; }
+        }
+      }
+
+      .panel-info {
+        >.panel-heading{
+          a         { color:$SARDGrey01; }
+          a:visited { color:$SARDGrey16; }
+          a:hover   { color:$SARDTurq; }
+          a:focus   { color:$SARDTurq; }
+          a:active  { color:$SARDOrange; }
+        }
+        >.panel-body{
+          a         { color:$SARDGrey01; }
+          a:visited { color:$SARDGrey01; }
+          a:hover   { color:$SARDYellow; }
+          a:focus   { color:$SARDYellow; }
+          a:active  { color:$SARDGrey01; }
+        }
+         >.panel-footer{
+          a         { color:$SARDGrey01; }
+          a:visited { color:$SARDTurq; }
+          a:hover   { color:$SARDOrange; }
+          a:focus   { color:$SARDOrange; }
+          a:active  { color:$SARDGrey01; }
+        }
+      }
+
+
+      //  Vertical Tabs =================================================================================
+
+      $active-tab-bg:   $SARDTurq;
+
+
+      /*  bhoechie tab */
+      div.bhoechie-tab-container{
+        z-index: 10;
+        background-color: #ffffff;
+        background-image: image-url("backgrounds/natural-paper.png");
+        padding: 0 !important;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        margin-bottom: 20px;
+       }
+
+      div.bhoechie-tab-menu{
+        padding:0px;
+      }
+
+      div.bhoechie-tab-menu div.list-group{
+        margin-bottom: 0;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a{
+        background-image: image-url("backgrounds/natural-paper.png");
+        background:transparent;
+        margin-bottom: 0;
+        padding:0px;
+        min-height: 50px;
+        text-align: left;
+        border-top: 0px solid red;
+        border-right: 1px solid $SARDGrey04;
+        border-bottom: 1px solid $SARDGrey04;
+        border-left: none;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a:hover{
+        background:$SARDGrey02;
+      }
+
+
+      div.bhoechie-tab-menu div.list-group>a .glyphicon,
+      div.bhoechie-tab-menu div.list-group>a .fa {
+        color: active-tab-bg;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a:first-child{
+        border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        -moz-border-top-left-radius: 0;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a:last-child{
+        border-bottom-right-radius: 0;
+        -moz-border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        -moz-border-bottom-left-radius: 0;
+        border-bottom: 1px solid transparent;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a.active,
+      div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+      div.bhoechie-tab-menu div.list-group>a.active .fa{
+        background:$active-tab-bg; 
+        color: #ffffff;
+        border-bottom: 1px solid transparent;
+        border-right: 1px solid $active-tab-bg;
+      }
+
+      div.bhoechie-tab-menu div.list-group>a.active:after{ // styles the little arrow
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-top: -13px;
+        border-left: 0;
+        border-bottom: 13px solid transparent;
+        border-top: 13px solid transparent;
+        border-left: 10px solid $active-tab-bg;
+      }
+
+      div.bhoechie-tab-content{
+        /* border: 1px solid #eeeeee; */
+        // padding-left: 20px;
+        // padding-top: 22px;
+        // padding-bottom: 10px;
+        padding: 20px 16px 30px 20px;
+        margin-left:-11px;
+        margin-right:-10px;
+        border-left:1px solid $SARDGrey04;
+      }
+
+      div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+        display: none;
+      }
+
+
+/*  added by simon */
+
+
+      .menu-number {
+        width: 38px;
+        min-height: 100%;
+        text-align: center;
+        padding: 0px 5px;
+        float:left;
+        font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+        font-size: 2.5em;
+        letter-spacing:$reduced;
+        margin-right: 10px;
+        .glyphicon{
+          font-size: 0.8em;
+        }
+      }
+
+      .menu-title {
+        padding-top:9px;
+        padding-right: 0px;
+        font-size: 1em;
+        line-height: 1.2em;
+        margin-left: 10px;
+      }
+
+
+      /*==========  Non-Mobile First Method  ==========*/
+
+      /* Large Devices, Wide Screens */
+      @media only screen and (max-width : 1199px) {
+
+      }
+
+      /* Medium Devices, Desktops */
+      @media only screen and (max-width : 991px) {
+          .menu-number{
+            display:block;
+            float:left;
+            font-size: 2em; 
+            width: 30px;
+            .glyphicon{
+              font-size: 0.8em;
+            }      
+          }
+          .menu-title{
+            font-size: 0.8em;
+            line-height: 1em;
+          }
+      }
+
+      /* Small Devices, Tablets */
+      @media only screen and (max-width : 767px) {
+          .menu-number{
+            display:block;
+            float:left;
+            font-size: 2em; 
+            width: 30px;
+            .glyphicon{
+              font-size: 0.8em;
+            }      
+          }
+          .menu-title{
+            font-size: 0.8em;
+            line-height: 1em;
+          }
+      }
+
+      /* Extra Small Devices, Phones */ 
+      @media only screen and (max-width : 479px) {
+        div.bhoechie-tab-menu{
+          width: 15%;
+        }
+        div.bhoechie-tab{
+          min-width: 85%;
+        }
+        .menu-title{
+          visibility: hidden;
+          width:0px;
+          height:0px;
+        }
+
+      }
+
+      /* Custom, iPhone Retina */ 
+      @media only screen and (max-width : 319px) {
+          
+      }
+
+
+
+
+      //  Pagination =================================================================================
+
+      .pagination-container{
+        @include make-md-column(8);
+        @include make-xs-column(6);
+      }
+
+      .pagination>li>a, .pagination>li>span { 
+        border-radius: 50% !important;
+        margin: 3px;
+        padding-top:9px;
+        height: 40px;
+        width: 40px;
+        text-align:center;     
+      }
+      .pagination {
+          span.disabled:link { background:white; }
+          span.disabled:hover{ background:white; }
+          span.disabled:focus{ background:white; }
+      }
+
+      .pagination{
+        li:active{ color:white; }
+      }
+
+      /*==========  Non-Mobile First Method  ==========*/
+
+      /* Large Devices, Wide Screens */
+      @media only screen and (max-width : 1199px) {
+
+      }
+
+      /* Medium Devices, Desktops */
+      @media only screen and (max-width : 991px) {
+        .pagination>li>a, .pagination>li>span { 
+        margin: 2px;
+        padding-top:4px;
+        padding-left:8px;
+        height: 30px;
+        width: 30px;
+      }
+
+      }
+
+      /* Small Devices, Tablets */
+      @media only screen and (max-width : 767px) {
+
+      }
+
+      /* Extra Small Devices, Phones */ 
+      @media only screen and (max-width : 479px) {
+
+      }
+
+      /* Custom, iPhone Retina */ 
+      @media only screen and (max-width : 319px) {
+          
+      }
+
+
+
+
+
+      //  Noticeboard =================================================================================
+      // found in panels.css
+
+      .noticeboard{
+        .panel-footer { margin: 15px -15px 0px -15px; } // you don't need this on the live version
+
+      .notice-article{ }
+
+      .notice-date {
+        font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+        background: $SARDGrey14;
+        color:white;
+        padding: 3px 10px;
+        margin: 0px -3px 0px -3px;
+        border-radius:20px;
+      }
+
+      .notice-time {
+        font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+        border-top: 1px solid $SARDGrey14;
+        padding-top: 12px;
+        margin-top: 10px;
+      }
+
+      .notice-text {
+        padding-right: 25px;
+      }
+
+      .notice-link{
+        a:link:after {
+        margin-top: -20px;
+        font-family:'Glyphicons Halflings';
+        content:"\e131";
+        // font-family: FontAwesome;
+        // content: "\f005";
+        float: right;
+        color: $SARDGrey12;
+        font-size:1.4em;
+        line-height:1em;
+
+        }
+        a:visited:after { color: $SARDGrey12; }
+        a:hover:after { color: $SARDTurq; }
+        a:active:after { color: $SARDTurq; }
+        a:focus:after { color: $SARDTurq; }
+      }
+
+      .notice-date + .notice-time { // this effects time when when it follows date, but is not first child.
+        border-top:none;
+        margin-top: 0px;
+      }
+
+      .glyphicon {
+        float:right;
+        font-size:1.5em;
+        padding-top:3px;
+      }
+
+      .divide-dots{
+        margin: 15px -15px;
+      }
+
+    } // end noticeboard
+
+
+    //  Pageheader =================================================================================
+
+    #UI-page-header{
+
+      .jumbotron{
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+        border-radius:0px;
+        img{
+          width:100%;
+        }
+      }
+
+      .navbar {
+        font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+        font-size: 1.0em;
+        border-radius: 0px;
+        border: 0px;
+        line-height: 16px;
+        margin: 0px;
+      }
+
+
+      .navbar-right{
+        padding:0;
+        display:block;
+      }
+
+      .dropdown li{
+        font-size: 1.0em;
+        > a {padding-left:15px;}
+      }
+
+      .dropdown-open{ }
+
+      .dropdown-menu{ border-radius: 0px; }
+
+      ul li .divider{ margin:0px;}
+
+      .dropdown-toggle {
+          :after{
+          font-family: 'Glyphicons Halflings';
+          content: "\e114";
+          font-size:0.8em;
+          color: white;
+        }
+      }
+    } // END #UI-page-header
+
+
+      
+
+} // END .ui-guidelines
+
+
+
+
+

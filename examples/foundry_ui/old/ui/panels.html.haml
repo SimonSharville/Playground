@@ -1,0 +1,491 @@
+#panels.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+  .row
+    .col-xs-12
+      %h1 UI Panels
+      %p Panels are core to the design of Foundry and are used throughout the system.
+
+
+      .divide-dots-ui
+
+      .row
+        / First column =======================================================
+        .col-xs-6
+          %h1 Common panels
+          %p &nbsp;
+          .ui-article
+            %h2 Default Panel
+            %p Default panels have a medium grey header and a darker grey footer.
+            .panel.panel-default
+              .panel-body 
+                This is a standard Default Panel with no Heading or Footer
+        
+        
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel with H3 Heading
+              .panel-body 
+                This is the Default Panel with a <em>.panel-heading</em> set to H3, 
+                %br
+                a Primary Button and a Footer.
+                %br
+                %br
+                .btn.btn-primary Primary Button 
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+      
+      
+          .ui-article
+            %h2 Primary Panel
+            %p Primary panels have the same grey background as default panels but with no extra colouring on the header or footer.
+            .panel.panel-primary
+              .panel-body This is a Primary Panel with no Header or Footer
+        
+            .panel.panel-primary
+              .panel-heading
+                %h3 Primary Panel with H3 Heading
+              .panel-body 
+                This is the Primary Panel with a <em>.panel-heading</em> set to H3,
+                %br
+                a Primary Button and a Footer.
+                %br
+                %br
+                .btn.btn-primary Primary Button
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+
+          .ui-article
+            %h2 Info Panel
+            %p Info panels have a Turquise background with a darker (Teal) header and footer.
+            .panel.panel-info
+              .panel-body 
+                This is an Info Panel with no Header or Footer
+      
+            .panel.panel-info
+              .panel-heading
+                %h3 Info Panel with H3 Heading
+              .panel-body
+                %p This is the Info Panel with a <em>.panel-heading</em> set to H3, an Info Button and a Footer.
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+      
+      
+        / Second column =======================================================
+        .col-xs-6
+    
+          %h1 Less common panels
+          %p &nbsp;
+
+          .ui-article
+            %h2 Clean Panel
+            %p Clean panels have no background colour, but have a divide rule between the header, body and footer.
+            .panel.panel-clean
+              .panel-body This is a Clean Panel with no Header or Footer
+
+            .panel.panel-clean
+              .panel-heading
+                %h3 Clean Panel with H3 Heading
+              .panel-body 
+                This is the Clean Panel with a <em>.panel-heading</em> set to H3,
+                %br
+                a Primary Button and a Footer.
+                %br
+                %br
+                .btn.btn-primary Primary Button
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+
+          .ui-article
+            %h2 White Panel
+            %p White panels have a white background with a light grey divide between the header, body and footer.
+            .panel.panel-white
+              .panel-body This is a White Panel with no Header or Footer
+            
+            .panel.panel-white
+              .panel-heading
+                %h3 White Panel with H3 Heading
+              .panel-body 
+                This is the White Panel with a <em>.panel-heading</em> set to H3,
+                %br
+                a Primary Button and a Footer.
+                %br
+                %br
+                .btn.btn-primary Primary Button
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+
+            .ui-article
+            %h2 Transparent Panel
+            %p Transparent panels are used solely for nesting within other panels (see below). They have no texture background and are semi-transparent grey, similar to the effect of tracing paper. 
+            .panel.panel-transparent
+              .panel-body This is a Transparent Panel with no Header or Footer
+            
+            .panel.panel-transparent
+              .panel-heading
+                %h3 Transparent Panel with H3 Heading
+              .panel-body 
+                This is the Transparent Panel with a <em>.panel-heading</em> set to H3,
+                %br
+                a Primary Button and a Footer.
+                %br
+                %br
+                .btn.btn-primary Primary Button
+              .panel-footer Panel Footer (<em>.panel-footer</em>)
+
+
+      / Nested Panels =======================================================
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"} 
+      %h1 Nested Panels
+      %p Foundry frequently uses panels nested within other panels. Below is a selction of options.
+      %br
+      .row
+        .col-xs-6
+          .ui-article
+            %h2 Default Panel with a Nested Panel Info
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-info</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-info
+                  .panel-heading
+                    %h3 Info Panel 
+                  .panel-body
+                    %p Info Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-info Info Link Button 
+
+          .ui-article
+            %h2 Info Panel with a Nested Panel Default
+            .panel.panel-info
+              .panel-heading
+                %h3 Info Panel 
+              .panel-body
+                %p This is a <em>.panel-info</em> with a <em>.panel-default</em> followed by a <em>.panel-primary</em>s nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-default
+                  .panel-heading
+                    %h3 Default Panel  
+                  .panel-body
+                    %p Default Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button
+                .panel.panel-primary
+                  .panel-heading
+                    %h3 Panel Primary 
+                  .panel-body
+                    %p Default Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+
+
+
+        .col-xs-6
+          .ui-article
+            %h2 Default Panel with a Nested Panel Clean
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-clean</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-clean
+                  .panel-heading
+                    %h3 Clean Panel  
+                  .panel-body
+                    %p Clean Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+                  .panel-footer
+                    Clean Panel Footer
+                            
+          .ui-article
+            %h2 Default Panel with a Nested Panel White
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-white</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-white
+                  .panel-heading
+                    %h3 White Panel 
+                  .panel-body
+                    %p Info Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"} 
+
+      %h1 Transparent Nested Panels
+      %p Transparent Nested Panels give the impression of overlaid tracing paper. To use them give the nested panel a class of .<em>panel-transparent</em> rather than another class.
+      %br
+      .row
+        .col-xs-6
+          .ui-article
+            %h2 Transparent on Default
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-transparent</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-transparent
+                  .panel-heading
+                    %h3 Transparent Panel 
+                  .panel-body
+                    %p Transparent Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+                  .panel-footer
+                    %p Panel footer
+
+          .ui-article
+            %h2 Transparent on Info
+            .panel.panel-info
+              .panel-heading
+                %h3 Info Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-transparent</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-transparent
+                  .panel-heading
+                    %h3 Transparent Panel 
+                  .panel-body
+                    %p Transparent Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-info Info Link Button 
+                  .panel-footer
+                    %p Panel footer
+
+        .col-xs-6
+          .ui-article
+            %h2 Transparent on Primary
+            .panel.panel-primary
+              .panel-heading
+                %h3 Primary Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-transparent</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-transparent
+                  .panel-heading
+                    %h3 Transparent Panel 
+                  .panel-body
+                    %p Transparent Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+                  .panel-footer
+                    %p Panel footer
+
+          .ui-article
+            %h2 Transparent on White
+            .panel.panel-white
+              .panel-heading
+                %h3 White Panel 
+              .panel-body
+                %p This is a <em>.panel-default</em> with a <em>.panel-transparent</em> nested within it.
+                %form
+                  .form-group
+                    %label This is a Label
+                .panel.panel-transparent
+                  .panel-heading
+                    %h3 Transparent Panel 
+                  .panel-body
+                    %p Transparent Panel Body
+                    %form
+                      %label This is a Label
+                    %a.btn.btn-primary Primary Link Button 
+                  .panel-footer
+                    %p Panel footer
+
+
+      / Collapsing Panels =======================================================
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"} 
+
+      %h1 Collapse Panels
+      %p Collapse panels are used when you need to hide less prominent information, or need to break information into easily digestible chunks.
+      %br
+      .row
+        .col-xs-6
+          .ui-article
+            %h2 Example 1
+            .panel.panel-default.panel-collapse
+              .panel-heading
+                %a{"data-target" => "#E1a", "data-toggle" => "collapse"} View further information
+              #E1a.panel-body.collapse
+                %h3 Collapse Panel Body
+                %p This is an axample of a Collapse Panel with the collapse feature in the header.
+                %p
+                  Click on this  
+                  %a{"data-target" => "#E1b", "data-toggle" => "collapse"} LINK
+                  to open up further information below.
+            #E1b.panel.panel-default.collapse.collapse-neg-margin
+              = render 'ui/tables/ui_table'
+                        
+
+
+          .ui-article
+            %h2 Example 2
+            .panel.panel-default.panel-collapse
+              .panel-heading
+                %h3 Default Panel Heading
+              #p3.panel-body
+                %p This panel has a collapsable footer containing a table. This can be expaneded by either clicking on the link in the text below, or by clicking on the footer.
+                %p
+                  This
+                  %a{"data-target" => "#E2a", "data-toggle" => "collapse"} Link
+                  will expand the footer
+                  %p NOTE: If the item that is collapsing is a table, then it should NOT sit within a <em>.panel-body</em>. It should however sit within a <em>.panel</em> that as well as the <em>.collapse</em> class, should also have the class of <em>.collapse-neg-margin</em>. This is so it has no top margin.
+              .panel-footer
+                %a{"data-target" => "#E2a", "data-toggle" => "collapse"} Expand this footer
+            #E2a.panel.panel-default.collapse.collapse-neg-margin
+              = render 'ui/tables/ui_table'
+
+
+          .ui-article
+            %h2 Expandable buttons
+            %p A button can also have a collapse panel below it
+            %button.btn.btn-primary{"aria-controls" => "collapseExample", "aria-expanded" => "false", "data-target" => "#collapseExample", "data-toggle" => "collapse", :type => "button"}
+              Click to open a panel below ...
+            #collapseExample.collapse.panel.panel-default
+              .panel-body
+                \...
+                Trouble is I don't know why you would.
+
+          .ui-article
+            .bs-callout.bs-callout-warning
+              %h2 Notes
+              %p when creating collapse panels you can set the panel to be either open or closed when the page loads by using the following sub-classes:
+              %p <em>.collapse</em> hides content
+              %p <em>.collapse.in</em> shows content
+              %p <em>.collapsing</em> is a transitory state applied during transitions
+
+        .col-xs-6
+          .ui-article
+            %h2 Example 3
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel 
+              .panel-body
+                %p This an example of a Collapsable Panel nested within another panel.
+                .panel.panel-info.panel-collapse
+                  .panel-heading
+                    %a{"data-target" => "#E3a", "data-toggle" => "collapse"} Info Panel Heading Link
+                  #E3a.panel-body.collapse
+                    %p
+                      This is a collapsible 
+                      %a{"data-target" => "#E3b", "data-toggle" => "collapse"} Link
+                      That opens up a panel body below the footer
+                  .panel-footer
+                    Panel Footer
+                #E3b.panel.panel-info.collapse.collapse-neg-margin
+                  = render 'ui/tables/ui_table'
+
+
+          .ui-article
+            %h2 Example 4
+            .panel.panel-default
+              .panel-heading
+                %h3 Panel Default
+              .panel-body
+                %p This an example of a Collapsable Panel nested within another panel, but with the two links like example 2.
+                .panel.panel-info.panel-collapse
+                  .panel-heading
+                    %h3 Info Panel Heading
+                  #p7.panel-body
+                    %p This panel has a collapsable footer containing a table. This can be expaneded by either clicking on the link in the text below, or by clicking on the footer.
+                    %p
+                      This
+                      %a{"data-target" => "#E4a", "data-toggle" => "collapse"} Link
+                      will expand the footer
+                      %p NOTE: If the item that is collapsing is a table, then it should NOT sit within a <em>.panel-body</em>. It should however sit within a <em>.panel</em> that as well as the <em>.collapse</em> class, should also have the class of <em>.collapse-neg-margin</em>. This is so it has no top margin.
+                  .panel-footer
+                    %a{"data-target" => "#E4a", "data-toggle" => "collapse"} Expand this footer
+                #E4a.panel.panel-info.collapse.collapse-neg-margin
+                  = render 'ui/tables/ui_table'
+
+
+
+
+
+
+      / Accordian Panels =======================================================
+
+      .divide-dots-ui
+      .toplink
+        %a{"href" => "#"} 
+
+      %h1 Accordian Panels
+      %p Accordian panels are an alternative to collapsable panels, They have a simpler build and may beeasier to impliment depending on the back-end coding.
+      %br
+      .row
+        .col-xs-6
+          .ui-article
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel
+              .panel-body
+                %p Each on these Accordian Panels need a unique ID for it to work. This is <em>#AccordianOne</em>
+              
+              .accordian.panel.panel-info
+                .panel-footer
+                  %a{"data-target" => "#AccordianOne", "data-toggle" => "collapse", :href => "#AccordianOne"}
+                    Collapsible Group Item #1
+                #AccordianOne.panel-collapse.collapse
+                  .panel-body Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        .col-xs-6
+          .ui-article
+            .panel.panel-default
+              .panel-heading
+                %h3 Default Panel
+              .panel-body
+                %p Each on these Accordian Panels need a unique ID for it to work. This is <em>#AccordianTwo</em>
+                %p This version has a table rendered in the body of the Accordian Panel.
+              .accordian.panel.panel-info
+                .panel-footer
+                  %a{"data-target" => "#AccordianTwo", "data-toggle" => "collapse", :href => "#AccordianTwo"}
+                    Collapsible Group Item #2
+                #AccordianTwo.panel-collapse.collapse
+                  .panel-body 
+                  = render 'ui/tables/ui_table'
+
+
+
+          
+            
+
+      
+
+
+                
+    
+
+     

@@ -1,0 +1,17 @@
+#user_panel
+  .userinfo
+    =image_tag "temp/frankie.png", class: 'userimage'
+    .userdetails
+      %h3
+        Frankie Howard
+      %p 
+        Comic Genius
+      %p
+        oooh-misses@frankie.com
+    .clearfix
+  .usercontrol
+    %li= link_to t('.edit_my_details'), edit_user_registration_path(current_user, locale: I18n.locale)
+    %li= link_to t('navigation.site', default: 'Site'), dashboard_user_path(current_user) if can_access_admin?
+    %li= link_to t('navigation.admin', default: 'Admin'), dashboard_admin_user_path(current_user) if can_access_admin?
+    %li= link_to t('navigation.super_admin', default: 'Super Admin'), dashboard_super_admin_user_path(current_user) if can_access_super_admin?
+    %li= link_to t('devise.sessions.sign_out', default: "Log Out"), destroy_user_session_path

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  margin: 20px;
+  padding: 0px;
+  }
+
+.wrapper{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  font-size: 4em;  /* 16x4 = 80 */
+  letter-spacing: -0.01em;
+  margin-bottom:-0.5em;
+  margin-top:0px;
+}
+
+h2 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 2em;  /* 16x4 = 80 */
+  letter-spacing: -0.01em;
+  margin-bottom:0.25em;
+  padding-top:0.5em;
+  border-top: 1px orange dotted;
+}
+
+p {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  font-size: 2em;  /* 16x4 = 80 */
+  letter-spacing: -0.01em;
+}
+
+ul {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 1.5em;  /* 16x4 = 80 */
+  list-style-type: none;
+  padding:0em; 
+  margin-top:0.5em;
+  color:black;
+  text-decoration:none;
+  }
+  
+  a:link {
+      color:black;
+      text-decoration:none;
+  }
+  
+  li a:after {
+      font-family: FontAwesome;
+      content: "\f061";
+      margin-left:5px;
+  }
+   li a:hover:after {
+      color: orange;
+  }
+  
+  .description {
+     font-weight:300;
+     font-size:0.7em;
+     letter-spacing: 0.03em;
+     color:#666;
+     padding-bottom: 20px;
+   }
+   
+   .description:last-child {
+     padding-bottom: 0px;
+   }
+ 
+ .hidden{
+  display: none;
+ }
+
+/*==========  RESPONSIVE  ====================================================*/
+ 
+/*==========  Mobile First Method  ===========================================*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+    
+/*==========  Non-Mobile First Method  =======================================*/
+
+    /* Large Devices, Wide Screens */     /* iPad2 Landscape */
+    @media only screen and (max-width : 1199px) {
+      
+      p{
+        font-size: 1.9em;  /* 16x4 = 80 */
+      }
+
+
+    }
+
+    /* Medium Devices, Desktops */      /* iPad2 portrait */
+    @media only screen and (max-width : 991px) {
+      
+      p{
+        font-size: 1.8em;  /* 16x4 = 80 */
+      }
+
+      .description {
+       font-size:0.7em;
+     }
+
+    }
+
+    /* Small Devices, Tablets */      /* iPhone5 Landscape */
+    @media only screen and (max-width : 767px) {
+
+      h1 {
+        font-size: 3em;  /* 16x4 = 80 */
+      }
+      
+      h2{
+        font-size: 1.6em;  /* 16x4 = 80 */
+      }
+      
+      p{
+        font-size: 1.3em;  /* 16x4 = 80 */
+      }
+      
+      .description {
+       font-size:0.7em;
+     }
+
+
+    }
+
+
+    /* Extra Small Devices, Phones */      /* iPhone5 Portrait */
+    @media only screen and (max-width : 479px) {
+      
+      h1 {
+        font-size: 3em;  /* 16x4 = 80 */
+      }
+      
+      h2{
+        font-size: 1.6em;  /* 16x4 = 80 */
+      }
+      
+      p{
+        font-size: 1.3em;  /* 16x4 = 80 */
+      }
+      
+     .description {
+       font-size:0.6em;
+     }
+
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 319px) {
+        
+    }
+ 

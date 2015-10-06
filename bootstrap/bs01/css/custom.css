@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  background:#F1F1F1;
+}
+
+.container{
+  background:white; 
+}
+
+h1 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  font-size: 3em;  /* 16x4 = 80 */
+  margin-bottom:0em;
+}
+
+h2 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 2em;  /* 16x4 = 80 */
+  margin-bottom:-0.5em;
+}
+
+h3 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  font-size: 2em;  /* 16x4 = 80 */
+  margin-bottom:0.1em;
+}
+
+
+p {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 1.2em;  /* 16x4 = 80 */
+}
+
+.description {
+  width:100%;
+  display:inline-block;
+}
+
+.column {
+  margin-bottom:10px; 
+  background:#CBDFD9;
+  border-right: 1px solid white ;
+  text-align:center;
+  padding-bottom:15px;
+}
+
+.column:last-child {
+  border-right: 0px ;
+}
+
+
+.item {
+  background:#B2CEC7; 
+}
+

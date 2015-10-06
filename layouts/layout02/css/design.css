@@ -1,0 +1,192 @@
+body {
+  background: #ddd;
+  font-family: 'Roboto', serif;
+  font-weight: 400; }
+
+.container {
+  background: white;
+  padding-left: 48px;
+  padding-right: 32px;
+  padding-bottom: 70px;
+  margin: 32px;
+  background-image: url("../../../images/paper/natural-paper.png"); }
+
+.container-fluid {
+  background: white;
+  padding-left: 48px;
+  padding-right: 32px;
+  padding-bottom: 70px;
+  margin: 32px;
+  background-image: url("../../../images/paper/natural-paper.png");
+  box-shadow: 0px 0px 5px #888888; }
+
+h1 {
+  font-family: 'Roboto', serif;
+  /* 100 300 400 500 700*/
+  font-weight: 100;
+  font-size: 4em; }
+
+h2 {
+  font-family: 'Roboto', serif;
+  /* 100 300 400 500 700*/
+  font-weight: 700;
+  font-size: 2.2em;
+  margin-top: 0px; }
+
+h3 {
+  font-family: 'Roboto', serif;
+  /* 100 300 400 500 700*/
+  font-weight: 100;
+  font-size: 2.2em;
+  margin-top: 0px; }
+
+br {
+  line-height: 1em; }
+
+a:link {
+  color: #E68A00;
+  text-decoration: none; }
+
+a:visited {
+  color: #E68A00;
+  text-decoration: none; }
+
+a:hover {
+  color: #E62E00;
+  text-decoration: none; }
+
+.masthead {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: -16px; }
+
+img {
+  padding-bottom: 1.2em; }
+
+.divideHoriz {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: #E62E00; }
+  .divideHoriz i {
+    background: white;
+    position: relative;
+    top: 10px; }
+
+.standfirst {
+  text-align: right;
+  padding-right: 16px;
+  margin-bottom: -16px; }
+
+.standfirst h3:after {
+  content: '.';
+  position: absolute;
+  margin-right: -4em; }
+
+.pullQuote {
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 42px;
+  margin-bottom: -16px; }
+
+.pullQuote h3 {
+  font-size: 1.8em; }
+
+.pullQuote:before {
+  content: url("../assets/quoteOpen.png");
+  display: inline-block;
+  margin-right: -6px; }
+
+.pullQuote h3:after {
+  content: '.';
+  position: absolute;
+  margin-right: -4em; }
+
+.article {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex; }
+
+.story {
+  border-left: 1px solid #E68A00;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.storytext p {
+  margin-bottom: 0px;
+  vertical-align: top;
+  padding-bottom: 1.5em; }
+
+.storytext {
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 3;
+  /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 32px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 32px;
+  /* Firefox */
+  column-gap: 32px;
+  -webkit-column-rule: 1px solid #ddd;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid #ddd;
+  /* Firefox */
+  column-rule: 1px solid #ddd;
+  -webkit-column-rule-width: 1px;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;
+  /* Firefox */
+  column-rule-width: 1px; }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .storytext {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .article {
+    display: inline-block; }
+
+  .standfirst {
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E68A00;
+    margin-bottom: 16px; }
+
+  .pullQuote {
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E68A00;
+    margin-bottom: 16px; }
+
+  .story {
+    border-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .storytext {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

@@ -1,0 +1,481 @@
+/*   PANELS STYLES ======================================================================== */
+@import "foundry_variables";
+
+// Panel Variables
+$panel-info-bg-color: $SARDTurq;
+
+
+/*   PANEL Colouring  ========================================================== */
+
+
+// Panel colouring mixins are in the 'foundry-variables.css.scss' file
+
+
+
+
+/*   PANELS CORE ELEMENTS ================================================================= */
+
+.panel {
+    background-image: image-url("images/cardboard-flat.png"); //www.transparenttextures.com
+    margin-bottom: 20px;
+    border: 0;
+    color: $text-color;
+    background-color:$SARDGrey02;
+    .panel-heading {
+      // background-color:$SARDGrey06;
+      background-image: image-url("../images/cardboard-flat.png");
+      border-radius:0px 0px 0px 0px;
+      border-bottom: 0px ;
+      h1, h2, h3, h4, h5, h6, p { margin: 0px; }
+    }
+
+    .panel-body { padding-bottom: 15px; }
+
+    .panel-footer {
+      background-image: image-url("../images/cardboard-flat_50.png");
+      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      font-size: 1em;
+      letter-spacing: $single;
+      line-height:30px;
+      color:white;
+      border:0;
+    }
+
+
+
+    /*   DEFAULT (GREY PANELS WITH GREY HEADING) =================== */
+    .panel-default > .panel-heading { background-image: image-url("../images/cardboard-flat_50.png"); }
+
+
+
+    /*   PANELS PRIMARY (Default with no heading or footer colour) =================== */
+
+    &.panel-primary {
+      > {
+        .panel-heading {
+          background:none;
+          padding-top:16px;
+          margin-bottom:-10px;
+        }
+        .panel-body { }
+        .panel-footer {
+          background:none;
+          color: $text-color;
+          padding-bottom:5px;
+        }
+      }
+    }
+
+
+
+    /*   PANELS INFO (Turquise) =================== */
+
+    &.panel-info {
+      background-color: $panel-info-bg-color;
+
+      > {
+        .panel-heading {
+          background-image: image-url("../images/cardboard-flat_50.png");
+          color:white;
+        }
+        .panel-body > form label { color: white; }
+        .panel-footer {
+          background:darken($SARDTeal, 5%);
+          background-image: image-url("../images/cardboard-flat_50.png");
+        }
+      }
+    }
+    
+
+
+
+    /*   PANELS WHITE (NO COLOURING) ========================================= */
+    &.panel-white {
+      background-color: white;
+      background-image: image-url("../images/natural-paper.png");
+      .panel-heading {
+        border-bottom: 1px solid $SARDGrey02;
+        background: transparent;
+      }
+      .panel-body {  }
+      .panel-footer {
+        background:white;
+        color: $text-color;
+        border-top: 1px solid $SARDGrey02;
+      }
+    }
+
+
+
+    /*   PANELS CLEAN (NO COLOURING) ========================================= */
+    &.panel-clean {
+      background-color: transparent;
+      background-image: none;
+      box-shadow:none;
+      .panel-heading {
+        background: transparent;
+        border-bottom: 1px solid $text-color;
+        padding: 10px 0px 10px 0px;
+      }
+      .panel-body { padding: 10px 0px 10px 0px; }
+      .panel-footer {
+        background:transparent;
+        border-top: 1px solid $text-color;
+        border-bottom: 1px solid $text-color;
+        padding: 0px;
+        color: $text-color;
+      }
+    }
+
+
+
+    /*   PANELS TRANSPARENT ================================================== */
+     &.panel-transparent {
+      background: transparent;
+      background-image: none;
+      .panel-heading {
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .panel-body {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-top:1px!IMPORTANT;
+        margin-bottom:1px!IMPORTANT;
+      }
+      .panel-footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: $text-color;
+        background-image: none;
+      }
+    }
+
+
+
+    /*   PANELS INVISIBLE ================================================== */
+     &.panel-invisible {
+      background: none;
+      background-image: none;
+      -moz-box-shadow:    none;
+      -webkit-box-shadow: none;
+      box-shadow:         none;
+      .panel-heading {
+        background: none;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .panel-body {
+        background: none;
+        margin-top:1px!IMPORTANT;
+        margin-bottom:1px!IMPORTANT;
+      }
+      .panel-footer {
+        background: none;
+        color: $text-color;
+        background-image: none;
+      }
+    }
+
+
+    /*   PANELS FOR RATING GROUPS ================================================== */
+     &.panel-rating {
+      background: transparent;
+      background-image: none;
+      .panel-heading {
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .panel-body {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding:0px 0px 0px 0px
+
+      }
+      .panel-footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: $text-color;
+        background-image: none;
+      }
+    }
+
+
+
+    /*   PERFORATIONS ============================================================== */
+    &.perforated {
+      margin-bottom: 0px;
+      > .panel-footer {
+        margin-bottom: -16px;
+        padding-bottom: 8px;
+      }
+      > .panel-perforation {
+        height: 16px;
+        position: relative;
+        bottom: -8px;
+        z-index: 10;
+        background-image: image-url("graphics/dot_grey01.png");
+        background-repeat: repeat-x;
+        background-position: -4px 0px;
+      }
+    }
+} // end .panels
+
+
+
+// Use this when perforated panels just won't do
+.divide-dots {
+  background-image: image-url("graphics/dot_grey01.png");
+  background-repeat: repeat-x;
+  height: 16px;
+  background-position: -4px 0px;
+}
+
+.divide-dots-wht {
+  background-image: image-url("graphics/dot_white.png");
+  background-repeat: repeat-x;
+  height: 16px;
+  background-position: -4px 0px;
+}
+
+.divide-empty {
+  height: 20px;
+  background:none;
+}
+
+
+/*  ACCORDIAN PANELS ========================================= */
+    // http://jsfiddle.net/Wc4xt/1052/
+
+  .accordian {
+    margin-bottom: 0px;
+
+    .panel-heading a:after {
+      font-family:'Glyphicons Halflings';
+      content:"\e114";
+      float: right;
+      color: white;
+    }
+
+    .panel-heading a.collapsed:after { content:"\e080"; }
+  
+    .panel-footer a:after {
+      font-family:'Glyphicons Halflings';
+      content:"\e114";
+      float: right;
+      color: white;
+    }
+
+  .panel-footer a.collapsed:after { content:"\e080";
+  }
+  .table { margin-top: -30px;}
+}
+
+/*  COLLAPSING PANELS ========================================= */
+
+  .panel-collapse {
+    // margin-bottom: 0px;
+    .panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: white;
+    }
+
+    .panel-heading a.collapsed:after {
+      content:"\e080";
+    }
+
+    // This styles the +New button and hides the collapse icon
+    .plus-new-btn{
+      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      font-size:1.500em;
+      margin-top:-27px!IMPORTANT;
+      margin-right: -23px!IMPORTANT;
+      a:link{ color:white;}
+      a:visited{ color:white;}
+      a:hover{ color:$SARDTurq;}
+      a:active{ color:$SARDTeal;}
+      a:focus{ color:$SARDTeal;}
+      a:after{ visibility: hidden; }
+    }
+
+
+    .panel-footer a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: white;
+    }
+    .panel-footer a.collapsed:after {
+      content:"\e080";
+    }
+}
+
+
+
+    .collapse-neg-margin {
+      margin-top: -20px;
+    }
+
+    .collapsing { .panel-body { padding-bottom: 0px;} }
+
+
+
+// PANEL LINKS COLOURING ===================================================
+
+   .panel-default{
+      a:link { color: $SARDTurq; text-decoration: none;}
+      a:visited{ color: $SARDTurq;}
+      a:hover{ color: $SARDTeal;}
+      a:active{ color: darken($SARDYellow, 10%)}
+    }
+
+
+    .panel-default .panel-footer {
+      a:link { color: white; text-decoration: none;}
+      a:visited{ color: white;}
+      a:hover{ color: $SARDTurq;}
+      a:active{ color: white;}
+    }
+
+
+    .panel-info {
+      a:link { color:white; text-decoration: none;}
+      a:visited{ color: white; }
+      a:hover{ color: $SARDTeal ;}
+      a:active{ color: $SARDYellow;}
+    }
+
+    .panel-info .panel-heading{
+      a:link { color:white; text-decoration: none;}
+      a:visited{ color: white; }
+      a:hover{ color: $SARDYellow ;}
+      a:active{ color: darken($SARDYellow, 5%);}
+    }
+
+    .panel-info .panel-default .panel-heading {
+      a:link { color: white; text-decoration: none;}
+      a:visited{ color: white;}
+      a:hover{ color: $SARDTeal;}
+      a:active{ color: white;}
+    }
+
+    .panel-info .panel-default .panel-body{
+      a:link { color: $SARDTurq; text-decoration: none;}
+      a:visited{ color: $SARDTurq;}
+      a:hover{ color: $SARDTeal;}
+      a:active{ color: $SARDYellow;}
+    }
+
+/*  NOTICEBOARD ====================================================================================== */
+
+.noticeboard{
+
+  .notice-article{
+
+  }
+  .notice-date {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    background: $SARDGrey14;
+    color:white;
+    padding: 3px 10px;
+    margin: 0px -3px 0px -3px;
+    border-radius:20px;
+  }
+
+  .notice-time {
+    font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+    border-top: 1px solid $SARDGrey14;
+    padding-top: 12px;
+    margin-top: 10px;
+  }
+
+  .notice-text {
+    padding-right: 25px;
+  }
+
+  .notice-link{
+    a:link:after {
+    margin-top: -20px;
+    font-family:'Glyphicons Halflings';
+    content:"\e131";
+    // font-family: FontAwesome;
+    // content: "\f005";
+    float: right;
+    color: $SARDGrey12;
+    font-size:1.4em;
+    line-height:1em;
+
+    }
+    a:visited:after { color: $SARDGrey12; }
+    a:hover:after { color: $SARDTurq; }
+    a:active:after { color: $SARDTurq; }
+    a:focus:after { color: $SARDTurq; }
+  }
+
+  .notice-date + .notice-time { // this effects time when when it follows date, but is not first child.
+    border-top:none;
+    margin-top: 0px;
+  }
+
+  .glyphicon {
+    float:right;
+    font-size:1.5em;
+    padding-top:3px;
+  }
+
+  .divide-dots{
+    margin: 15px -15px;
+  }
+
+} // end noticeboard
+
+// NOTICEBAORD COLLAPSE PANEL FIXES =========================
+
+.noticeboard{
+
+  .panel-heading{
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size:1.5em;
+    line-height:1.000em;
+    border-top: 1px solid white;
+      a{
+        color:$SARDGrey16;
+      }
+      a:after{
+        font-size: 0.700em;
+        line-height:0.700em;
+        margin-top: 6px;
+      }
+  }
+
+  .panel-body{
+    padding-bottom: 0px!IMPORTANT;
+  }
+
+  .panel-footer{
+    margin: 10px 0px -15px 0px;
+  }
+
+  .panel-footer a:link:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e131";
+    float: right;
+    color: white;
+    font-size:1.4em;
+  }
+
+  .panel-footer a:hover:after {
+    color: $SARDTurq;
+  }
+
+  .badge{
+    padding-bottom:5px;
+    position:relative;
+    top:-3px;
+    &.todo{ background-color: $SARDRed; }
+    &.waiting{ background-color: $SARDYellow; }
+    &.reference{ background-color: $SARDPurple; }
+  }
+
+} // end noticeboard
+
+
+
+

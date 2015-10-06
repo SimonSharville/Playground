@@ -1,0 +1,162 @@
+#perforations.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+
+  %h1 Perforations
+  %p Perforations are designed as a divide between panels so they look like a continuous panel but can also change colour between sections. 
+  The top panel can be any colour but must have the class <em>.perforated</em> added to it. This will give it a negative margin at the bottom. 
+  Below the panel body add a new panel called <em>.panel-perforation</em>. This is a single line of dots that also have the bottom negative margin.
+  And below that add the next panel. This panel can be a different type from the first. However if yo wish to add a further perforated panel below, it would also need the <em>.perforated</em> class added to it, as well as a .panel-perforation between it and the following panel.
+  %p
+  %p There is an alternative, simpler version called <strong>Divide Rule</strong> to this. See below.
+  %br
+  %br
+
+  .row.ui-article
+    .col-xs-9
+      .row
+        .col-xs-12
+          .panel.panel-info.perforated
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              Panel Body
+            .panel-perforation
+        .col-xs-12
+          .panel.panel-default.perforated
+            .panel-body
+              %p The correct way to add a perforation between panels is to add the class <em>.perforated</em> to the top panel. (i.e. .panel.panel-info.perforated).
+              Then between that panel and the one below, add a <em>.div</em> with a class of <em>.panel-perforation</em> ... 
+            .panel-footer Panel footer
+            .panel-perforation
+        .col-xs-6
+          .panel.panel-info.perforated
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              %p ... Then follow that with another panel, that will also need a class of <em>.perforated</em> added to it if there is another perforation below that.
+            .panel-perforation
+          .row
+            .col-xs-4
+              .panel.panel-info
+                .panel-heading
+                  %h3 Panel Heading
+                .panel-body
+                  Panel Body
+                .panel-footer Panel footer
+                .panel-perforation
+            .col-xs-8
+              .panel.panel-default
+                .panel-heading
+                  %h3 Panel Heading
+                .panel-body
+                  Panel Body
+                .panel-footer Panel footer
+        .col-xs-6
+          .panel.panel-info
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              This technique give the option to have multiple panels, of various colours attached below the lead panel, like this.
+            .panel-footer Panel footer
+        .col-xs-12
+          .panel.panel-default.perforated
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              %p Suspendisse potenti. Aenean placerat turpis nec rutrum varius. Donec eget diam sed turpis porta porttitor eget quis est. Ut ex nibh, tempus quis fringilla quis, scelerisque id felis. Curabitur tempor ligula urna, in luctus purus volutpat ut. 
+              
+              %p Aenean placerat turpis nec rutrum varius. Donec eget diam.
+            .panel-perforation
+        .col-xs-6
+          .panel.panel-default
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              Panel Body
+            .panel-footer Panel footer
+        .col-xs-6
+          .panel.panel-default
+            .panel-heading
+              %h3 Panel Heading
+            .panel-body
+              Panel Body
+            .panel-footer Panel footer
+
+
+        
+    .col-xs-3
+      .panel.panel-default.perforated
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          Panel Body
+        .panel-perforation
+      .panel.panel-default.perforated
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          Panel Body
+        .panel-perforation
+      .panel.panel-info
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          Panel Body
+        .panel-perforation
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+  .row
+    .col-xs-6.ui-article
+      %h1 Divide Rule
+      %p The divide rule is an alternative to Perforations although can look identical.
+      %p If you have a continuous list contained within a panel body, then you can add this by splitting that panel into multiple panel bodies with a divide rule between them.
+      %p Currently this will only work if the panel bodies are taking their colouring from the overall panel class. i.e default or info.
+      %p However our elves are diligently working away to create an alternative to this. 
+      %p
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          This is the first panel body
+        .divide-dots
+        .panel-body
+          This is the second panel body
+        .divide-dots
+        .panel-body
+          And this is the third. Each of them had a <em>.divide-dots</em> between them.
+      .panel.panel-default
+        .panel-body
+          If you then add a new panel below, whether it has a heading or not, but don't have the .perforated class on the panel above, it will separate again like this.
+
+
+    .col-xs-6.ui-article
+      %h1 Mixing the two
+      %p Below is an example of Perforations and Divide Rule mixed together.
+      .panel.panel-default.perforated
+        .panel-heading
+          %h3 Top Panel
+        .panel-body
+          This top panel has a <em>.perforted</em> class added.
+          Below this panel body we have added a new panel called <em>.panel-perforation</em>.
+        .panel-perforation
+      .panel.panel-info.perforated
+        .panel-body
+          This is a new panel (info) that sits below the Top Panel. It has no panel heading, just a body.
+        .divide-dots
+        .panel-body
+          However this has a <em>.divide-dots</em> div added between two panel bodies. This puts a rule of dots between them but the style is taken from the overall panel style (in this case .info). Hence no colour change.
+        .panel-perforation
+        .panel.panel-default
+          .panel-body
+            To change the color of the background again, you need to go back to the Perforated style of creating them.
+
+
+
+
+        

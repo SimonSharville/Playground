@@ -1,0 +1,161 @@
+#tables.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+  .row
+    .ui-article.col-xs-12
+      %h1 UI guidelines for tables.
+      %br
+
+      %h1{ :style => "color:red;" } Incorrect use.
+      %h4 This is an example of a <em>.table</em> NOT placed into a panel.
+      %h5 All Tables should ideally be placed into Panels. But hey, you may need to do it sometime, so this is what it would look like.
+
+      = render 'ui/tables/ui_table'
+     
+      %h3 Nested Table 
+      %p This is an example of a <em>.table</em> placed into a <em>.panel-default</em>, with NO .panel-heading, but within a <em>.panel-body</em> to create the nesting. Again, there may be times when you need to do this.
+      .panel.panel-default
+        .panel-body
+          = render 'ui/tables/ui_table'
+
+      %p And this is an axample of a nested table with a panel heading 
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          = render 'ui/tables/ui_table'
+
+
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+  %h1{ :style => "color:green;" } Correct use.
+
+  .row
+    .col-xs-12
+      %h1 Foundry table types
+      %br
+      %h2 Default Table
+      %p 
+        This is an example of a <em>.table</em> placed into a <em>.panel-default</em>, with NO .panel-body. 
+        %br
+        By placing the table under the .panel-heading, but NOT within a .panel-body, then the table expands to the full width of the panel.
+    .ui-article.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table'
+
+      %h2 Default Table (no heading)
+      %p 
+        This is an example of a <em>.table</em> placed into a <em>.panel-default</em>, with NO .panel-heading or .panel-body.
+        %br
+        This shows the table placed just within the <em>.panel-default</em>, nothing else.
+        .panel.panel-default
+          = render 'ui/tables/ui_table'
+
+      %h2 Default Table Striped
+      %p 
+        This is an example of a <em>.table.table-striped</em> placed into a <em>.panel-default</em>, with a <em>.panel-heading</em>.
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_striped'
+
+      %h2 Info Table 
+      %p 
+        This is an example of a <em>.table</em> placed into a <em>.panel-info</em>, with a <em>.panel-heading</em>.
+      .panel.panel-info
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table'
+
+      %h2 Info Table Striped
+      %p 
+        This is an example of a <em>.table.table-striped</em> placed into a <em>.panel-info</em>, with a <em>.panel-heading</em>.
+      .panel.panel-info
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_striped'
+
+
+      %h2 Table with Body Text
+      %p 
+        Add any non-bordered <em>.table</em> within a panel for a seamless design. If there is a .<em>panel-body</em>, bootstrap adds an extra border to the top of the table for separation.
+        %br
+        By placing the table under the .panel-heading, but NOT within a .panel-body, then the table expands to the full width of the panel.
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        .panel-body
+          %p Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        = render 'ui/tables/ui_table'
+
+  .divide-dots-ui
+  .toplink
+    %a{"href" => "#"}
+
+  .row.ui-article
+    .col-xs-12
+      %h1 Other table types
+      %br
+      %h2 Responsive Table 
+      %p 
+        This is an example of a <em>.table.table-responsive</em> placed into a <em>.panel-default</em>, with a <em>.panel-heading</em>.
+        %br 
+        Simply add <em>.table-responsive</em> afer the <em>.table</em> class
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_responsive'
+
+
+      %h2 Striped Table 
+      %p 
+        This is an example of a <em>.table.table-striped</em> placed into a <em>.panel-default</em>, with a <em>.panel-heading</em>.
+        %br 
+        Simply add <em>.table-striped</em> afer the <em>.table</em> class
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_striped'
+
+
+      %h2 Hover Rows
+      %p 
+        This is an example of a <em>.table.table-hover</em> placed into a <em>.panel-default</em>, with a <em>.panel-heading</em>.
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_hover'
+
+      %p 
+        This is an example of a <em>.table.table-hover</em> placed into a <em>.panel-info</em>, with a <em>.panel-heading</em>.
+      .panel.panel-info
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_hover'
+
+      %h2 Condensed Table
+      %p 
+        This is an example of a <em>.table.table-condensed</em> placed into a <em>.panel-default</em>, with a <em>.panel-heading</em>.
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_condensed'
+
+      %h2 Contextual Classes
+      %p 
+        This is an example of a <em>.table</em>, but has contextual classes in alternate rows. This can also be applied to just cells instead.
+      .panel.panel-default
+        .panel-heading
+          %h3 Panel Heading
+        = render 'ui/tables/ui_table_contextual'
+
+
+
+
+      

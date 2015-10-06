@@ -1,0 +1,148 @@
+#buttons.ui-guidelines
+
+  .uinav
+    = render 'ui_nav'
+
+
+  .row
+    .col-xs-12
+      %h1 UI guidelines for buttons and links.
+      %br
+      %br
+
+    .col-xs-6
+
+      .panel.panel-default
+        .panel-heading
+          %h3 Default panel buttons
+        .panel-body
+          %p Here's the range of buttons available and how they work on the default panel 
+          %h4 Core buttons
+          %p The main button type to use is the Primary Button.
+          .btn.btn-primary Primary Button
+          %h4 Secondary buttons
+          .btn.btn-default Default Button
+          .btn.btn-success Success Button
+          .btn.btn-info Info Button
+          %p
+          .btn.btn-alert Alert Button
+          .btn.btn-warning Warning Button
+          .btn.btn-danger Danger Button
+          %p
+          .btn.btn-pink Pink Button
+          
+          %h4 Other button types
+          %button.btn.btn-primary Button Info Button
+          %a.btn.btn-primary Link Info Button
+          %p
+          %input.btn.btn-primary{:type => "submit", :value => "Submit Info Button"}/
+          %input.btn.btn-primary{:type => "Input", :value => "Input Info Button"}/
+          %p
+          %p This shows a range of buttons with an icon before the text, (although I can't find a way to add glyphicons to Submit and Input type buttons).
+          .btn.btn-primary 
+            = glyph('pencil')
+            Info Button
+          %button.btn.btn-primary 
+            = glyph('pencil') 
+            Button Info Button
+          %p
+          %a.btn.btn-primary
+            = glyph('pencil')
+            Link Info Button
+
+
+    .col-xs-6
+      .panel.panel-info
+        .panel-heading
+          %h3 Info panel buttons
+        .panel-body 
+          %p Here's the range of buttons available and how they work on the info panel 
+          %h4 Core buttons
+          %p The main button type to use is the Info Button.
+          .btn.btn-info Info Button
+          %h4 Secondary buttons
+          .btn.btn-default Default Button
+          .btn.btn-primary Primary Button
+          .btn.btn-success Success Button
+          %p
+          .btn.btn-alert Alert Button
+          .btn.btn-warning Warning Button
+          .btn.btn-danger Danger Button
+          %p
+          .btn.btn-pink Pink Button
+          
+          %h4 Other button types
+          %button.btn.btn-info Button Info Button
+          %a.btn.btn-info
+            Link Info Button
+          %p
+          %input.btn.btn-info{:type => "submit", :value => "Submit Info Button"}/
+          %input.btn.btn-info{:type => "Input", :value => "Input Info Button"}/
+          %p
+
+          %p Below is a range of buttons with an icon before the text, (although I can't find a way to add glyphicons to Submit and Input type buttons).
+          .btn.btn-info 
+            = glyph('pencil')
+            Info Button
+          %button.btn.btn-info 
+            = glyph('pencil') 
+            Button Info Button
+          %p
+          %a.btn.btn-info
+            %span.glyphicon.glyphicon-pencil>
+            Link Info Button
+
+
+    .col-xs-6
+      .panel.panel-default
+        .panel-heading
+          %h3 Default panel text links
+        .panel-body 
+          %h4 Links
+          %a{:href => " "} This is an inline text link.
+          %p
+          %p This is a <a href='#'>link</a> within text
+          %a{:href => " "} 
+            This is an inline text link with a glyphicon after it:
+            %span.glyphicon.glyphicon-pencil
+          %p
+          %a{:href => " "} 
+            %span.glyphicon.glyphicon-pencil
+            This is an inline text link with a glyphicon after it:
+          %p
+          %p
+            This is a
+            %a{:href => "#"}
+              %span.glyphicon.glyphicon-envelope
+              link with glyphicon 
+            within text
+
+
+    .col-xs-6
+      .panel.panel-info
+        .panel-heading
+          %h3 Info panel text links
+        .panel-body 
+          %h4 Links
+          %a{:href => " "} This is an inline text link.
+          %p
+          %p This is a <a href='#'>link</a> within text
+          %a{:href => " "} 
+            This is an inline text link with a glyphicon after it:
+            %span.glyphicon.glyphicon-pencil
+          %p
+          %a{:href => " "} 
+            %span.glyphicon.glyphicon-pencil
+            This is an inline text link with a glyphicon before it:
+          %p
+          %p
+            This is a
+            %a{:href => "#"}
+              %span.glyphicon.glyphicon-envelope
+              link with glyphicon 
+            within text
+
+
+
+
+          
