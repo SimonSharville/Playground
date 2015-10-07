@@ -1,6 +1,8 @@
 
 // UI Stylesheets
 
+// A lot of this has been commented out as it's been copied from the original and either not checked or not yet used.
+
 @import "foundry_variables";
 @import "foundry_panels";
 
@@ -19,11 +21,15 @@ body{
 .container{
   background: white;
   margin-top:10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
 }
 
 .container-fluid{
   background: white;
   margin-top:10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
 }
 
 
@@ -56,14 +62,16 @@ body{
 
       // .ui-article {margin-bottom:50px;}
 
-      // .divide-dots-ui {
-      //   background-image: image-url("graphics/dot_white.png");
-      //   background-repeat: repeat-x;
-      //   height: 16px;
-      //   background-position: -4px 0px;
-      //   margin-top:20px;
-      //   margin-bottom:20px;
-      // }
+      .divide-dots-ui {
+        background-image:url(../images/dot_grey01.png);
+        background-repeat: repeat-x;
+        height: 16px;
+        background-position: -4px 0px;
+        margin-top:30px;
+        margin-bottom:10px;
+        margin-left:-16px;
+        margin-right:-16px;
+      }
 
       // .toplink{
       //   background: white;
@@ -146,45 +154,48 @@ body{
       
       // COLOURS ==========================================================
 
-      // .colour-swatch{
-      //   display:inline-block;
-      //   width: 100px;
-      //   margin-bottom: 5px;
-      //   h6 {margin: 5px;}
+      .colour-swatch{
+        display:inline-block;
+        background-image:url(../images/cardboard-flat_50.png); //www.transparenttextures.com
+        background-repeat: no-repeat;
+        background-position: left 50px;
+        width: 100px;
+        margin-bottom: 5px;
+        h6 {margin: 5px;}
 
-      //   &.SARDTurq {min-height: 100px; background-color: $SARDTurq;}
-      //   &.SARDTeal {min-height: 100px; background-color: $SARDTeal; color:white;}
-      //   &.SARDGreen {min-height: 100px; background-color: $SARDGreen; color:white;}
-      //   &.SARDYellow {min-height: 100px; background-color: $SARDYellow;}
-      //   &.SARDOrange {min-height: 100px; background-color: $SARDOrange;}
-      //   &.SARDRed {min-height: 100px; background-color: $SARDRed; color:white;}
-      //   &.SARDPink {min-height: 100px; background-color: $SARDPink;}
-      //   &.SARDPurple {min-height: 100px; background-color: $SARDPurple; color:white;}
-      //   &.SARDLime {min-height: 100px; background-color: $SARDLime;}
-      //   &.SARDBlue {min-height: 100px; background-color: $SARDBlue; color:white;}
-      //   &.SARDInk {min-height: 100px; background-color: $SARDInk; color:white;}
-      //   &.SARDPlum {min-height: 100px; background-color: $SARDPlum; color:white;}
+        &.SARDTurq {min-height: 100px; background-color: $SARDTurq;}
+        &.SARDTeal {min-height: 100px; background-color: $SARDTeal; color:white;}
+        &.SARDGreen {min-height: 100px; background-color: $SARDGreen; color:white;}
+        &.SARDYellow {min-height: 100px; background-color: $SARDYellow;}
+        &.SARDOrange {min-height: 100px; background-color: $SARDOrange;}
+        &.SARDRed {min-height: 100px; background-color: $SARDRed; color:white;}
+        &.SARDPink {min-height: 100px; background-color: $SARDPink;}
+        &.SARDPurple {min-height: 100px; background-color: $SARDPurple; color:white;}
+        &.SARDLime {min-height: 100px; background-color: $SARDLime;}
+        &.SARDBlue {min-height: 100px; background-color: $SARDBlue; color:white;}
+        &.SARDInk {min-height: 100px; background-color: $SARDInk; color:white;}
+        &.SARDPlum {min-height: 100px; background-color: $SARDPlum; color:white;}
 
-      //   &.SARDGrey01 {min-height: 100px; background-color: $SARDGrey01; border: 1px solid $SARDGrey08;}
-      //   &.SARDGrey02 {min-height: 100px; background-color: $SARDGrey02;}
-      //   &.SARDGrey03 {min-height: 100px; background-color: $SARDGrey03;}
-      //   &.SARDGrey04 {min-height: 100px; background-color: $SARDGrey04;}
-      //   &.SARDGrey05 {min-height: 100px; background-color: $SARDGrey05;}
-      //   &.SARDGrey06 {min-height: 100px; background-color: $SARDGrey06;}
-      //   &.SARDGrey07 {min-height: 100px; background-color: $SARDGrey07;}
-      //   &.SARDGrey08 {min-height: 100px; background-color: $SARDGrey08;}
-      //   &.SARDGrey09 {min-height: 100px; background-color: $SARDGrey09;}
-      //   &.SARDGrey10 {min-height: 100px; background-color: $SARDGrey10; color:white;}
-      //   &.SARDGrey11 {min-height: 100px; background-color: $SARDGrey11; color:white;}
-      //   &.SARDGrey12 {min-height: 100px; background-color: $SARDGrey12; color:white;}
-      //   &.SARDGrey13 {min-height: 100px; background-color: $SARDGrey13; color:white;}
-      //   &.SARDGrey14 {min-height: 100px; background-color: $SARDGrey14; color:white;}
-      //   &.SARDGrey15 {min-height: 100px; background-color: $SARDGrey15; color:white;}
-      //   &.SARDGrey16 {min-height: 100px; background-color: $SARDGrey16; color:white;}
-      //   &.SARDGrey17 {min-height: 100px; background-color: $SARDGrey17; color:white;}
-      //   &.SARDGrey18 {min-height: 100px; background-color: $SARDGrey18; color:white;}
-      //   &.SARDGrey19 {min-height: 100px; background-color: $SARDGrey19; color:white;}
-      // }
+        &.SARDGrey01 {min-height: 100px; background-color: $SARDGrey01;}
+        &.SARDGrey02 {min-height: 100px; background-color: $SARDGrey02;}
+        &.SARDGrey03 {min-height: 100px; background-color: $SARDGrey03;}
+        &.SARDGrey04 {min-height: 100px; background-color: $SARDGrey04;}
+        &.SARDGrey05 {min-height: 100px; background-color: $SARDGrey05;}
+        &.SARDGrey06 {min-height: 100px; background-color: $SARDGrey06;}
+        &.SARDGrey07 {min-height: 100px; background-color: $SARDGrey07;}
+        &.SARDGrey08 {min-height: 100px; background-color: $SARDGrey08;}
+        &.SARDGrey09 {min-height: 100px; background-color: $SARDGrey09;}
+        &.SARDGrey10 {min-height: 100px; background-color: $SARDGrey10; color:white;}
+        &.SARDGrey11 {min-height: 100px; background-color: $SARDGrey11; color:white;}
+        &.SARDGrey12 {min-height: 100px; background-color: $SARDGrey12; color:white;}
+        &.SARDGrey13 {min-height: 100px; background-color: $SARDGrey13; color:white;}
+        &.SARDGrey14 {min-height: 100px; background-color: $SARDGrey14; color:white;}
+        &.SARDGrey15 {min-height: 100px; background-color: $SARDGrey15; color:white;}
+        &.SARDGrey16 {min-height: 100px; background-color: $SARDGrey16; color:white;}
+        &.SARDGrey17 {min-height: 100px; background-color: $SARDGrey17; color:white;}
+        &.SARDGrey18 {min-height: 100px; background-color: $SARDGrey18; color:white;}
+        &.SARDGrey19 {min-height: 100px; background-color: $SARDGrey19; color:white;}
+      }
 
 
       //  TYPOGRAPHY =================================================================================
@@ -464,7 +475,7 @@ body{
 
       /*==========  Non-Mobile First Method  ==========*/
 
-      Large Devices, Wide Screens
+      /* Large Devices, Wide Screens */
       @media only screen and (max-width : 1199px) {
 
       }
@@ -506,63 +517,70 @@ body{
       .noticeboard{
         .panel-footer { margin: 15px -15px 0px -15px; } // you don't need this on the live version
 
-      .notice-article{ }
+        .notice-article{ }
 
-      .notice-date {
-        font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-        background: $SARDGrey14;
-        color:white;
-        padding: 3px 10px;
-        margin: 0px -3px 0px -3px;
-        border-radius:20px;
-      }
-
-      .notice-time {
-        font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-        border-top: 1px solid $SARDGrey14;
-        padding-top: 12px;
-        margin-top: 10px;
-      }
-
-      .notice-text {
-        padding-right: 25px;
-      }
-
-      .notice-link{
-        a:link:after {
-        margin-top: -20px;
-        font-family:'Glyphicons Halflings';
-        content:"\e131";
-        // font-family: FontAwesome;
-        // content: "\f005";
-        float: right;
-        color: $SARDGrey12;
-        font-size:1.4em;
-        line-height:1em;
-
+        .notice-date {
+          font-family: 'roboto', Helvetica, Arial, Sans-serif;
+          font-weight:400;
+          background: $SARDGrey16;
+          background-image:url(../images/cardboard-flat_50.png); //www.transparenttextures.com
+          color:white;
+          padding: 3px 10px;
+          margin: 0px -3px 0px -3px;
+          border-radius:20px;
         }
-        a:visited:after { color: $SARDGrey12; }
-        a:hover:after { color: $SARDTurq; }
-        a:active:after { color: $SARDTurq; }
-        a:focus:after { color: $SARDTurq; }
-      }
 
-      .notice-date + .notice-time { // this effects time when when it follows date, but is not first child.
-        border-top:none;
-        margin-top: 0px;
-      }
+        .notice-time {
+          font-family: 'roboto', Helvetica, Arial, Sans-serif;
+          font-weight:700;
+          border-top: 1px solid $SARDGrey14;
+          padding-top: 12px;
+          margin-top: 10px;
+        }
 
-      .glyphicon {
-        float:right;
-        font-size:1.5em;
-        padding-top:3px;
-      }
+        .notice-text {
+          padding-right: 25px;
+        }
 
-      .divide-dots{
-        margin: 15px -15px;
-      }
+        .notice-link{
+          a:link:after {
+          margin-top: -20px;
+          font-family:'Glyphicons Halflings';
+          content:"\e131";
+          // font-family: FontAwesome;
+          // content: "\f005";
+          float: right;
+          color: $SARDGrey14;
+          font-size:1.4em;
+          line-height:1em;
 
-    } // end noticeboard
+          }
+          a:visited:after { color: $SARDGrey14; }
+          a:hover:after { color: $SARDTurq; }
+          a:active:after { color: $SARDTurq; }
+          a:focus:after { color: $SARDTurq; }
+        }
+
+        .notice-date + .notice-time { // this effects time when when it follows date, but is not first child.
+          border-top:none;
+          margin-top: 0px;
+        }
+
+        .glyphicon {
+          float:right;
+          font-size:1.5em;
+          padding-top:3px;
+        }
+
+        .divide-dots{
+          margin: 15px -15px;
+        }
+
+      } // end noticeboard
+
+      // NOTICEBAORD COLLAPSE PANEL FIXES are in foundry_panels.css        =========================
+
+
 
 
     //  Pageheader =================================================================================
