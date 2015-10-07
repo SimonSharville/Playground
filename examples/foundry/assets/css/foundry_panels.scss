@@ -1,7 +1,7 @@
 /*   PANELS STYLES ======================================================================== */
 @import "foundry_variables";
 
-// Panel Variables
+// Panel Variables 
 $panel-info-bg-color: $SARDTurq;
 
 
@@ -16,35 +16,41 @@ $panel-info-bg-color: $SARDTurq;
 /*   PANELS CORE ELEMENTS ================================================================= */
 
 .panel {
-    background-image: image-url("images/cardboard-flat.png"); //www.transparenttextures.com
     margin-bottom: 20px;
     border: 0;
     color: $text-color;
-    background-color:$SARDGrey02;
+    background-color:$SARDGrey01;
     .panel-heading {
-      // background-color:$SARDGrey06;
-      background-image: image-url("../images/cardboard-flat.png");
+      background-color:$SARDGrey06;
+      background-image:url(../images/cardboard-flat_inverse.png); //www.transparenttextures.com
       border-radius:0px 0px 0px 0px;
       border-bottom: 0px ;
       h1, h2, h3, h4, h5, h6, p { margin: 0px; }
     }
 
-    .panel-body { padding-bottom: 15px; }
+    .panel-body { 
+      background-image:url(../images/cardboard-flat.png); //www.transparenttextures.com
+      padding-bottom: 15px; 
+    }
 
     .panel-footer {
-      background-image: image-url("../images/cardboard-flat_50.png");
-      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      background-image:url(../images/cardboard-flat_inverse.png); //www.transparenttextures.com
+      background-color:$SARDGrey02;
+      font-family: 'roboto', Helvetica, Arial, Sans-serif;
+      font-weight: 700;
       font-size: 1em;
       letter-spacing: $single;
       line-height:30px;
-      color:white;
+      color: $SARDGrey14;
       border:0;
     }
 
 
 
     /*   DEFAULT (GREY PANELS WITH GREY HEADING) =================== */
-    .panel-default > .panel-heading { background-image: image-url("../images/cardboard-flat_50.png"); }
+    .panel-default > .panel-heading { 
+      // background-image:url(../images/cardboard-flat_50.png); 
+    }
 
 
 
@@ -75,13 +81,13 @@ $panel-info-bg-color: $SARDTurq;
 
       > {
         .panel-heading {
-          background-image: image-url("../images/cardboard-flat_50.png");
+          // background-image:url(../images/cardboard-flat_50.png);
           color:white;
         }
         .panel-body > form label { color: white; }
         .panel-footer {
           background:darken($SARDTeal, 5%);
-          background-image: image-url("../images/cardboard-flat_50.png");
+          // background-image:url(../images/cardboard-flat_50.png);
         }
       }
     }
@@ -92,7 +98,7 @@ $panel-info-bg-color: $SARDTurq;
     /*   PANELS WHITE (NO COLOURING) ========================================= */
     &.panel-white {
       background-color: white;
-      background-image: image-url("../images/natural-paper.png");
+      // bbackground-image:url(../images/natural-paper.png);
       .panel-heading {
         border-bottom: 1px solid $SARDGrey02;
         background: transparent;
@@ -209,7 +215,7 @@ $panel-info-bg-color: $SARDTurq;
         position: relative;
         bottom: -8px;
         z-index: 10;
-        background-image: image-url("graphics/dot_grey01.png");
+        background-image:url(../images/dot_grey01.png);
         background-repeat: repeat-x;
         background-position: -4px 0px;
       }
@@ -220,14 +226,14 @@ $panel-info-bg-color: $SARDTurq;
 
 // Use this when perforated panels just won't do
 .divide-dots {
-  background-image: image-url("graphics/dot_grey01.png");
+  background-image:url(../images/dot_grey01.png);
   background-repeat: repeat-x;
   height: 16px;
   background-position: -4px 0px;
 }
 
 .divide-dots-wht {
-  background-image: image-url("graphics/dot_white.png");
+  background-image:url(../images/dot_white.png);
   background-repeat: repeat-x;
   height: 16px;
   background-position: -4px 0px;
@@ -283,7 +289,8 @@ $panel-info-bg-color: $SARDTurq;
 
     // This styles the +New button and hides the collapse icon
     .plus-new-btn{
-      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      font-family: 'roboto', Helvetica, Arial, Sans-serif;
+      font-weight:300;
       font-size:1.500em;
       margin-top:-27px!IMPORTANT;
       margin-right: -23px!IMPORTANT;
@@ -300,7 +307,7 @@ $panel-info-bg-color: $SARDTurq;
     font-family:'Glyphicons Halflings';
     content:"\e114";
     float: right;
-    color: white;
+    color: $SARDGrey14;
     }
     .panel-footer a.collapsed:after {
       content:"\e080";
@@ -363,75 +370,15 @@ $panel-info-bg-color: $SARDTurq;
       a:active{ color: $SARDYellow;}
     }
 
-/*  NOTICEBOARD ====================================================================================== */
 
-.noticeboard{
-
-  .notice-article{
-
-  }
-  .notice-date {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-    background: $SARDGrey14;
-    color:white;
-    padding: 3px 10px;
-    margin: 0px -3px 0px -3px;
-    border-radius:20px;
-  }
-
-  .notice-time {
-    font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-    border-top: 1px solid $SARDGrey14;
-    padding-top: 12px;
-    margin-top: 10px;
-  }
-
-  .notice-text {
-    padding-right: 25px;
-  }
-
-  .notice-link{
-    a:link:after {
-    margin-top: -20px;
-    font-family:'Glyphicons Halflings';
-    content:"\e131";
-    // font-family: FontAwesome;
-    // content: "\f005";
-    float: right;
-    color: $SARDGrey12;
-    font-size:1.4em;
-    line-height:1em;
-
-    }
-    a:visited:after { color: $SARDGrey12; }
-    a:hover:after { color: $SARDTurq; }
-    a:active:after { color: $SARDTurq; }
-    a:focus:after { color: $SARDTurq; }
-  }
-
-  .notice-date + .notice-time { // this effects time when when it follows date, but is not first child.
-    border-top:none;
-    margin-top: 0px;
-  }
-
-  .glyphicon {
-    float:right;
-    font-size:1.5em;
-    padding-top:3px;
-  }
-
-  .divide-dots{
-    margin: 15px -15px;
-  }
-
-} // end noticeboard
 
 // NOTICEBAORD COLLAPSE PANEL FIXES =========================
 
 .noticeboard{
 
   .panel-heading{
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight:300;
     font-size:1.5em;
     line-height:1.000em;
     border-top: 1px solid white;
@@ -457,7 +404,6 @@ $panel-info-bg-color: $SARDTurq;
     font-family:'Glyphicons Halflings';
     content:"\e131";
     float: right;
-    color: white;
     font-size:1.4em;
   }
 

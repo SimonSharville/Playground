@@ -1,63 +1,504 @@
-/*
-Error: Invalid CSS after "...s, Wide Screens": expected selector, was "@media only scr..."
-        on line 468 of /Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss
+/*  FORM Colouring  ========================================================== */
+/*  TYPOGRAPHY GENERAL ========================================================== */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0625 = 1px */
+/* 16 * 0.125 = 2px */
+h1 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 100;
+  font-size: 3.000em;
+  letter-spacing: -0.025em; }
 
-463:       }
-464: 
-465:       /*==========  Non-Mobile First Method  ==========*\/
-466: 
-467:       Large Devices, Wide Screens
-468:       @media only screen and (max-width : 1199px) {
-469: 
-470:       }
-471: 
-472:       /* Medium Devices, Desktops *\/
-473:       @media only screen and (max-width : 991px) {
+h2 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.875em;
+  margin-top: 0; }
 
-Backtrace:
-/Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss:468
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1162:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1098:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/static_parser.rb:21:in `parse_selector'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:418:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...s, Wide Screens\": expected selector, was \"@media only scr...\"\A         on line 468 of /Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss\A \A 463:       }\A 464: \A 465:       /*==========  Non-Mobile First Method  ==========*/\A 466: \A 467:       Large Devices, Wide Screens\A 468:       @media only screen and (max-width : 1199px) {\A 469: \A 470:       }\A 471: \A 472:       /* Medium Devices, Desktops */\A 473:       @media only screen and (max-width : 991px) {"; }
+h3 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.600em;
+  margin-top: 0; }
+
+h4 h5 h6 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.250em; }
+
+p {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 1.000em; }
+
+/*   PANELS STYLES ======================================================================== */
+/*  FORM Colouring  ========================================================== */
+/*  TYPOGRAPHY GENERAL ========================================================== */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0625 = 1px */
+/* 16 * 0.125 = 2px */
+h1 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 100;
+  font-size: 3.000em;
+  letter-spacing: -0.025em; }
+
+h2 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.875em;
+  margin-top: 0; }
+
+h3 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.600em;
+  margin-top: 0; }
+
+h4 h5 h6 {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.250em; }
+
+p {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 1.000em; }
+
+/*   PANEL Colouring  ========================================================== */
+/*   PANELS CORE ELEMENTS ================================================================= */
+.panel {
+  margin-bottom: 20px;
+  border: 0;
+  color: #615e5d;
+  background-color: #F5F5F5;
+  /*   DEFAULT (GREY PANELS WITH GREY HEADING) =================== */
+  /*   PANELS PRIMARY (Default with no heading or footer colour) =================== */
+  /*   PANELS INFO (Turquise) =================== */
+  /*   PANELS WHITE (NO COLOURING) ========================================= */
+  /*   PANELS CLEAN (NO COLOURING) ========================================= */
+  /*   PANELS TRANSPARENT ================================================== */
+  /*   PANELS INVISIBLE ================================================== */
+  /*   PANELS FOR RATING GROUPS ================================================== */
+  /*   PERFORATIONS ============================================================== */ }
+  .panel .panel-heading {
+    background-color: #c7c4c3;
+    background-image: url(../images/cardboard-flat_inverse.png);
+    border-radius: 0px 0px 0px 0px;
+    border-bottom: 0px; }
+    .panel .panel-heading h1, .panel .panel-heading h2, .panel .panel-heading h3, .panel .panel-heading h4, .panel .panel-heading h5, .panel .panel-heading h6, .panel .panel-heading p {
+      margin: 0px; }
+  .panel .panel-body {
+    background-image: url(../images/cardboard-flat.png);
+    padding-bottom: 15px; }
+  .panel .panel-footer {
+    background-image: url(../images/cardboard-flat_inverse.png);
+    background-color: #ecebeb;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0.0625em;
+    line-height: 30px;
+    color: #615e5d;
+    border: 0; }
+  .panel.panel-primary > .panel-heading {
+    background: none;
+    padding-top: 16px;
+    margin-bottom: -10px; }
+  .panel.panel-primary > .panel-footer {
+    background: none;
+    color: #615e5d;
+    padding-bottom: 5px; }
+  .panel.panel-info {
+    background-color: #00B2B2; }
+    .panel.panel-info > .panel-heading {
+      color: white; }
+    .panel.panel-info > .panel-body > form label {
+      color: white; }
+    .panel.panel-info > .panel-footer {
+      background: #003434; }
+  .panel.panel-white {
+    background-color: white; }
+    .panel.panel-white .panel-heading {
+      border-bottom: 1px solid #ecebeb;
+      background: transparent; }
+    .panel.panel-white .panel-footer {
+      background: white;
+      color: #615e5d;
+      border-top: 1px solid #ecebeb; }
+  .panel.panel-clean {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
+    .panel.panel-clean .panel-heading {
+      background: transparent;
+      border-bottom: 1px solid #615e5d;
+      padding: 10px 0px 10px 0px; }
+    .panel.panel-clean .panel-body {
+      padding: 10px 0px 10px 0px; }
+    .panel.panel-clean .panel-footer {
+      background: transparent;
+      border-top: 1px solid #615e5d;
+      border-bottom: 1px solid #615e5d;
+      padding: 0px;
+      color: #615e5d; }
+  .panel.panel-transparent {
+    background: transparent;
+    background-image: none; }
+    .panel.panel-transparent .panel-heading {
+      background: transparent;
+      background-color: rgba(0, 0, 0, 0.1); }
+    .panel.panel-transparent .panel-body {
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-top: 1px !important;
+      margin-bottom: 1px !important; }
+    .panel.panel-transparent .panel-footer {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: #615e5d;
+      background-image: none; }
+  .panel.panel-invisible {
+    background: none;
+    background-image: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .panel.panel-invisible .panel-heading {
+      background: none;
+      background-color: rgba(0, 0, 0, 0.1); }
+    .panel.panel-invisible .panel-body {
+      background: none;
+      margin-top: 1px !important;
+      margin-bottom: 1px !important; }
+    .panel.panel-invisible .panel-footer {
+      background: none;
+      color: #615e5d;
+      background-image: none; }
+  .panel.panel-rating {
+    background: transparent;
+    background-image: none; }
+    .panel.panel-rating .panel-heading {
+      background: transparent;
+      background-color: rgba(0, 0, 0, 0.1); }
+    .panel.panel-rating .panel-body {
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 0px 0px 0px 0px; }
+    .panel.panel-rating .panel-footer {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: #615e5d;
+      background-image: none; }
+  .panel.perforated {
+    margin-bottom: 0px; }
+    .panel.perforated > .panel-footer {
+      margin-bottom: -16px;
+      padding-bottom: 8px; }
+    .panel.perforated > .panel-perforation {
+      height: 16px;
+      position: relative;
+      bottom: -8px;
+      z-index: 10;
+      background-image: url(../images/dot_grey01.png);
+      background-repeat: repeat-x;
+      background-position: -4px 0px; }
+
+.divide-dots {
+  background-image: url(../images/dot_grey01.png);
+  background-repeat: repeat-x;
+  height: 16px;
+  background-position: -4px 0px; }
+
+.divide-dots-wht {
+  background-image: url(../images/dot_white.png);
+  background-repeat: repeat-x;
+  height: 16px;
+  background-position: -4px 0px; }
+
+.divide-empty {
+  height: 20px;
+  background: none; }
+
+/*  ACCORDIAN PANELS ========================================= */
+.accordian {
+  margin-bottom: 0px; }
+  .accordian .panel-heading a:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    color: white; }
+  .accordian .panel-heading a.collapsed:after {
+    content: "\e080"; }
+  .accordian .panel-footer a:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    color: white; }
+  .accordian .panel-footer a.collapsed:after {
+    content: "\e080"; }
+  .accordian .table {
+    margin-top: -30px; }
+
+/*  COLLAPSING PANELS ========================================= */
+.panel-collapse .panel-heading a:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  float: right;
+  color: white; }
+.panel-collapse .panel-heading a.collapsed:after {
+  content: "\e080"; }
+.panel-collapse .plus-new-btn {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.500em;
+  margin-top: -27px !important;
+  margin-right: -23px !important; }
+  .panel-collapse .plus-new-btn a:link {
+    color: white; }
+  .panel-collapse .plus-new-btn a:visited {
+    color: white; }
+  .panel-collapse .plus-new-btn a:hover {
+    color: #00B2B2; }
+  .panel-collapse .plus-new-btn a:active {
+    color: #004D4D; }
+  .panel-collapse .plus-new-btn a:focus {
+    color: #004D4D; }
+  .panel-collapse .plus-new-btn a:after {
+    visibility: hidden; }
+.panel-collapse .panel-footer a:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  float: right;
+  color: #615e5d; }
+.panel-collapse .panel-footer a.collapsed:after {
+  content: "\e080"; }
+
+.collapse-neg-margin {
+  margin-top: -20px; }
+
+.collapsing .panel-body {
+  padding-bottom: 0px; }
+
+.panel-default a:link {
+  color: #00B2B2;
+  text-decoration: none; }
+.panel-default a:visited {
+  color: #00B2B2; }
+.panel-default a:hover {
+  color: #004D4D; }
+.panel-default a:active {
+  color: #cc8e00; }
+
+.panel-default .panel-footer a:link {
+  color: white;
+  text-decoration: none; }
+.panel-default .panel-footer a:visited {
+  color: white; }
+.panel-default .panel-footer a:hover {
+  color: #00B2B2; }
+.panel-default .panel-footer a:active {
+  color: white; }
+
+.panel-info a:link {
+  color: white;
+  text-decoration: none; }
+.panel-info a:visited {
+  color: white; }
+.panel-info a:hover {
+  color: #004D4D; }
+.panel-info a:active {
+  color: #FFB200; }
+
+.panel-info .panel-heading a:link {
+  color: white;
+  text-decoration: none; }
+.panel-info .panel-heading a:visited {
+  color: white; }
+.panel-info .panel-heading a:hover {
+  color: #FFB200; }
+.panel-info .panel-heading a:active {
+  color: #e6a000; }
+
+.panel-info .panel-default .panel-heading a:link {
+  color: white;
+  text-decoration: none; }
+.panel-info .panel-default .panel-heading a:visited {
+  color: white; }
+.panel-info .panel-default .panel-heading a:hover {
+  color: #004D4D; }
+.panel-info .panel-default .panel-heading a:active {
+  color: white; }
+
+.panel-info .panel-default .panel-body a:link {
+  color: #00B2B2;
+  text-decoration: none; }
+.panel-info .panel-default .panel-body a:visited {
+  color: #00B2B2; }
+.panel-info .panel-default .panel-body a:hover {
+  color: #004D4D; }
+.panel-info .panel-default .panel-body a:active {
+  color: #FFB200; }
+
+.noticeboard .panel-heading {
+  font-family: 'roboto', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.000em;
+  border-top: 1px solid white; }
+  .noticeboard .panel-heading a {
+    color: #403e3e; }
+  .noticeboard .panel-heading a:after {
+    font-size: 0.700em;
+    line-height: 0.700em;
+    margin-top: 6px; }
+.noticeboard .panel-body {
+  padding-bottom: 0px !important; }
+.noticeboard .panel-footer {
+  margin: 10px 0px -15px 0px; }
+.noticeboard .panel-footer a:link:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e131";
+  float: right;
+  font-size: 1.4em; }
+.noticeboard .panel-footer a:hover:after {
+  color: #00B2B2; }
+.noticeboard .badge {
+  padding-bottom: 5px;
+  position: relative;
+  top: -3px; }
+  .noticeboard .badge.todo {
+    background-color: #BF0000; }
+  .noticeboard .badge.waiting {
+    background-color: #FFB200; }
+  .noticeboard .badge.reference {
+    background-color: #52008C; }
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.05em; }
+
+body {
+  background: #F5F5F5; }
+
+.container {
+  background: white;
+  margin-top: 10px; }
+
+.container-fluid {
+  background: white;
+  margin-top: 10px; }
+
+.ui-guidelines {
+  /*  added by simon */
+  /*==========  Non-Mobile First Method  ==========*/
+  /* Large Devices, Wide Screens */
+  /* Medium Devices, Desktops */
+  /* Small Devices, Tablets */
+  /* Extra Small Devices, Phones */
+  /* Custom, iPhone Retina */
+  /*==========  Non-Mobile First Method  ==========*/
+  /* Large Devices, Wide Screens */
+  /* Medium Devices, Desktops */
+  /* Small Devices, Tablets */
+  /* Extra Small Devices, Phones */
+  /* Custom, iPhone Retina */ }
+  @media only screen and (max-width: 991px) {
+    .ui-guidelines .menu-number {
+      display: block;
+      float: left;
+      font-size: 2em;
+      width: 30px; }
+      .ui-guidelines .menu-number .glyphicon {
+        font-size: 0.8em; }
+    .ui-guidelines .menu-title {
+      font-size: 0.8em;
+      line-height: 1em; } }
+  @media only screen and (max-width: 767px) {
+    .ui-guidelines .menu-number {
+      display: block;
+      float: left;
+      font-size: 2em;
+      width: 30px; }
+      .ui-guidelines .menu-number .glyphicon {
+        font-size: 0.8em; }
+    .ui-guidelines .menu-title {
+      font-size: 0.8em;
+      line-height: 1em; } }
+  @media only screen and (max-width: 479px) {
+    .ui-guidelines div.bhoechie-tab-menu {
+      width: 15%; }
+    .ui-guidelines div.bhoechie-tab {
+      min-width: 85%; }
+    .ui-guidelines .menu-title {
+      visibility: hidden;
+      width: 0px;
+      height: 0px; } }
+  .ui-guidelines .pagination > li > a, .ui-guidelines .pagination > li > span {
+    border-radius: 50% !important;
+    margin: 3px;
+    padding-top: 9px;
+    height: 40px;
+    width: 40px;
+    text-align: center; }
+  .ui-guidelines .pagination span.disabled:link {
+    background: white; }
+  .ui-guidelines .pagination span.disabled:hover {
+    background: white; }
+  .ui-guidelines .pagination span.disabled:focus {
+    background: white; }
+  .ui-guidelines .pagination li:active {
+    color: white; }
+  @media only screen and (max-width: 991px) {
+    .ui-guidelines .pagination > li > a, .ui-guidelines .pagination > li > span {
+      margin: 2px;
+      padding-top: 4px;
+      padding-left: 8px;
+      height: 30px;
+      width: 30px; } }
+  .ui-guidelines .noticeboard .panel-footer {
+    margin: 15px -15px 0px -15px; }
+  .ui-guidelines .noticeboard .notice-date {
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 400;
+    background: #403e3e;
+    background-image: url(../images/cardboard-flat_50.png);
+    color: white;
+    padding: 3px 10px;
+    margin: 0px -3px 0px -3px;
+    border-radius: 20px; }
+  .ui-guidelines .noticeboard .notice-time {
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 700;
+    border-top: 1px solid #615e5d;
+    padding-top: 12px;
+    margin-top: 10px; }
+  .ui-guidelines .noticeboard .notice-text {
+    padding-right: 25px; }
+  .ui-guidelines .noticeboard .notice-link a:link:after {
+    margin-top: -20px;
+    font-family: 'Glyphicons Halflings';
+    content: "\e131";
+    float: right;
+    color: #615e5d;
+    font-size: 1.4em;
+    line-height: 1em; }
+  .ui-guidelines .noticeboard .notice-link a:visited:after {
+    color: #615e5d; }
+  .ui-guidelines .noticeboard .notice-link a:hover:after {
+    color: #00B2B2; }
+  .ui-guidelines .noticeboard .notice-link a:active:after {
+    color: #00B2B2; }
+  .ui-guidelines .noticeboard .notice-link a:focus:after {
+    color: #00B2B2; }
+  .ui-guidelines .noticeboard .notice-date + .notice-time {
+    border-top: none;
+    margin-top: 0px; }
+  .ui-guidelines .noticeboard .glyphicon {
+    float: right;
+    font-size: 1.5em;
+    padding-top: 3px; }
+  .ui-guidelines .noticeboard .divide-dots {
+    margin: 15px -15px; }
