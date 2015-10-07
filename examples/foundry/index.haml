@@ -12,8 +12,8 @@
 
     / Comment/
 
-    %link{:href => "../assets/css/bootstrap.css", :rel => "stylesheet"}/
-    %link{:href => "../assets/css/foundry_ui.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/foundry_ui.css", :rel => "stylesheet"}/
 
     / Include the navigation/
     / %script{:src => "js/jquery-1.11.2.min.js"}
@@ -36,9 +36,143 @@
     /       %li
     /         %a{:href => "#"} Menu 3
 
-    .container
-      #noticeboard.ui-guidelines
-        .row
+    <!-- COLOUR PALLET -->
+    .container 
+      .row
+        #colourpallet.ui-guidelines
+          .ui-article.col-xs-12
+            %h1 Colour pallet
+            %p This shows the full colour pallet used in Foundry, including the base texture applied to some elements.
+          .ui-article.col-xs-12  
+            %h3 Primary Colours
+            .colour-swatch.SARDTurq
+              %h6 $SARDTurq
+              %h6 #00B2B2
+            .colour-swatch.SARDTeal
+              %h6 $SARDTeal
+              %h6 #004D4D
+            .colour-swatch.SARDGreen
+              %h6 $SARDGreen
+              %h6 #359E00
+            .colour-swatch.SARDYellow
+              %h6 $SARDYellow
+              %h6 #FFB200
+            .colour-swatch.SARDOrange
+              %h6 $SARDOrange
+              %h6 #FF6A00
+            .colour-swatch.SARDRed
+              %h6 $SARDRed
+              %h6 #BF0000
+            .colour-swatch.SARDPurple
+              %h6 $SARDPurple
+              %h6 #52008C
+
+          .ui-article.col-xs-12  
+            %h3 Secondary Colours
+            .colour-swatch.SARDPink
+              %h6 $SARDPink
+              %h6 #E50073
+            .colour-swatch.SARDLime
+              %h6 $SARDLime
+              %h6 #A7BF30
+            .colour-swatch.SARDBlue
+              %h6 $SARDBlue
+              %h6 #003CB2
+            .colour-swatch.SARDInk
+              %h6 $SARDInk
+              %h6 #00178C
+            .colour-swatch.SARDPlum
+              %h6 $SARDPlum
+              %h6 #990099
+
+          .ui-article.col-xs-12  
+            %h3 Primary Greys
+            .colour-swatch.SARDGrey01
+              %h6 $SARDGrey01
+              %h6 #F5F5F5
+            .colour-swatch.SARDGrey02
+              %h6 $SARDGrey02
+              %h6 #ECEBEB
+            .colour-swatch.SARDGrey04
+              %h6 $SARDGrey04
+              %h6 #D9D7D7
+            .colour-swatch.SARDGrey06
+              %h6 $SARDGrey06
+              %h6 #C7C4C3
+            .colour-swatch.SARDGrey08
+              %h6 $SARDGrey08
+              %h6 #B4B0AF
+            .colour-swatch.SARDGrey10
+              %h6 $SARDGrey10
+              %h6 #A29D9B
+            .colour-swatch.SARDGrey12
+              %h6 $SARDGrey12
+              %h6 #817D7C
+            .colour-swatch.SARDGrey14
+              %h6 $SARDGrey14
+              %h6 #615E5D
+            .colour-swatch.SARDGrey16
+              %h6 $SARDGrey16
+              %h6 #403E3E
+            .colour-swatch.SARDGrey18
+              %h6 $SARDGrey18
+              %h6 #100F0F
+
+            .ui-article.col-xs-12  
+            %h3 Secondary Greys
+            .colour-swatch.SARDGrey03
+              %h6 $SARDGrey03
+              %h6 #E3E1E1
+            .colour-swatch.SARDGrey05
+              %h6 $SARDGrey05
+              %h6 #D0CECD
+            .colour-swatch.SARDGrey07
+              %h6 $SARDGrey07
+              %h6 #BDBAB9
+            .colour-swatch.SARDGrey09
+              %h6 $SARDGrey09
+              %h6 #ABA6A5
+            .colour-swatch.SARDGrey11
+              %h6 $SARDGrey11
+              %h6 #918D8B
+            .colour-swatch.SARDGrey13
+              %h6 $SARDGrey13
+              %h6 #716D6C
+            .colour-swatch.SARDGrey15
+              %h6 $SARDGrey15
+              %h6 #514E4D
+            .colour-swatch.SARDGrey17
+              %h6 $SARDGrey17
+              %h6 #302F2E
+            .colour-swatch.SARDGrey19
+              %h6 $SARDGrey19
+              %h6 #100F0F
+
+      .divide-dots-ui
+      
+
+      <!-- TYPOGRAPHY -->
+      .row
+        #colourpallet.ui-guidelines
+        .ui-article.col-xs-12
+          %h1 Typography
+          .row
+            .ui-article.col-xs-12
+              %h1 Header 1
+              %h2 Header 2
+              %h3 Header 3
+              %h4 Header 4
+              %h5 Header 5
+              %h6 Header 6
+              %p Paragraph text
+              %p.small Small paragraph text
+
+      .divide-dots-ui
+
+
+      <!-- NOTICEBOARD -->
+      .row
+        #noticeboard.ui-guidelines
           .ui-article.col-xs-12
             %h1 Noticeboard
           .col-xs-12.col-sm-5.col-md-3
@@ -157,6 +291,7 @@
               %br
               %p And finishes of with a Panel Footer with the Panel Body. 
 
+    
 
 
 
@@ -165,4 +300,4 @@
   \==================================================
 / Placed at the end of the document so the pages load faster
 %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"} 
-%script{:src => "../assets/js/bootstrap.js"}
+%script{:src => "assets/js/bootstrap.js"}

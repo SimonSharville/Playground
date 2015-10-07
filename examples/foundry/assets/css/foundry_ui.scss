@@ -21,11 +21,15 @@ body{
 .container{
   background: white;
   margin-top:10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
 }
 
 .container-fluid{
   background: white;
   margin-top:10px;
+  margin-bottom:20px;
+  padding-bottom:10px;
 }
 
 
@@ -58,14 +62,16 @@ body{
 
       // .ui-article {margin-bottom:50px;}
 
-      // .divide-dots-ui {
-      //   background-image: image-url("graphics/dot_white.png");
-      //   background-repeat: repeat-x;
-      //   height: 16px;
-      //   background-position: -4px 0px;
-      //   margin-top:20px;
-      //   margin-bottom:20px;
-      // }
+      .divide-dots-ui {
+        background-image:url(../images/dot_grey01.png);
+        background-repeat: repeat-x;
+        height: 16px;
+        background-position: -4px 0px;
+        margin-top:30px;
+        margin-bottom:10px;
+        margin-left:-16px;
+        margin-right:-16px;
+      }
 
       // .toplink{
       //   background: white;
@@ -148,45 +154,48 @@ body{
       
       // COLOURS ==========================================================
 
-      // .colour-swatch{
-      //   display:inline-block;
-      //   width: 100px;
-      //   margin-bottom: 5px;
-      //   h6 {margin: 5px;}
+      .colour-swatch{
+        display:inline-block;
+        background-image:url(../images/cardboard-flat_50.png); //www.transparenttextures.com
+        background-repeat: no-repeat;
+        background-position: left 50px;
+        width: 100px;
+        margin-bottom: 5px;
+        h6 {margin: 5px;}
 
-      //   &.SARDTurq {min-height: 100px; background-color: $SARDTurq;}
-      //   &.SARDTeal {min-height: 100px; background-color: $SARDTeal; color:white;}
-      //   &.SARDGreen {min-height: 100px; background-color: $SARDGreen; color:white;}
-      //   &.SARDYellow {min-height: 100px; background-color: $SARDYellow;}
-      //   &.SARDOrange {min-height: 100px; background-color: $SARDOrange;}
-      //   &.SARDRed {min-height: 100px; background-color: $SARDRed; color:white;}
-      //   &.SARDPink {min-height: 100px; background-color: $SARDPink;}
-      //   &.SARDPurple {min-height: 100px; background-color: $SARDPurple; color:white;}
-      //   &.SARDLime {min-height: 100px; background-color: $SARDLime;}
-      //   &.SARDBlue {min-height: 100px; background-color: $SARDBlue; color:white;}
-      //   &.SARDInk {min-height: 100px; background-color: $SARDInk; color:white;}
-      //   &.SARDPlum {min-height: 100px; background-color: $SARDPlum; color:white;}
+        &.SARDTurq {min-height: 100px; background-color: $SARDTurq;}
+        &.SARDTeal {min-height: 100px; background-color: $SARDTeal; color:white;}
+        &.SARDGreen {min-height: 100px; background-color: $SARDGreen; color:white;}
+        &.SARDYellow {min-height: 100px; background-color: $SARDYellow;}
+        &.SARDOrange {min-height: 100px; background-color: $SARDOrange;}
+        &.SARDRed {min-height: 100px; background-color: $SARDRed; color:white;}
+        &.SARDPink {min-height: 100px; background-color: $SARDPink;}
+        &.SARDPurple {min-height: 100px; background-color: $SARDPurple; color:white;}
+        &.SARDLime {min-height: 100px; background-color: $SARDLime;}
+        &.SARDBlue {min-height: 100px; background-color: $SARDBlue; color:white;}
+        &.SARDInk {min-height: 100px; background-color: $SARDInk; color:white;}
+        &.SARDPlum {min-height: 100px; background-color: $SARDPlum; color:white;}
 
-      //   &.SARDGrey01 {min-height: 100px; background-color: $SARDGrey01; border: 1px solid $SARDGrey08;}
-      //   &.SARDGrey02 {min-height: 100px; background-color: $SARDGrey02;}
-      //   &.SARDGrey03 {min-height: 100px; background-color: $SARDGrey03;}
-      //   &.SARDGrey04 {min-height: 100px; background-color: $SARDGrey04;}
-      //   &.SARDGrey05 {min-height: 100px; background-color: $SARDGrey05;}
-      //   &.SARDGrey06 {min-height: 100px; background-color: $SARDGrey06;}
-      //   &.SARDGrey07 {min-height: 100px; background-color: $SARDGrey07;}
-      //   &.SARDGrey08 {min-height: 100px; background-color: $SARDGrey08;}
-      //   &.SARDGrey09 {min-height: 100px; background-color: $SARDGrey09;}
-      //   &.SARDGrey10 {min-height: 100px; background-color: $SARDGrey10; color:white;}
-      //   &.SARDGrey11 {min-height: 100px; background-color: $SARDGrey11; color:white;}
-      //   &.SARDGrey12 {min-height: 100px; background-color: $SARDGrey12; color:white;}
-      //   &.SARDGrey13 {min-height: 100px; background-color: $SARDGrey13; color:white;}
-      //   &.SARDGrey14 {min-height: 100px; background-color: $SARDGrey14; color:white;}
-      //   &.SARDGrey15 {min-height: 100px; background-color: $SARDGrey15; color:white;}
-      //   &.SARDGrey16 {min-height: 100px; background-color: $SARDGrey16; color:white;}
-      //   &.SARDGrey17 {min-height: 100px; background-color: $SARDGrey17; color:white;}
-      //   &.SARDGrey18 {min-height: 100px; background-color: $SARDGrey18; color:white;}
-      //   &.SARDGrey19 {min-height: 100px; background-color: $SARDGrey19; color:white;}
-      // }
+        &.SARDGrey01 {min-height: 100px; background-color: $SARDGrey01;}
+        &.SARDGrey02 {min-height: 100px; background-color: $SARDGrey02;}
+        &.SARDGrey03 {min-height: 100px; background-color: $SARDGrey03;}
+        &.SARDGrey04 {min-height: 100px; background-color: $SARDGrey04;}
+        &.SARDGrey05 {min-height: 100px; background-color: $SARDGrey05;}
+        &.SARDGrey06 {min-height: 100px; background-color: $SARDGrey06;}
+        &.SARDGrey07 {min-height: 100px; background-color: $SARDGrey07;}
+        &.SARDGrey08 {min-height: 100px; background-color: $SARDGrey08;}
+        &.SARDGrey09 {min-height: 100px; background-color: $SARDGrey09;}
+        &.SARDGrey10 {min-height: 100px; background-color: $SARDGrey10; color:white;}
+        &.SARDGrey11 {min-height: 100px; background-color: $SARDGrey11; color:white;}
+        &.SARDGrey12 {min-height: 100px; background-color: $SARDGrey12; color:white;}
+        &.SARDGrey13 {min-height: 100px; background-color: $SARDGrey13; color:white;}
+        &.SARDGrey14 {min-height: 100px; background-color: $SARDGrey14; color:white;}
+        &.SARDGrey15 {min-height: 100px; background-color: $SARDGrey15; color:white;}
+        &.SARDGrey16 {min-height: 100px; background-color: $SARDGrey16; color:white;}
+        &.SARDGrey17 {min-height: 100px; background-color: $SARDGrey17; color:white;}
+        &.SARDGrey18 {min-height: 100px; background-color: $SARDGrey18; color:white;}
+        &.SARDGrey19 {min-height: 100px; background-color: $SARDGrey19; color:white;}
+      }
 
 
       //  TYPOGRAPHY =================================================================================
@@ -571,7 +580,7 @@ body{
 
       // NOTICEBAORD COLLAPSE PANEL FIXES are in foundry_panels.css        =========================
 
-      
+
 
 
     //  Pageheader =================================================================================

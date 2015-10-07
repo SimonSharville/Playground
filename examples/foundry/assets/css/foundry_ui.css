@@ -9,7 +9,7 @@ h1 {
   font-family: 'roboto', Helvetica, Arial, Sans-serif;
   font-weight: 100;
   font-size: 3.000em;
-  letter-spacing: -0.025em; }
+  letter-spacing: -0.01em; }
 
 h2 {
   font-family: 'roboto', Helvetica, Arial, Sans-serif;
@@ -45,7 +45,7 @@ h1 {
   font-family: 'roboto', Helvetica, Arial, Sans-serif;
   font-weight: 100;
   font-size: 3.000em;
-  letter-spacing: -0.025em; }
+  letter-spacing: -0.01em; }
 
 h2 {
   font-family: 'roboto', Helvetica, Arial, Sans-serif;
@@ -385,11 +385,15 @@ body {
 
 .container {
   background: white;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
 
 .container-fluid {
   background: white;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
 
 .ui-guidelines {
   /*  added by simon */
@@ -405,6 +409,134 @@ body {
   /* Small Devices, Tablets */
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */ }
+  .ui-guidelines .divide-dots-ui {
+    background-image: url(../images/dot_grey01.png);
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: -16px;
+    margin-right: -16px; }
+  .ui-guidelines .colour-swatch {
+    display: inline-block;
+    background-image: url(../images/cardboard-flat_50.png);
+    background-repeat: no-repeat;
+    background-position: left 50px;
+    width: 100px;
+    margin-bottom: 5px; }
+    .ui-guidelines .colour-swatch h6 {
+      margin: 5px; }
+    .ui-guidelines .colour-swatch.SARDTurq {
+      min-height: 100px;
+      background-color: #00B2B2; }
+    .ui-guidelines .colour-swatch.SARDTeal {
+      min-height: 100px;
+      background-color: #004D4D;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGreen {
+      min-height: 100px;
+      background-color: #359E00;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDYellow {
+      min-height: 100px;
+      background-color: #FFB200; }
+    .ui-guidelines .colour-swatch.SARDOrange {
+      min-height: 100px;
+      background-color: #FF6A00; }
+    .ui-guidelines .colour-swatch.SARDRed {
+      min-height: 100px;
+      background-color: #BF0000;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDPink {
+      min-height: 100px;
+      background-color: #e50073; }
+    .ui-guidelines .colour-swatch.SARDPurple {
+      min-height: 100px;
+      background-color: #52008C;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDLime {
+      min-height: 100px;
+      background-color: #A7BF30; }
+    .ui-guidelines .colour-swatch.SARDBlue {
+      min-height: 100px;
+      background-color: #003CB2;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDInk {
+      min-height: 100px;
+      background-color: #00178C;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDPlum {
+      min-height: 100px;
+      background-color: #990099;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey01 {
+      min-height: 100px;
+      background-color: #F5F5F5; }
+    .ui-guidelines .colour-swatch.SARDGrey02 {
+      min-height: 100px;
+      background-color: #ecebeb; }
+    .ui-guidelines .colour-swatch.SARDGrey03 {
+      min-height: 100px;
+      background-color: #E3E1E1; }
+    .ui-guidelines .colour-swatch.SARDGrey04 {
+      min-height: 100px;
+      background-color: #d9d7d7; }
+    .ui-guidelines .colour-swatch.SARDGrey05 {
+      min-height: 100px;
+      background-color: #D0CECD; }
+    .ui-guidelines .colour-swatch.SARDGrey06 {
+      min-height: 100px;
+      background-color: #c7c4c3; }
+    .ui-guidelines .colour-swatch.SARDGrey07 {
+      min-height: 100px;
+      background-color: #BDBAB9; }
+    .ui-guidelines .colour-swatch.SARDGrey08 {
+      min-height: 100px;
+      background-color: #b4b0af; }
+    .ui-guidelines .colour-swatch.SARDGrey09 {
+      min-height: 100px;
+      background-color: #ABA6A5; }
+    .ui-guidelines .colour-swatch.SARDGrey10 {
+      min-height: 100px;
+      background-color: #a29d9b;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey11 {
+      min-height: 100px;
+      background-color: #918D8B;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey12 {
+      min-height: 100px;
+      background-color: #817d7c;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey13 {
+      min-height: 100px;
+      background-color: #716D6C;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey14 {
+      min-height: 100px;
+      background-color: #615e5d;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey15 {
+      min-height: 100px;
+      background-color: #514E4D;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey16 {
+      min-height: 100px;
+      background-color: #403e3e;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey17 {
+      min-height: 100px;
+      background-color: #302F2E;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey18 {
+      min-height: 100px;
+      background-color: #201f1f;
+      color: white; }
+    .ui-guidelines .colour-swatch.SARDGrey19 {
+      min-height: 100px;
+      background-color: #100F0F;
+      color: white; }
   @media only screen and (max-width: 991px) {
     .ui-guidelines .menu-number {
       display: block;
