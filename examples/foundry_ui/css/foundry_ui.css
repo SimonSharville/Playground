@@ -1,5 +1,0 @@
-
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...s, Wide Screens\": expected selector, was \"@media only scr...\"\A         on line 468 of /Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css/foundry_ui.scss\A \A 463:       }\A 464: \A 465:       /*==========  Non-Mobile First Method  ==========*/\A 466: \A 467:       Large Devices, Wide Screens\A 468:       @media only screen and (max-width : 1199px) {\A 469: \A 470:       }\A 471: \A 472:       /* Medium Devices, Desktops */\A 473:       @media only screen and (max-width : 991px) {"; }
