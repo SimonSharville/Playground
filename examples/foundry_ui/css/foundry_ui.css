@@ -1,6 +1,6 @@
 /*
 Error: Invalid CSS after "...s, Wide Screens": expected selector, was "@media only scr..."
-        on line 468 of /Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss
+        on line 468 of /Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css/foundry_ui.scss
 
 463:       }
 464: 
@@ -15,22 +15,22 @@ Error: Invalid CSS after "...s, Wide Screens": expected selector, was "@media on
 473:       @media only screen and (max-width : 991px) {
 
 Backtrace:
-/Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss:468
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1162:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1098:in `expected'
+/Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css/foundry_ui.scss:468
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1161:in `expected'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1097:in `expected'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/static_parser.rb:21:in `parse_selector'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:425:in `visit_rule'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
@@ -51,7 +51,7 @@ Backtrace:
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:418:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:420:in `run'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
@@ -60,4 +60,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...s, Wide Screens\": expected selector, was \"@media only scr...\"\A         on line 468 of /Users/simonsharville/••WORK••/WEBSITES/simo_site_2015/playground/examples/foundry_ui/css/foundry_ui.scss\A \A 463:       }\A 464: \A 465:       /*==========  Non-Mobile First Method  ==========*/\A 466: \A 467:       Large Devices, Wide Screens\A 468:       @media only screen and (max-width : 1199px) {\A 469: \A 470:       }\A 471: \A 472:       /* Medium Devices, Desktops */\A 473:       @media only screen and (max-width : 991px) {"; }
+  content: "Error: Invalid CSS after \"...s, Wide Screens\": expected selector, was \"@media only scr...\"\A         on line 468 of /Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css/foundry_ui.scss\A \A 463:       }\A 464: \A 465:       /*==========  Non-Mobile First Method  ==========*/\A 466: \A 467:       Large Devices, Wide Screens\A 468:       @media only screen and (max-width : 1199px) {\A 469: \A 470:       }\A 471: \A 472:       /* Medium Devices, Desktops */\A 473:       @media only screen and (max-width : 991px) {"; }
