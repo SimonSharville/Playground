@@ -1,0 +1,24 @@
+/* https://www.youtube.com/watch?v=t6GoK1yGcFM&feature=youtu.be */
+/* http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center; }
+
+.flexcontainer > * {
+  min-width: 100px;
+  min-height: 100px; }
+
+header {
+  background: #c8c8c8; }
+
+article {
+  background: rgba(200, 200, 200, 0.8); }
+
+aside {
+  background: rgba(200, 200, 200, 0.6); }
+
+footer {
+  background: rgba(200, 200, 200, 0.4); }

@@ -1,4 +1,4 @@
-
+// The core styles for foundry
 
 // 	COLOURS ================================================================ 
 	$SARDPink:   #e50073;
@@ -49,40 +49,45 @@
 $text-color: #615e5d;
 
   //letter-spacing
-    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
-    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
-    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
-    $single: 0.0625em; /* 16 * 0.0625 = 1px */
-    $double: 0.125em; /* 16 * 0.125 = 2px */
+    $tight: -0.05em;    /* 16 * 0.0312 = 1/2px */
+    $reduced: -0.01em;  /* 16 * 0.0312 = 1/2px */
+    $slight: 0.05em;    /* 16 * 0.0312 = 1/2px */
+    $single: 0.0625em;  /* 16 * 0.0625 = 1px */
+    $double: 0.125em;   /* 16 * 0.125 = 2px */
   
   
-
+  // Font-weights: 100,300,400,500,700,900
   
   h1 {
-    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 100;
     font-size: 3.000em;
     letter-spacing: $reduced;
   }
   
   h2 {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 300;
     font-size: 1.875em;
     margin-top:0;
   }
   
   h3 {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 300;
     font-size: 1.600em;
     margin-top:0;
   }
   
   h4 h5 h6 {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 300;
     font-size: 1.250em;
   }
   
   p {
-    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-family: 'roboto', Helvetica, Arial, Sans-serif;
+    font-weight: 400;
     font-size: 1.000em;
   }
   
