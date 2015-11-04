@@ -1,0 +1,5 @@
+
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: all/vertical_tabs.\A        Load paths:\A          /Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css\A          Sass::Globbing::Importer\A         on line 4 of /Users/simonsharville/Dropbox/SSL_WORK/SSL_Web_Repositories/playground/examples/foundry_ui/css/foundry_ui_old.css.scss\A \A 1: \A 2: // UI Stylesheets\A 3: \A 4: @import \"all/vertical_tabs\";\A 5: \A 6: \A 7: \A 8: \A 9: .ui-guidelines {"; }
