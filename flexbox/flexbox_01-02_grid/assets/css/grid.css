@@ -1,0 +1,12 @@
+.grid {
+  margin: 0;
+  padding: 0; }
+
+.grid::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid > * {
+  padding: .25rem;
+  float: left; }
