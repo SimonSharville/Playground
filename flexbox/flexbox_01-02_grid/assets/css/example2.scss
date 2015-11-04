@@ -1,0 +1,24 @@
+
+.flex{
+  display: -webkit-flex;
+  -webkit-flex-flow:row;
+  -webkit-justify-content:center;
+  -webkit-align-items:center;
+}
+
+header, footer {
+  height: 100px;
+}
+
+.middle{
+  display: -webkit-flex;
+  min-height:500px;
+}
+
+article{
+  -webkit-flex: 3 0 0;
+}
+
+aside{
+  -webkit-flex: 1 0 0;
+}
