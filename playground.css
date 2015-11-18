@@ -52,6 +52,11 @@ ul {
       color:black;
       text-decoration:none;
   }
+
+  a:visited {
+      color:black;
+      text-decoration:none;
+  }
   
   li a:after {
       font-family: FontAwesome;
