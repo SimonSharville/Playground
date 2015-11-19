@@ -4,6 +4,9 @@
 body{
   margin: 20px;
   padding: 0px;
+    background-image:url(images/SwingsBG.png);
+    background-repeat: no-repeat;
+    background-position: right 200px top 200px;
   }
 
 .wrapper{
@@ -116,7 +119,15 @@ ul {
 
     /* Large Devices, Wide Screens */     /* iPad2 Landscape */
     @media only screen and (max-width : 1199px) {
-      
+      body{
+        /*margin: 20px;*/
+        /*padding: 0px;*/
+        background-image:url(images/SwingsBG.png);
+        background-repeat: no-repeat;
+        background-position: right 100px top 100px;
+      }
+
+
       p{
         font-size: 1.9em;  /* 16x4 = 80 */
       }
@@ -140,6 +151,13 @@ ul {
     /* Small Devices, Tablets */      /* iPhone5 Landscape */
     @media only screen and (max-width : 767px) {
 
+      body{
+        background-image:url(images/SwingsBG.png);
+        background-repeat: no-repeat;
+        background-position: right 10px top 10px;
+        background-size: 300px;
+      }
+
       h1 {
         font-size: 3em;  /* 16x4 = 80 */
       }
@@ -162,6 +180,13 @@ ul {
 
     /* Extra Small Devices, Phones */      /* iPhone5 Portrait */
     @media only screen and (max-width : 479px) {
+
+      body{
+        background-image:url(images/SwingsBG.png);
+        background-repeat: no-repeat;
+        background-position: right 10px top 150px;
+        background-size: 300px;
+      }
       
       h1 {
         font-size: 3em;  /* 16x4 = 80 */
