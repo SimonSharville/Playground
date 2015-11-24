@@ -163,7 +163,8 @@ body{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     .flexcontainer { display:inline-block;}
-    .container { min-width: 3000px; }
+    .container { min-width: 4000px; }
+    .bubbleouter{ padding: 30px 0; }
     .bubblewrap{
       @include make-xs-column(1);
     }
