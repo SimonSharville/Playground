@@ -1,0 +1,46 @@
+
+
+// Index Bubbles ======================
+
+// bubbleouter is in structure.scss
+
+.bubblewrap {
+  margin-bottom:10px;
+}
+
+.bubble {
+  background: $Orange;
+  text-align:center;
+  border-radius: 50%;
+}
+
+.bubtext{
+  position: absolute;
+  top:0px;
+  left:0px;
+  padding-top:45%;
+  padding-right:10px;
+  padding-left:10px;
+  height:100%;
+  width:100%;
+}
+
+#bubtext{
+  position: absolute;
+  top:0px;
+  left:0px;
+  padding-top:40%;
+  padding-right:10px;
+  padding-left:10px;
+  height:100%;
+  width:100%;
+}
+
+.DOT{
+  height:100% auto;
+  width:100%;
+  visibility:hidden;
+  padding:0;
+  margin:0;
+  display:flex;
+}
