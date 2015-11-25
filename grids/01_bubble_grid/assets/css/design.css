@@ -5882,9 +5882,13 @@ body {
     display: inline-block; }
 
   .container {
-    min-width: 3000px; }
+    min-width: 3500px !important; }
 
-  .bubblewrap, .bubblewrap2 {
+  .bubbleouter {
+    padding: 0px 0px;
+    margin-top: -5px; }
+
+  .bubblewrap {
     position: relative;
     float: left;
     width: 8.3333333333%;
@@ -5903,7 +5907,7 @@ body {
     min-width: 4000px; }
 
   .bubbleouter {
-    padding: 30px 0; }
+    padding: 30px 15px; }
 
   .bubblewrap {
     position: relative;
