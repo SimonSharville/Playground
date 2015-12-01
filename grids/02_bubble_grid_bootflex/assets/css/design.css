@@ -5882,18 +5882,19 @@ body {
 .bubble {
   min-width: 250px;
   min-height: 250px; }
-  @media (min-width: 768px) {
-    .bubble {
-      min-width: 220px;
-      min-height: 220px; } }
-  @media (min-width: 992px) {
-    .bubble {
-      min-width: 200px;
-      min-height: 200px; } }
-  @media (min-width: 1200px) {
-    .bubble {
-      min-width: 250px;
-      min-height: 250px; } }
+
+@media (min-width: 768px) {
+  .bubble {
+    min-width: 220px;
+    min-height: 220px; } }
+@media (min-width: 992px) {
+  .bubble {
+    min-width: 200px;
+    min-height: 200px; } }
+@media (min-width: 1200px) {
+  .bubble {
+    min-width: 250px;
+    min-height: 250px; } }
 
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait and Landscape */
@@ -5950,16 +5951,13 @@ body {
 /* Portrait and Landscape */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .container {
-    min-height: 4450px; }
-
   .flex-container {
     display: inline-block;
     margin-top: 20px; }
 
   .bubble {
-    min-width: 450px;
-    min-height: 450px;
+    min-width: 350px;
+    min-height: 350px;
     margin: 10px 0px; } }
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
