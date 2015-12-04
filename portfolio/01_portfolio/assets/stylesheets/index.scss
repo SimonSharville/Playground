@@ -26,11 +26,16 @@
   @import "partials/index/large";
 }
 
-@media (min-width: 768px) 
-  and (max-width: 1024px)
+@media (min-width: 768px) and (max-width: 1024px)
    {
     @import "partials/index/medium";
 }
+
+@media (max-width: 767px)
+   {
+    @import "partials/index/small";
+}
+
 
 // ----------- iPhone 4 and 4S ----------------
 
