@@ -4,13 +4,9 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: $Grey01;
 }
 
-// .container {
-//   background-color: $Grey01;
-//   height: 100%;
-// }
 
 .flex-container {
   height:100%;
@@ -29,7 +25,6 @@ body {
   flex-wrap:                wrap;
   -webkit-align-content:    center; 
   align-content:            center;
-  
 }
 
 
@@ -46,17 +41,19 @@ body {
   flex-wrap:                wrap;
   -webkit-align-content:    center; 
   align-content:            center;
+}
 
+.bubblewrap{
   position: relative;
   background-color: $Grey01;
-  width:1024px;
-  height:768px;
-  background-image: url("../../assets/images/index/IndexLogo_iPadMini.png"); 
+  height:1024px;
+  width:768px;
+  // background-image: url("../../assets/images/index/IndexLogo_iPadMini_p.png"); 
 }
 
 
 
-  
+
 
 .bubble, .bubbleOpen{
   display:                  -webkit-flex; 
@@ -73,7 +70,6 @@ body {
   position: absolute;
   // border: solid 1px $Orange;
   background-color: white;
-  // margin:10px;
   border-radius: 50%;
 }
 
