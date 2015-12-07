@@ -1,5 +1,6 @@
 
 @import "partials/index/core-elements";
+// @import "bootstrap";
 
 // ====================================================================================
 
@@ -12,6 +13,40 @@
 // iPhone5    = 568 x 320
 // iPhone4    = 480 x 320
 
+
+@media(min-width:480px) { //BS3 xs
+
+  // This is for the flex-container & bubblewrap for 480px and larger
+    .flex-container{            // -webkit-  is for Safari
+    display:                  -webkit-flex; 
+    display:                  flex;
+    -webkit-flex-flow:        row;
+    flex-flow:                row;
+    -webkit-justify-content:  center;
+    justify-content:          center;
+    -webkit-align-items:      center;
+    align-items:              center;
+    -webkit-flex-wrap:        wrap; 
+    flex-wrap:                wrap;
+    -webkit-align-content:    center; 
+    align-content:            center;
+  }
+
+  .bubblewrap{
+    display:                  -webkit-flex; 
+    display:                  flex;
+    -webkit-flex-flow:        row;
+    flex-flow:                row;
+    -webkit-justify-content:  center;
+    justify-content:          center;
+    -webkit-align-items:      center;
+    align-items:              center;
+    -webkit-flex-wrap:        wrap; 
+    flex-wrap:                wrap;
+    -webkit-align-content:    center; 
+    align-content:            center;
+  }
+}
 
 @media(min-width:768px){ //BS3 sm
 }
@@ -26,11 +61,16 @@
   @import "partials/index/large";
 }
 
-@media (min-width: 768px) 
-  and (max-width: 1024px)
+@media (min-width: 768px) and (max-width: 1024px)
    {
     @import "partials/index/medium";
 }
+
+@media (min-width: 480px) and (max-width: 767px)
+   {
+    @import "partials/index/small";
+}
+
 
 // ----------- iPhone 4 and 4S ----------------
 
@@ -124,6 +164,7 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+    @import "partials/index/iphone6plus";
 }
 
 // Landscape
@@ -132,4 +173,6 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+    // @import "bootstrap";
+    @import "partials/index/iphone6plus";
 }

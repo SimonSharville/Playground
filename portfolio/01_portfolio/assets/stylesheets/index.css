@@ -1,13 +1,4 @@
-@media (min-width: 1024px) {
-  html, body {
-    height: 100%; }
-
-  body {
-    background-color: #2F2B2D; }
-
-  .flex-container {
-    height: 100%; }
-
+@media (min-width: 480px) {
   .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -34,7 +25,16 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-content: center;
-    align-content: center; }
+    align-content: center; } }
+@media (min-width: 1024px) {
+  html, body {
+    height: 100%; }
+
+  body {
+    background-color: #2F2B2D; }
+
+  .flex-container {
+    height: 100%; }
 
   .bubblewrap {
     position: relative;
@@ -179,34 +179,6 @@
   .flex-container {
     height: 100%; }
 
-  .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center; }
-
-  .bubblewrap {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center; }
-
   .bubblewrap {
     position: relative;
     background-color: #2F2B2D;
@@ -340,3 +312,301 @@
     left: 62px;
     width: 64px;
     height: 64px; } }
+@media (min-width: 480px) and (max-width: 767px) {
+  html, body {
+    height: 100%; }
+
+  body {
+    background-color: #2F2B2D; }
+
+  .flex-container {
+    height: 100%; }
+
+  .bubblewrap {
+    position: relative;
+    background-color: #2F2B2D;
+    width: 480px;
+    height: 638px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .bubble, .bubbleOpen {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubble {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; }
+
+  .bubbleOpen {
+    position: absolute;
+    border: solid 1px #DC7321;
+    border-radius: 50%; }
+
+  .bubble, .bubbleOpen {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+  .bubble:hover, .bubbleOpen:hover {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+
+  .bubbleLogo {
+    top: 140px;
+    left: 206px;
+    width: 200px;
+    height: 200px; }
+
+  .bubbleStatement {
+    top: 333px;
+    left: 85px;
+    width: 245px;
+    height: 245px; }
+
+  .bubblePrint {
+    top: 337px;
+    left: 334px;
+    width: 102px;
+    height: 102px; }
+
+  .bubbleWeb {
+    top: 58px;
+    left: 155px;
+    width: 102px;
+    height: 102px; }
+
+  .bubbleClients {
+    top: 283px;
+    left: 12px;
+    width: 102px;
+    height: 102px; }
+
+  .bubbleProfile {
+    top: 169px;
+    left: 23px;
+    width: 102px;
+    height: 102px; }
+
+  .bubblePlayground {
+    top: 247px;
+    left: 119px;
+    width: 76px;
+    height: 76px; }
+
+  .bubbleIllustration {
+    top: 442px;
+    left: 393px;
+    width: 60px;
+    height: 60px; }
+
+  .bubbleCustard {
+    top: 67px;
+    left: 266px;
+    width: 60px;
+    height: 60px; }
+
+  .bubbleLaughingBag {
+    top: 109px;
+    left: 89px;
+    width: 60px;
+    height: 60px; }
+
+  .bubbleTshirts {
+    top: 170px;
+    left: 137px;
+    width: 60px;
+    height: 60px; }
+
+  .bubbleEmail {
+    top: 276px;
+    left: 406px;
+    width: 60px;
+    height: 60px; }
+
+  .bubbleLinkedIn {
+    top: 447px;
+    left: 340px;
+    width: 40px;
+    height: 40px; }
+
+  .bubbleShare {
+    top: 398px;
+    left: 38px;
+    width: 40px;
+    height: 40px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  html, body {
+    height: 100%; }
+
+  body {
+    background-color: #2F2B2D; }
+
+  .flex-container {
+    height: 100%; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .flex-container {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    background-color: red; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .flex-container {
+    height: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start; }
+
+  .bubblewrap {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    min-width: 4700px;
+    background-color: green; }
+
+  .bubble {
+    border: solid 1px #DC7321;
+    background-color: none !important;
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    top: 20px; }
+
+  .bubbleOpen {
+    border: solid 1px #DC7321;
+    background-color: none !important;
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    top: 20px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .bubble, .bubbleOpen {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+  .bubble:hover, .bubbleOpen:hover {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  html, body {
+    height: 100%; }
+
+  body {
+    background-color: #2F2B2D; }
+
+  .flex-container {
+    height: 100%; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .flex-container {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    background-color: red; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .flex-container {
+    height: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start; }
+
+  .bubblewrap {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    min-width: 4700px;
+    background-color: green; }
+
+  .bubble {
+    border: solid 1px #DC7321;
+    background-color: none !important;
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    top: 20px; }
+
+  .bubbleOpen {
+    border: solid 1px #DC7321;
+    background-color: none !important;
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    top: 20px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .bubble, .bubbleOpen {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+  .bubble:hover, .bubbleOpen:hover {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); } }

@@ -46,9 +46,12 @@ body {
 .bubblewrap{
   position: relative;
   background-color: $Grey01;
-  width:1024px;
-  height:768px;
-  // background-image: url("../../assets/images/index/IndexLogo_iPadMini.png"); 
+  width:480px;
+  height:638px;
+  // background-image: url("../../assets/images/index/IndexLogo_sm.png"); 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -70,7 +73,6 @@ body {
   position: absolute;
   // border: solid 1px $Orange;
   background-color: white;
-  // margin:10px;
   border-radius: 50%;
 }
 
