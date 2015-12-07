@@ -13,6 +13,9 @@
 // iPhone4    = 480 x 320
 
 
+@media(min-width:480px) { //BS3 xs
+}
+
 @media(min-width:768px){ //BS3 sm
 }
 
@@ -31,7 +34,7 @@
     @import "partials/index/medium";
 }
 
-@media (max-width: 767px)
+@media (min-width: 480px) and (max-width: 767px)
    {
     @import "partials/index/small";
 }
