@@ -12,36 +12,36 @@ body {
   height:100%;
 }
 
-.flex-container{            // -webkit-  is for Safari
-  display:                  -webkit-flex; 
-  display:                  flex;
-  -webkit-flex-flow:        row;
-  flex-flow:                row;
-  -webkit-justify-content:  center;
-  justify-content:          center;
-  -webkit-align-items:      center;
-  align-items:              center;
-  -webkit-flex-wrap:        wrap; 
-  flex-wrap:                wrap;
-  -webkit-align-content:    center; 
-  align-content:            center;
-}
+// .flex-container{            // -webkit-  is for Safari
+//   display:                  -webkit-flex; 
+//   display:                  flex;
+//   -webkit-flex-flow:        row;
+//   flex-flow:                row;
+//   -webkit-justify-content:  center;
+//   justify-content:          center;
+//   -webkit-align-items:      center;
+//   align-items:              center;
+//   -webkit-flex-wrap:        wrap; 
+//   flex-wrap:                wrap;
+//   -webkit-align-content:    center; 
+//   align-content:            center;
+// }
 
 
-.bubblewrap{
-  display:                  -webkit-flex; 
-  display:                  flex;
-  -webkit-flex-flow:        row;
-  flex-flow:                row;
-  -webkit-justify-content:  center;
-  justify-content:          center;
-  -webkit-align-items:      center;
-  align-items:              center;
-  -webkit-flex-wrap:        wrap; 
-  flex-wrap:                wrap;
-  -webkit-align-content:    center; 
-  align-content:            center;
-}
+// .bubblewrap{
+//   display:                  -webkit-flex; 
+//   display:                  flex;
+//   -webkit-flex-flow:        row;
+//   flex-flow:                row;
+//   -webkit-justify-content:  center;
+//   justify-content:          center;
+//   -webkit-align-items:      center;
+//   align-items:              center;
+//   -webkit-flex-wrap:        wrap; 
+//   flex-wrap:                wrap;
+//   -webkit-align-content:    center; 
+//   align-content:            center;
+// }
 
 .bubblewrap{
   position: relative;
