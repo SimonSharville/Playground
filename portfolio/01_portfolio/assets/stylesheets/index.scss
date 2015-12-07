@@ -1,5 +1,6 @@
 
 @import "partials/index/core-elements";
+// @import "bootstrap";
 
 // ====================================================================================
 
@@ -14,6 +15,8 @@
 
 
 @media(min-width:480px) { //BS3 xs
+
+  // This is for the flex-container & bubblewrap for 480px and larger
     .flex-container{            // -webkit-  is for Safari
     display:                  -webkit-flex; 
     display:                  flex;
@@ -28,7 +31,6 @@
     -webkit-align-content:    center; 
     align-content:            center;
   }
-
 
   .bubblewrap{
     display:                  -webkit-flex; 
@@ -162,6 +164,7 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+    @import "partials/index/iphone6plus";
 }
 
 // Landscape
@@ -170,4 +173,6 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+    // @import "bootstrap";
+    @import "partials/index/iphone6plus";
 }
