@@ -5912,15 +5912,16 @@ body {
 
 .bubble {
   position: absolute;
-  background-color: white;
   border-radius: 50%; }
+
+.bubbleWhite {
+  background-color: white; }
 
 .bubbleOpen {
-  position: absolute;
   border: solid 1px #DC7321;
-  border-radius: 50%; }
+  background: none; }
 
-.bubble, .bubbleOpen {
+.bubble, .bubbleLink {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -5932,7 +5933,7 @@ body {
   -ms-transform: scale(1);
   transform: scale(1); }
 
-.bubble:hover, .bubbleOpen:hover {
+.bubbleLink:hover {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -6211,256 +6212,59 @@ body {
 /* ----------- iPhone 6+ ----------------------- */
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  html, body {
-    height: 100%; }
-
-  body {
-    background-color: #2F2B2D; }
-
   .flex-container {
-    height: 100%; } }
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .flex-container {
-    height: 100%;
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column;
-    flex-flow: column;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    background-color: red; }
+    display: inline; }
 
   .bubblewrap {
     position: relative;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    float: left;
     width: 100%;
-    min-height: 5600px;
-    background-color: yellow; }
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 414px;
+    padding-top: 20px; }
 
   .bubble {
-    position: positive;
-    background-color: white;
-    border-radius: 50%;
+    position: relative;
+    float: left;
+    width: 8.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px; }
+
+  .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
+  .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
     width: 370px;
-    height: 370px;
-    top: 20px; }
-
-  .bubbleOpen {
-    border: solid 1px #DC7321;
-    background-color: none;
-    border-radius: 50%;
-    width: 370px;
-    height: 370px;
-    top: 20px; }
-
-  .bubbleLogo {
-    left: 0px; }
-
-  .bubbleStatement {
-    left: 400px; }
-
-  .bubblePrint {
-    left: 800px; }
-
-  .bubbleWeb {
-    left: 1200px; }
-
-  .bubbleClients {
-    left: 1600px; }
-
-  .bubbleProfile {
-    left: 2000px; }
-
-  .bubblePlayground {
-    left: 2400px; }
-
-  .bubbleIllustration {
-    left: 2800px; }
-
-  .bubbleCustard {
-    left: 3200px; }
-
-  .bubbleLaughingBag {
-    left: 3600px; }
-
-  .bubbleTshirts {
-    left: 4000px; }
-
-  .bubbleEmail {
-    left: 4400px; }
-
-  .bubbleLinkedIn {
-    left: 4800px; }
-
-  .bubbleShare {
-    left: 5200px; } }
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .flex-container {
-    height: 100%;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start; }
-
-  .bubblewrap {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    min-width: 5600px;
-    margin-left: 20px;
-    margin-right: 20px; }
-
-  .bubble {
-    border-radius: 50%;
-    width: 370px;
-    height: 370px;
-    top: 20px; }
-
-  .bubbleOpen {
-    border: solid 1px #DC7321;
-    background-color: none !important;
-    border-radius: 50%;
-    width: 370px;
-    height: 370px;
-    top: 20px; }
-
-  .bubbleLogo {
-    left: 0px; }
-
-  .bubbleStatement {
-    left: 400px; }
-
-  .bubblePrint {
-    left: 800px; }
-
-  .bubbleWeb {
-    left: 1200px; }
-
-  .bubbleClients {
-    left: 1600px; }
-
-  .bubbleProfile {
-    left: 2000px; }
-
-  .bubblePlayground {
-    left: 2400px; }
-
-  .bubbleIllustration {
-    left: 2800px; }
-
-  .bubbleCustard {
-    left: 3200px; }
-
-  .bubbleLaughingBag {
-    left: 3600px; }
-
-  .bubbleTshirts {
-    left: 4000px; }
-
-  .bubbleEmail {
-    left: 4400px; }
-
-  .bubbleLinkedIn {
-    left: 4800px; }
-
-  .bubbleShare {
-    left: 5200px; } }
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .bubble, .bubbleOpen {
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  .bubble:hover, .bubbleOpen:hover {
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); } }
+    height: 370px; } }
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .flex-container {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start; }
+    display: inline; }
 
   .bubblewrap {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    min-width: 5600px;
-    margin-left: 20px;
-    margin-right: 20px; }
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 5500px;
+    height: 414px; }
 
   .bubble {
+    position: relative;
+    float: left;
+    width: 8.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px; }
+
+  .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
+  .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
     width: 370px;
     height: 370px;
-    top: 20px; }
-
-  .bubbleOpen {
-    width: 370px;
-    height: 370px;
-    top: 20px; }
-
-  .bubbleLogo {
-    left: 0px; }
-
-  .bubbleStatement {
-    left: 400px; }
-
-  .bubblePrint {
-    left: 800px; }
-
-  .bubbleWeb {
-    left: 1200px; }
-
-  .bubbleClients {
-    left: 1600px; }
-
-  .bubbleProfile {
-    left: 2000px; }
-
-  .bubblePlayground {
-    left: 2400px; }
-
-  .bubbleIllustration {
-    left: 2800px; }
-
-  .bubbleCustard {
-    left: 3200px; }
-
-  .bubbleLaughingBag {
-    left: 3600px; }
-
-  .bubbleTshirts {
-    left: 4000px; }
-
-  .bubbleEmail {
-    left: 4400px; }
-
-  .bubbleLinkedIn {
-    left: 4800px; }
-
-  .bubbleShare {
-    left: 5200px; } }
+    top: 0px;
+    left: 0px; } }

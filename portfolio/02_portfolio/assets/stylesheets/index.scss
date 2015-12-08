@@ -71,18 +71,25 @@ body {
 .bubble{
   position: absolute;
   // border: solid 1px $Orange;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.bubbleOpen{
-  position: absolute;
-  border: solid 1px $Orange;
   // background-color: white;
   border-radius: 50%;
 }
 
-.bubble, .bubbleOpen{
+.bubbleWhite{
+  // position: absolute;
+  // border: solid 1px $Orange;
+  background-color: white;
+  // border-radius: 50%;
+}
+
+.bubbleOpen{
+  // position: absolute;
+  border: solid 1px $Orange;
+  background: none;
+  // border-radius: 50%;
+}
+
+.bubble, .bubbleLink{
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -96,7 +103,7 @@ body {
   transform: scale(1);
 }
 
-.bubble:hover, .bubbleOpen:hover{
+.bubbleLink:hover{
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -239,7 +246,7 @@ body {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-    @import "partials/index/iphone6plus";
+    @import "partials/index/devices/iPhone6plus-portrait";
 }
 
 /* Landscape */
