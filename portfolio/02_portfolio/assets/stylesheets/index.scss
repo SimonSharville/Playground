@@ -169,6 +169,7 @@ body {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    @import "partials/index/devices/iPhone5-portrait";
 }
 
 // Landscape
@@ -177,6 +178,7 @@ body {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    @import "partials/index/devices/iPhone4-landscape";
 }
 
 // ----------- iPhone 5 and 5S ----------------

@@ -1,12 +1,12 @@
 
 
 
-// ----------- iPhone 5 -----------------------
+// ----------- iPhone 4 -----------------------
 
 // Portrait
 
 .flex-container { 
-  display:block;
+  // display:block;
 }
 .bubblewrap{ 
   @include make-xs-column(12);

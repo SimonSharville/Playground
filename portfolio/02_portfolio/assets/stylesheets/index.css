@@ -6209,6 +6209,63 @@ body {
     left: 38px;
     width: 40px;
     height: 40px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .flex-container {
+    display: block; }
+
+  .bubblewrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 320px;
+    padding-top: 20px; }
+
+  .bubble {
+    position: relative;
+    float: left;
+    width: 8.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px; }
+
+  .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
+  .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
+    width: 275px;
+    height: 275px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .flex-container {
+    padding: 0px;
+    margin: 0px; }
+
+  .bubblewrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 4160px;
+    height: 320px; }
+
+  .bubble {
+    position: relative;
+    float: left;
+    width: 8.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px; }
+
+  .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
+  .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
+    width: 275px;
+    height: 275px;
+    top: 0px;
+    left: 0px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: block; }
@@ -6238,7 +6295,8 @@ body {
     height: 275px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
-    display: inline; }
+    padding: 0px;
+    margin: 0px; }
 
   .bubblewrap {
     position: relative;

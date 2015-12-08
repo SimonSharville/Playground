@@ -1,19 +1,18 @@
 
 
 
-// ----------- iPhone 5 -----------------------
+// ----------- iPhone 4 -----------------------
 
 // Landscape
 
 .flex-container { 
-  // display:inline;
   padding:0px;
   margin:0px;
 }
 .bubblewrap{ 
   @include make-xs-column(12);
-  width:4160px!IMPORTANT;
-  height: 320px!IMPORTANT; 
+  width:4160px;
+  height: 320px; 
 }
 
 .bubble{
@@ -23,8 +22,8 @@
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
 .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
-  width: 275px!IMPORTANT;
-  height: 275px!IMPORTANT;
+  width: 275px;
+  height: 275px;
   top:0px;
   left:0px;
 }
