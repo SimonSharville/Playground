@@ -1,16 +1,16 @@
 
 
 
-// ----------- iPhone 6+ -----------------------
+// ----------- iPhone 6 -----------------------
 
 // Portrait
 
 .flex-container { 
-  display:inline;
+  display:block;
 }
 .bubblewrap{ 
   @include make-xs-column(12);
-  width: 414px; 
+  width: 320px; 
   padding-top:20px;
 }
 
@@ -21,8 +21,8 @@
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
 .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
-  width: 370px;
-  height: 370px;
+  width: 275px;
+  height: 275px;
 }
 
 
