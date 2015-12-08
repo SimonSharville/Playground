@@ -1,6 +1,8 @@
 
+
+@import "bootstrap";
+@import "reset";
 @import "partials/index/core-elements";
-// @import "../css/bootstrap";
 
 // ====================================================================================
 
@@ -222,7 +224,7 @@ body {
 }
 
 
-// ----------- iPhone 6+ -----------------------
+/* ----------- iPhone 6+ ----------------------- */
 
 // Portrait and Landscape
 // @media only screen 
@@ -231,7 +233,7 @@ body {
 //   and (-webkit-min-device-pixel-ratio: 3) { 
 // }
 
-// Portrait
+/* Portrait */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -240,12 +242,12 @@ body {
     @import "partials/index/iphone6plus";
 }
 
-// Landscape
+/* Landscape */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     // @import "bootstrap";
-    @import "partials/index/iphone6plus";
+    @import "partials/index/devices/iPhone6plus-landscape";
 }
