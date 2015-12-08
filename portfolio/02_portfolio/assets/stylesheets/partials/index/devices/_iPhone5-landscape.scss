@@ -6,14 +6,17 @@
 // Landscape
 
 .flex-container { 
-  // display:inline;
+  display:inline-block;
   padding:0px;
   margin:0px;
+  height: 320px!IMPORTANT;
 }
 .bubblewrap{ 
+  display:inline-block;
   @include make-xs-column(12);
-  width:4160px!IMPORTANT;
-  height: 320px!IMPORTANT; 
+  width:4240px!IMPORTANT;
+  height: 300px!IMPORTANT; 
+  margin-top:20px;
 }
 
 .bubble{
@@ -23,8 +26,8 @@
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
 .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
-  width: 275px!IMPORTANT;
-  height: 275px!IMPORTANT;
+  width: 280px!IMPORTANT;
+  height: 280px!IMPORTANT;
   top:0px;
   left:0px;
 }

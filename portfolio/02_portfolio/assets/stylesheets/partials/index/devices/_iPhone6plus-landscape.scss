@@ -6,13 +6,17 @@
 // Landscape
 
 .flex-container { 
-  display:inline;
+  display:inline-block;
+  height: 414px; 
+  padding:0px;
+  margin:0px;
 }
 .bubblewrap{ 
+  display:inline-block;
   @include make-xs-column(12);
   width:5500px;
-  height: 414px; 
-  // border: 1px solid green;
+  height: 394px; 
+  margin-top:20px;
 }
 
 .bubble{

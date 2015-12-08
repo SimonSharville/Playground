@@ -153,6 +153,10 @@ body {
     @import "partials/index/small";
 }
 
+@media (max-width: 480px)
+   {
+    @import "partials/index/x-small";
+}
 
 // ----------- iPhone 4 and 4S ----------------
 
