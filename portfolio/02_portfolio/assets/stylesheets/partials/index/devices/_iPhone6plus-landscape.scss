@@ -5,64 +5,87 @@
 
 // Landscape
 
-.flex-container{            
-  -webkit-align-items:flex-start;
-  align-items:flex-start;
-  -webkit-justify-content:flex-start;
-  justify-content:flex-start;
+.flex-container { 
+  display:inline;
 }
-
-.bubblewrap{
-  -webkit-align-items:flex-start;
-  align-items:flex-start;
-  -webkit-justify-content:flex-start;
-  justify-content:flex-start;
-  min-width:5600px;
-  margin-left: 20px;
-  margin-right: 20px;
+.bubblewrap{ 
+  @include make-xs-column(12);
+  width:5500px;
+  height: 414px; 
+  // border: 1px solid green;
 }
 
 .bubble{
-  width: 370px;
-  height: 370px;
-  top: 20px;
+  @include make-xs-column(1);
+  margin-right:20px;
 }
 
-.bubbleOpen{
+.bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
+.bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
   width: 370px;
   height: 370px;
-  top: 20px;
+  top:0px;
+  left:0px;
 }
 
-.bubbleLogo{          left:0px;    }
 
-.bubbleStatement{     left:400px;  }
+// ======================================================================================
+// I have kept this in for when Bootstrap changes and I may need to do it all in flexbox.
 
-.bubblePrint{         left:800px;  }
+// .flex-container{            
+//   -webkit-align-items:flex-start;
+//   align-items:flex-start;
+//   -webkit-justify-content:flex-start;
+//   justify-content:flex-start;
+// }
 
-.bubbleWeb{           left:1200px; }
+// .bubblewrap{
+//   -webkit-align-items:flex-start;
+//   align-items:flex-start;
+//   -webkit-justify-content:flex-start;
+//   justify-content:flex-start;
+//   min-width:5600px;
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
 
-.bubbleClients{       left:1600px; }
+// .bubble{
+//   width: 370px;
+//   height: 370px;
+//   top: 20px;
+// }
 
-.bubbleProfile{       left:2000px; }
+// .bubbleOpen{
+//   width: 370px;
+//   height: 370px;
+//   top: 20px;
+// }
 
-.bubblePlayground{    left:2400px; }
+// .bubbleLogo{          left:0px;    }
 
-.bubbleIllustration{  left:2800px; }
+// .bubbleStatement{     left:400px;  }
 
-.bubbleCustard{       left:3200px; }
+// .bubblePrint{         left:800px;  }
 
-.bubbleLaughingBag{   left:3600px; }
+// .bubbleWeb{           left:1200px; }
 
-.bubbleTshirts{       left:4000px; }
+// .bubbleClients{       left:1600px; }
 
-.bubbleEmail{         left:4400px; }
+// .bubbleProfile{       left:2000px; }
 
-.bubbleLinkedIn{      left:4800px; }
+// .bubblePlayground{    left:2400px; }
 
-.bubbleShare{         left:5200px; }
+// .bubbleIllustration{  left:2800px; }
+
+// .bubbleCustard{       left:3200px; }
+
+// .bubbleLaughingBag{   left:3600px; }
+
+// .bubbleTshirts{       left:4000px; }
+
+// .bubbleEmail{         left:4400px; }
+
+// .bubbleLinkedIn{      left:4800px; }
+
+// .bubbleShare{         left:5200px; }
     
-
-
-
-
