@@ -5895,6 +5895,11 @@ html, body {
 body {
   background-color: #2F2B2D; }
 
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: grayscale !important;
+  font-smoothing: antialiased !important; }
+
 .flex-container {
   height: 100%; }
 

@@ -15,6 +15,11 @@ body {
   background-color: $Grey01;
 }
 
+* {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-font-smoothing: grayscale!important;
+    font-smoothing: antialiased!important;
+}
 
 
 .flex-container {
@@ -84,6 +89,7 @@ body {
   border: solid 1px $Orange;
   background: none;
 }
+
 
 .bubble, .bubbleLink{
   -webkit-transition: all 0.5s ease-out;
