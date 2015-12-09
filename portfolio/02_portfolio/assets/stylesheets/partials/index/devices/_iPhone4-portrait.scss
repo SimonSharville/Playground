@@ -15,6 +15,7 @@
   display:inline-block;
   @include make-xs-column(12);
   width: 320px; 
+
 }
 
 .bubble{
@@ -57,6 +58,15 @@ h1{
   margin-top: 3px;
   margin-bottom: -16px;
   word-spacing:-9px;
+}
+
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:30px;
+  padding-top:6px;
+  
+}
+a:link, a:link:hover { 
+  color: $Grey01!IMPORTANT;
 }
 
 

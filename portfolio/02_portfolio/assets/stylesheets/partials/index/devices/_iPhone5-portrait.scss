@@ -10,6 +10,7 @@
   width: 320px; 
   padding:0px;
   margin:0px;
+  margin-left:8px!IMPORTANT;
 }
 .bubblewrap{ 
   display:inline-block;
@@ -47,6 +48,7 @@
 .statement{
   font-size: 15px;
   line-height: 17px;
+  display:inherit;
 }
 
 .logo{
@@ -67,4 +69,12 @@ h1{
   word-spacing:-9px;
 }
 
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:50px;
+  padding-top:10px;
+  
+}
+a:link, a:link:hover { 
+  color: $Grey01!IMPORTANT;
+}
 

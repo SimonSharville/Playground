@@ -1,6 +1,7 @@
 .statement{
   font-size: 14px;
   line-height: 15px;
+  display: none;
 }
 
 
@@ -25,3 +26,13 @@ h1{
 
 }
 
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:28px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+  
+}
+
+a:link, a:link:hover { 
+  color: white;
+}
