@@ -1,8 +1,9 @@
 
 
+
 @import "bootstrap";
 @import "reset";
-@import "partials/index/core-elements";
+@import "core-elements";
 
 // ====================================================================================
 
@@ -13,6 +14,8 @@ html, body {
 body {
   background-color: $Grey01;
 }
+
+
 
 .flex-container {
   height:100%;
@@ -51,7 +54,6 @@ body {
 .bubblewrap{
   position: relative;
   background-color: $Grey01;
-  // background-image: url("../../assets/images/index/IndexLogo_sm.png"); 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -70,9 +72,8 @@ body {
 
 .bubble{
   position: absolute;
-  // border: solid 1px $Orange;
-  // background-color: white;
   border-radius: 50%;
+  text-align:center;
 }
 
 .bubbleWhite{
@@ -80,7 +81,7 @@ body {
 }
 
 .bubbleOpen{
-  border: solid 1px $Orange;
+  border: solid 1px white;
   background: none;
 }
 
@@ -110,7 +111,24 @@ body {
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+  color: $Grey01;
 }
+
+// h1, h2, h3, h4, h5, h6{
+//   -webkit-transform: scale(1)!IMPORTANT;
+//   -moz-transform: scale(1)!IMPORTANT;
+//   -o-transform: scale(1)!IMPORTANT;
+//   -ms-transform: scale(1)!IMPORTANT;
+//   transform: scale(1)!IMPORTANT;
+// }
+
+// Index Type styles --------------------------------------------------
+
+.statement{
+  color: white;
+}
+
+
 
 // Media Sizes ========================================================
 

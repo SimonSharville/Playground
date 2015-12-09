@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5856,6 +5857,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'LightCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /*Used for main headings*/
+  font-family: 'LightUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /*Used for main headings*/
+  font-family: 'ThinUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.svg#UniversLTStd-ThinUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif; }
+
+.statement {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 100; }
+
+a:link {
+  text-decoration: none; }
+
 html, body {
   height: 100%; }
 
@@ -5898,13 +5930,14 @@ body {
 
 .bubble {
   position: absolute;
-  border-radius: 50%; }
+  border-radius: 50%;
+  text-align: center; }
 
 .bubbleWhite {
   background-color: white; }
 
 .bubbleOpen {
-  border: solid 1px #DC7321;
+  border: solid 1px white;
   background: none; }
 
 .bubble, .bubbleLink {
@@ -5929,7 +5962,11 @@ body {
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
-  transform: scale(1.05); }
+  transform: scale(1.05);
+  color: #2F2B2D; }
+
+.statement {
+  color: white; }
 
 @media (min-width: 1024px) {
   .bubblewrap {
@@ -6018,7 +6055,11 @@ body {
     top: 640px;
     left: 640px;
     width: 64px;
-    height: 64px; } }
+    height: 64px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 23px; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   .bubblewrap {
     height: 1024px;
@@ -6106,7 +6147,11 @@ body {
     top: 639px;
     left: 62px;
     width: 64px;
-    height: 64px; } }
+    height: 64px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 23px; } }
 @media (min-width: 480px) and (max-width: 767px) {
   .bubblewrap {
     width: 480px;
@@ -6194,7 +6239,11 @@ body {
     top: 398px;
     left: 38px;
     width: 40px;
-    height: 40px; } }
+    height: 40px; }
+
+  .statement {
+    font-size: 14px;
+    line-height: 15px; } }
 @media (max-width: 480px) {
   .bubblewrap {
     border: 1px solid green;
@@ -6204,8 +6253,7 @@ body {
     -webkit-flex-flow: column;
     flex-flow: column;
     width: 75%;
-    height: 100%;
-    padding-top: 20px; }
+    height: 100%; }
 
   .bubble {
     position: relative;
@@ -6217,7 +6265,11 @@ body {
     background: none; }
 
   .bubbleOpen {
-    border: none; } }
+    border: none; }
+
+  .statement {
+    font-size: 14px;
+    line-height: 15px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6257,7 +6309,11 @@ body {
     width: 275px;
     height: 275px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 15px;
+    line-height: 17px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6339,7 +6395,11 @@ body {
     width: 275px;
     height: 275px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 15px;
+    line-height: 17px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6373,7 +6433,11 @@ body {
     width: 280px !important;
     height: 280px !important;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 15px !important;
+    line-height: 17px !important; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6405,7 +6469,11 @@ body {
     width: 330px;
     height: 330px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 18px;
+    line-height: 20px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6439,7 +6507,11 @@ body {
     width: 330px;
     height: 330px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 18px;
+    line-height: 20px; } }
 /* ----------- iPhone 6+ ----------------------- */
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -6473,7 +6545,11 @@ body {
     width: 370px;
     height: 370px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 23px; } }
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .flex-container {
@@ -6508,4 +6584,8 @@ body {
     width: 370px;
     height: 370px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 23px; } }
