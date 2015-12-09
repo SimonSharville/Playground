@@ -5880,20 +5880,6 @@ body {
   align-content: center; }
 
 .bubblewrap {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row;
-  flex-flow: row;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center; }
-
-.bubblewrap {
   position: relative;
   background-color: #2F2B2D;
   -webkit-box-sizing: border-box;
@@ -6211,92 +6197,27 @@ body {
     height: 40px; } }
 @media (max-width: 480px) {
   .bubblewrap {
-    width: 480px;
-    height: 638px; }
+    border: 1px solid green;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    width: 75%;
+    height: 100%;
+    padding-top: 20px; }
 
-  .bubbleLogo {
-    top: 140px;
-    left: 206px;
-    width: 200px;
-    height: 200px; }
+  .bubble {
+    position: relative;
+    width: 100%;
+    border-radius: 0%;
+    padding: 10px 0px; }
 
-  .bubbleStatement {
-    top: 333px;
-    left: 85px;
-    width: 245px;
-    height: 245px; }
+  .bubbleWhite {
+    background: none; }
 
-  .bubblePrint {
-    top: 337px;
-    left: 334px;
-    width: 102px;
-    height: 102px; }
-
-  .bubbleWeb {
-    top: 58px;
-    left: 155px;
-    width: 102px;
-    height: 102px; }
-
-  .bubbleClients {
-    top: 283px;
-    left: 12px;
-    width: 102px;
-    height: 102px; }
-
-  .bubbleProfile {
-    top: 169px;
-    left: 23px;
-    width: 102px;
-    height: 102px; }
-
-  .bubblePlayground {
-    top: 247px;
-    left: 119px;
-    width: 76px;
-    height: 76px; }
-
-  .bubbleIllustration {
-    top: 442px;
-    left: 393px;
-    width: 60px;
-    height: 60px; }
-
-  .bubbleCustard {
-    top: 67px;
-    left: 266px;
-    width: 60px;
-    height: 60px; }
-
-  .bubbleLaughingBag {
-    top: 109px;
-    left: 89px;
-    width: 60px;
-    height: 60px; }
-
-  .bubbleTshirts {
-    top: 170px;
-    left: 137px;
-    width: 60px;
-    height: 60px; }
-
-  .bubbleEmail {
-    top: 276px;
-    left: 406px;
-    width: 60px;
-    height: 60px; }
-
-  .bubbleLinkedIn {
-    top: 447px;
-    left: 340px;
-    width: 40px;
-    height: 40px; }
-
-  .bubbleShare {
-    top: 398px;
-    left: 38px;
-    width: 40px;
-    height: 40px; } }
+  .bubbleOpen {
+    border: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6321,7 +6242,15 @@ body {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    border-radius: 50%; }
+
+  .bubbleWhite {
+    background-color: white; }
+
+  .bubbleOpen {
+    border: solid 1px #DC7321;
+    background: none; }
 
   .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
   .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
@@ -6355,7 +6284,15 @@ body {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    border-radius: 50%; }
+
+  .bubbleWhite {
+    background-color: white; }
+
+  .bubbleOpen {
+    border: solid 1px #DC7321;
+    background: none; }
 
   .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
   .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
@@ -6387,7 +6324,15 @@ body {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    border-radius: 50%; }
+
+  .bubbleWhite {
+    background-color: white; }
+
+  .bubbleOpen {
+    border: solid 1px #DC7321;
+    background: none; }
 
   .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration,
   .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {

@@ -1,5 +1,37 @@
 
+// x-small screen sizes
+
+
+
+
+
 .bubblewrap{
-  width:480px;
-  height:638px;
+  border:1px solid green;
+
+  position:relative;
+  display:                  -webkit-flex; 
+  display:                  flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+
+  width:75%;
+  height:100%;
+  padding-top:20px;
+
+}
+
+.bubble {
+  position:relative;
+  width:100%;
+  border-radius: 0%;
+  padding: 10px 0px;
+}
+
+.bubbleWhite{
+  background: none;
+}
+
+.bubbleOpen{
+  border: none;
+  // background: none;
 }

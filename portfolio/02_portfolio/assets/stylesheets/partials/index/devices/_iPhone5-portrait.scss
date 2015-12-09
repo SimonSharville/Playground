@@ -20,6 +20,16 @@
 .bubble{
   @include make-xs-column(1);
   margin-top:20px;
+  border-radius: 50%;
+}
+
+.bubbleWhite{
+  background-color: white;
+}
+
+.bubbleOpen{
+  border: solid 1px $Orange;
+  background: none;
 }
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
