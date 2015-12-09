@@ -1,18 +1,22 @@
 
 
 
-// ----------- iPhone 6 -----------------------
+// ----------- iPhone 5 -----------------------
 
 // Landscape
 
 .flex-container { 
-  display:inline;
+  display:inline-block;
+  padding:0px;
+  margin:0px;
+  height: 320px!IMPORTANT;
 }
 .bubblewrap{ 
+  display:inline-block;
   @include make-xs-column(12);
-  width:4160px!IMPORTANT;
-  height: 320px!IMPORTANT; 
-  // background:red;
+  width:4240px!IMPORTANT;
+  height: 300px!IMPORTANT; 
+  margin-top:20px;
 }
 
 .bubble{
@@ -22,11 +26,47 @@
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
 .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
-  width: 275px!IMPORTANT;
-  height: 275px!IMPORTANT;
+  width: 280px!IMPORTANT;
+  height: 280px!IMPORTANT;
   top:0px;
   left:0px;
 }
+
+// ======================================================================================
+// Typesizes
+
+.statement{
+  font-size: 15px!IMPORTANT;
+  line-height: 17px!IMPORTANT;
+}
+
+.logo{
+  display:inline-block;
+  border-left: 2px solid $Orange!IMPORTANT;
+  padding-left:8px;
+  text-align:left;
+
+}
+
+h1{
+  top:0px;
+  left:0px;
+  font-size:60px!IMPORTANT;
+  line-height:58px!IMPORTANT;
+  margin-top: 3px!IMPORTANT;
+  margin-bottom: -16px!IMPORTANT;
+  word-spacing:-9px!IMPORTANT;
+}
+
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:50px;
+  padding-top:10px;
+  
+}
+a:link, a:link:hover { 
+  color: $Grey01!IMPORTANT;
+}
+
 
 
 // ======================================================================================

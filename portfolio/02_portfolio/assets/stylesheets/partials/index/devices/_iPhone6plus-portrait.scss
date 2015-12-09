@@ -6,25 +6,52 @@
 // Portrait
 
 .flex-container { 
-  display:inline;
+  display:inline-block;
+  max-width: 414px;
+  padding:0px;
+  margin:0px;
 }
 .bubblewrap{ 
+  display:inline-block;
   @include make-xs-column(12);
-  width: 414px; 
-  padding-top:20px;
+  max-width: 414px; 
 }
 
 .bubble{
   @include make-xs-column(1);
-  margin-bottom:20px;
+  margin-top:20px;
 }
 
 .bubbleLogo, .bubbleStatement, .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, 
 .bubbleCustard, .bubbleLaughingBag, .bubbleTshirts, .bubbleEmail, .bubbleLinkedIn, .bubbleShare {
   width: 370px;
   height: 370px;
+  top:0px;
+  left:0px;
 }
 
+.statement{
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.logo{
+  display:inline-block;
+  border-left: 2px solid $Orange;
+  padding-left:8px;
+  text-align:left;
+
+}
+
+h1{
+  top:0px;
+  left:0px;
+  font-size:72px;
+  line-height:68px;
+  margin-top: 3px;
+  margin-bottom: -16px;
+  word-spacing:-11px;
+}
 
 
 
