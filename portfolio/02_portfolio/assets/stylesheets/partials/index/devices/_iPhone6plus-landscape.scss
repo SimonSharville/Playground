@@ -6,13 +6,17 @@
 // Landscape
 
 .flex-container { 
-  display:inline;
+  display:inline-block;
+  height: 414px; 
+  padding:0px;
+  margin:0px;
 }
 .bubblewrap{ 
+  display:inline-block;
   @include make-xs-column(12);
   width:5500px;
-  height: 414px; 
-  // border: 1px solid green;
+  height: 394px; 
+  margin-top:20px;
 }
 
 .bubble{
@@ -27,6 +31,41 @@
   top:0px;
   left:0px;
 }
+
+// ======================================================================================
+// Typesizes
+.statement{
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.logo{
+  display:inline-block;
+  border-left: 2px solid $Orange;
+  padding-left:8px;
+  text-align:left;
+
+}
+
+h1{
+  top:0px;
+  left:0px;
+  font-size:72px;
+  line-height:68px;
+  margin-top: 3px;
+  margin-bottom: -16px;
+  word-spacing:-11px;
+}
+
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:50px;
+  padding-top:10px;
+  
+}
+a:link, a:link:hover { 
+  color: $Grey01!IMPORTANT;
+}
+
 
 
 // ======================================================================================

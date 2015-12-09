@@ -1,0 +1,69 @@
+
+// x-small screen sizes
+
+
+.flex-container{            // -webkit-  is for Safari
+  display:                  -webkit-flex; 
+  display:                  flex;
+  -webkit-flex-flow:        row;
+  flex-flow:                row;
+  -webkit-justify-content:  center;
+  justify-content:          center;
+  -webkit-align-items:      flex-start;
+  align-items:              flex-start;
+  -webkit-flex-wrap:        wrap; 
+  flex-wrap:                wrap;
+  -webkit-align-content:    center; 
+  align-content:            center;
+}
+
+
+.bubblewrap{
+  // border:1px solid green;
+
+  position:relative;
+  display:                  -webkit-flex; 
+  display:                  flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+  -webkit-align-items: center; /* Safari */
+  align-items:         center;
+
+  width:75%;
+  // height:100%;
+  // padding-top:20px;
+
+}
+
+@media (max-width: 320px)
+   {
+    .bubblewrap{ width:100%; }
+}
+
+
+.bubble {
+  position:relative;
+  width:100%;
+  border-radius: 0%;
+  padding: 8px 0px;
+}
+
+
+.bubbleWhite{
+  background: none;
+}
+
+.bubbleOpen{
+  border: none;
+  // background: none;
+}
+
+.bubbleLogo{
+  // position: inherit;
+  background-color:white;
+  border-radius:50%;
+  height:150px;
+  width:150px;
+  margin-top:20px;
+}
+
