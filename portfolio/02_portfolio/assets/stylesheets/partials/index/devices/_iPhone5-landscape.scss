@@ -32,10 +32,33 @@
   left:0px;
 }
 
+// ======================================================================================
+// Typesizes
+
 .statement{
   font-size: 15px!IMPORTANT;
   line-height: 17px!IMPORTANT;
 }
+
+.logo{
+  display:inline-block;
+  border-left: 2px solid $Orange!IMPORTANT;
+  padding-left:8px;
+  text-align:left;
+
+}
+
+h1{
+  top:0px;
+  left:0px;
+  font-size:60px!IMPORTANT;
+  line-height:58px!IMPORTANT;
+  margin-top: 3px!IMPORTANT;
+  margin-bottom: -16px!IMPORTANT;
+  word-spacing:-9px!IMPORTANT;
+}
+
+
 
 
 // ======================================================================================

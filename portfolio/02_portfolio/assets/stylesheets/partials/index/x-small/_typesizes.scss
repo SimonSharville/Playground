@@ -2,3 +2,26 @@
   font-size: 14px;
   line-height: 15px;
 }
+
+
+
+.logo{
+  display:inline-block;
+  // border:1px solid green;
+  border-left: 2px solid $Orange;
+  padding-left:4px;
+  text-align:left;
+
+}
+
+h1{
+  top:0px;
+  left:0px;
+  font-size:32px;
+  line-height:30px;
+  margin-top: 1px;
+  margin-bottom: -8px;
+  word-spacing:-4px;
+
+}
+

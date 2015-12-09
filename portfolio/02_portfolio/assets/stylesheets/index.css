@@ -5937,7 +5937,7 @@ body {
   background-color: white; }
 
 .bubbleOpen {
-  border: solid 1px white;
+  border: solid 1px #DC7321;
   background: none; }
 
 .bubble, .bubbleLink {
@@ -6059,7 +6059,22 @@ body {
 
   .statement {
     font-size: 20px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 64px;
+    line-height: 60px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -9px; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   .bubblewrap {
     height: 1024px;
@@ -6151,7 +6166,22 @@ body {
 
   .statement {
     font-size: 20px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 64px;
+    line-height: 60px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -9px; } }
 @media (min-width: 480px) and (max-width: 767px) {
   .bubblewrap {
     width: 480px;
@@ -6243,8 +6273,23 @@ body {
 
   .statement {
     font-size: 14px;
-    line-height: 15px; } }
-@media (max-width: 480px) {
+    line-height: 15px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 6px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 40px;
+    line-height: 38px;
+    margin-top: 1px;
+    margin-bottom: -10px;
+    word-spacing: -6px; } }
+@media (max-width: 479px) {
   .bubblewrap {
     border: 1px solid green;
     position: relative;
@@ -6252,9 +6297,15 @@ body {
     display: flex;
     -webkit-flex-flow: column;
     flex-flow: column;
+    -webkit-align-items: center;
+    /* Safari */
+    align-items: center;
     width: 75%;
-    height: 100%; }
-
+    height: 100%; } }
+@media (max-width: 479px) and (max-width: 320px) {
+  .bubblewrap {
+    width: 100%; } }
+@media (max-width: 479px) {
   .bubble {
     position: relative;
     width: 100%;
@@ -6267,9 +6318,31 @@ body {
   .bubbleOpen {
     border: none; }
 
+  .bubbleLogo {
+    background-color: white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px; }
+
   .statement {
     font-size: 14px;
-    line-height: 15px; } }
+    line-height: 15px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 4px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 1px;
+    margin-bottom: -8px;
+    word-spacing: -4px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6313,7 +6386,22 @@ body {
 
   .statement {
     font-size: 15px;
-    line-height: 17px; } }
+    line-height: 17px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 60px;
+    line-height: 58px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -9px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6355,7 +6443,26 @@ body {
     width: 275px;
     height: 275px;
     top: 0px;
-    left: 0px; } }
+    left: 0px; }
+
+  .statement {
+    font-size: 15px !important;
+    line-height: 17px !important; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 60px;
+    line-height: 58px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -9px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6399,7 +6506,22 @@ body {
 
   .statement {
     font-size: 15px;
-    line-height: 17px; } }
+    line-height: 17px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 60px;
+    line-height: 58px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -9px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6437,7 +6559,22 @@ body {
 
   .statement {
     font-size: 15px !important;
-    line-height: 17px !important; } }
+    line-height: 17px !important; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321 !important;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 60px !important;
+    line-height: 58px !important;
+    margin-top: 3px !important;
+    margin-bottom: -16px !important;
+    word-spacing: -9px !important; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .flex-container {
     display: inline-block;
@@ -6473,7 +6610,22 @@ body {
 
   .statement {
     font-size: 18px;
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 68px;
+    line-height: 64px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -10px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .flex-container {
     display: inline-block;
@@ -6511,7 +6663,22 @@ body {
 
   .statement {
     font-size: 18px;
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 68px;
+    line-height: 64px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -10px; } }
 /* ----------- iPhone 6+ ----------------------- */
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -6549,7 +6716,22 @@ body {
 
   .statement {
     font-size: 20px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 72px;
+    line-height: 68px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -11px; } }
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .flex-container {
@@ -6588,4 +6770,19 @@ body {
 
   .statement {
     font-size: 20px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 8px;
+    text-align: left; }
+
+  h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 72px;
+    line-height: 68px;
+    margin-top: 3px;
+    margin-bottom: -16px;
+    word-spacing: -11px; } }

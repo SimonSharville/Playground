@@ -81,7 +81,7 @@ body {
 }
 
 .bubbleOpen{
-  border: solid 1px white;
+  border: solid 1px $Orange;
   background: none;
 }
 
@@ -166,7 +166,7 @@ body {
     @import "partials/index/small";
 }
 
-@media (max-width: 480px)
+@media (max-width: 479px)
    {
     @import "partials/index/x-small";
 }
