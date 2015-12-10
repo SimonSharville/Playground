@@ -90,8 +90,6 @@ body {
   font-smoothing: antialiased !important; }
 
 .flex-container {
-  height: 100%;
-  width: 100%;
   border: 1px dotted yellow;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
