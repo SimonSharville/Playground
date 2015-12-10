@@ -117,7 +117,7 @@ body {
 .bubble {
   border-radius: 50%;
   text-align: center;
-  background-color: white; }
+  background-color: yellow; }
 
 .bubbleStatement {
   border: solid 1px #DC7321;
@@ -190,8 +190,8 @@ body {
     padding-bottom: 20px; }
 
   .bubble {
-    height: 250px;
-    width: 250px;
+    min-height: 250px;
+    min-width: 250px;
     margin-top: 20px; }
 
   .bubbleStatement {
