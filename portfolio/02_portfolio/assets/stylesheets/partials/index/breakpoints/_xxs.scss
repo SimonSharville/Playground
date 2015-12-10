@@ -1,0 +1,35 @@
+
+// xxs sizes
+
+.flex-container{            // -webkit-  is for Safari
+  // display:                  -webkit-flex; 
+  // display:                  flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+  -webkit-justify-content:  flex-start;
+  justify-content:          flex-start;
+  -webkit-align-items:      center;
+  align-items:              center;
+  // -webkit-flex-wrap:        wrap; 
+  // flex-wrap:                wrap;
+  // -webkit-align-content:    flex-start; 
+  // align-content:            flex-start;
+}
+
+.bubblewrap{
+  display:                  -webkit-inline-flex; /* Safari */
+  display:                  inline-flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+  padding-bottom:20px;
+}
+
+.bubble{
+  height:150px;
+  width:150px;
+  margin-top:20px;
+}
+
+
+.bubbleStatement{ display:none; }
+
