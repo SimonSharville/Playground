@@ -163,12 +163,14 @@ body {
     display: inline-flex;
     -webkit-flex-flow: column;
     flex-flow: column;
+    padding-right: 0px;
     padding-bottom: 20px; }
 
   .bubble {
-    height: 150px;
-    width: 150px;
-    margin-top: 20px; }
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 20px;
+    margin-left: 0px; }
 
   .bubbleStatement {
     display: none; } }
@@ -187,12 +189,14 @@ body {
     display: inline-flex;
     -webkit-flex-flow: column;
     flex-flow: column;
+    padding-right: 0px;
     padding-bottom: 20px; }
 
   .bubble {
     min-height: 250px;
     min-width: 250px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 0px; }
 
   .bubbleStatement {
     display: inherit; } }
@@ -215,8 +219,8 @@ body {
     padding-bottom: 0px; }
 
   .bubble {
-    height: 250px;
-    width: 250px;
+    min-height: 250px;
+    min-width: 250px;
     margin-top: 0px;
     margin-left: 20px; }
 

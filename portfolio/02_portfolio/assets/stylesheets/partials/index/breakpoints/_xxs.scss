@@ -21,15 +21,16 @@
   display:                  inline-flex;
   -webkit-flex-flow:        column;
   flex-flow:                column;
+  padding-right:0px;
   padding-bottom:20px;
 }
 
 .bubble{
-  height:150px;
-  width:150px;
+  min-height:150px;
+  min-width:150px;
   margin-top:20px;
+  margin-left:0px;
 }
-
 
 .bubbleStatement{ display:none; }
 

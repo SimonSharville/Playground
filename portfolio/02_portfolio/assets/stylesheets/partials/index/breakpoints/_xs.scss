@@ -21,6 +21,7 @@
   display:                  inline-flex;
   -webkit-flex-flow:        column;
   flex-flow:                column;
+  padding-right:0px;
   padding-bottom:20px;
 }
 
@@ -28,14 +29,7 @@
   min-height:250px;
   min-width:250px;
   margin-top:20px;
+  margin-left:0px;
 }
 
-// .bubble:last-of-type{
-//   margin-bottom:20px;
-// }
-
-
-.bubbleStatement{ 
-  display:inherit;
-  // margin-bottom:-20px; 
-}
+.bubbleStatement{ display:inherit; }
