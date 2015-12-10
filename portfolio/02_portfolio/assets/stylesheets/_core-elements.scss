@@ -47,6 +47,7 @@ $Grey08:     #F7F5F4;
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  color: $Grey01;
 }
 
 
@@ -54,9 +55,14 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing:0.5px;
   font-weight:100;
+  color: white;
 }
 
 a:link { 
   color: $Grey01;
   text-decoration: none; 
 }
+
+// .bubbleLink{
+//   color: $Grey01;
+// }
