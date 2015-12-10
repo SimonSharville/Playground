@@ -139,7 +139,11 @@ body {
 { @import "partials/index/breakpoints/xs_landscape"; }
 
 @media (min-width:480px) // sm - mobile landcape 
-{ }
+{ @import "partials/index/breakpoints/sm"; }
+
+@media (min-width:480px) and (orientation: landscape) // xs - mobile landscape 
+{ @import "partials/index/breakpoints/sm_landscape"; }
+
 @media (min-width:768px) // lg - tablet portrait 
 { }
 @media (min-width:1024px) // xl - tablet lanscape 

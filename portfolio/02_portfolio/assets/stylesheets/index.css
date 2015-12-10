@@ -167,8 +167,8 @@ body {
     padding-bottom: 20px; }
 
   .bubble {
-    min-height: 150px;
-    min-width: 150px;
+    height: 150px;
+    width: 150px;
     margin-top: 20px;
     margin-left: 0px; }
 
@@ -193,8 +193,8 @@ body {
     padding-bottom: 20px; }
 
   .bubble {
-    min-height: 250px;
-    min-width: 250px;
+    height: 250px;
+    width: 250px;
     margin-top: 20px;
     margin-left: 0px; }
 
@@ -219,8 +219,60 @@ body {
     padding-bottom: 0px; }
 
   .bubble {
-    min-height: 250px;
-    min-width: 250px;
+    height: 150px;
+    width: 150px;
+    margin-top: 0px;
+    margin-left: 20px; }
+
+  .bubbleStatement {
+    display: inherit; } }
+@media (min-width: 480px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    padding-right: 0px;
+    padding-bottom: 20px; }
+
+  .bubble {
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleStatement {
+    display: inherit; } }
+@media (min-width: 480px) and (orientation: landscape) {
+  .flex-container {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    padding-right: 20px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    height: 150px;
+    width: 150px;
     margin-top: 0px;
     margin-left: 20px; }
 
