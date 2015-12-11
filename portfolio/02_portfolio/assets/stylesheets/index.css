@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 0.5px;
   font-weight: 100;
-  color: white; }
+  color: white;
+  font-weight: 400; }
 
 a:link {
   color: #2F2B2D;
@@ -198,7 +199,12 @@ body {
     line-height: 29px;
     margin-top: 3px;
     margin-bottom: -7px;
-    word-spacing: -5px; } }
+    word-spacing: -5px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 0.5px; } }
 @media (min-width: 320px) {
   .flex-container {
     -webkit-flex-flow: column;
@@ -239,7 +245,17 @@ body {
     line-height: 49px;
     margin-top: 3px;
     margin-bottom: -14px;
-    word-spacing: -8px; } }
+    word-spacing: -8px; }
+
+  .statement {
+    font-size: 16px;
+    line-height: 17px;
+    margin-top: -5px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 0.5px; } }
 @media (min-width: 320px) and (orientation: landscape) {
   .flex-container {
     -webkit-flex-flow: row;
@@ -281,7 +297,18 @@ body {
     line-height: 39px;
     margin-top: 3px;
     margin-bottom: -10px;
-    word-spacing: -7px; } }
+    word-spacing: -7px; }
+
+  .statement {
+    font-size: 13px;
+    line-height: 14px;
+    margin-top: -5px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0.5px; } }
 @media (min-width: 480px) {
   .flex-container {
     -webkit-flex-flow: column;
@@ -460,7 +487,43 @@ body {
     line-height: 56px;
     margin-top: 3px;
     margin-bottom: -13px;
-    word-spacing: -10px; } }
+    word-spacing: -10px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: -7px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubblePlayground, .bubbleTshirts, .bubbleEmail {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubbleIllustration, .bubbleLaughingBag {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 3px; }
+
+  .bubbleCustard {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding-top: 3px; }
+
+  .bubbleLinkedIn, .bubbleShare {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 3px; } }
 @media (min-width: 1024px) {
   .flex-container {
     -webkit-flex-flow: column;
@@ -586,7 +649,49 @@ body {
     line-height: 50px;
     margin-top: 3px;
     margin-bottom: -12px;
-    word-spacing: -9px; } }
+    word-spacing: -9px; }
+
+  .statement {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: -7px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubblePlayground, .bubbleTshirts, .bubbleEmail {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubbleIllustration {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 4px; }
+
+  .bubbleLaughingBag {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 3px; }
+
+  .bubbleCustard {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding-top: 3px; }
+
+  .bubbleLinkedIn, .bubbleShare {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 4px; } }
 @media (min-width: 1224px) {
   .flex-container {
     -webkit-flex-flow: column;
@@ -712,4 +817,41 @@ body {
     line-height: 68px;
     margin-top: 3px;
     margin-bottom: -16px;
-    word-spacing: -12px; } }
+    word-spacing: -12px; }
+
+  .statement {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: -7px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile {
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubblePlayground, .bubbleTshirts, .bubbleEmail {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px; }
+
+  .bubbleIllustration, .bubbleLaughingBag {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 3px; }
+
+  .bubbleCustard {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding-top: 3px; }
+
+  .bubbleLinkedIn, .bubbleShare {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    padding-top: 3px; } }

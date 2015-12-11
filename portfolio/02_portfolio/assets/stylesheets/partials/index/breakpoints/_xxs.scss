@@ -35,7 +35,7 @@
 .bubbleStatement{ display:none; }
 
 
-// TYPESTYLES =================================================
+// TYPE SIZES =================================================
 
 .logo{
   display:inline-block;
@@ -55,3 +55,9 @@
   margin-bottom: -7px;
   word-spacing:-5px;
 }
+
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleShare {
+  font-size:28px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+  }

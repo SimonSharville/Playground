@@ -69,7 +69,7 @@
 .bubbleShare{top:572px; left:614px;  min-height:60px; min-width:60px; }
 
 
-// TYPESTYLES ==================================================================
+// TYPE SIZES ==================================================================
 
 .logo{
   display:inline-block;
@@ -89,4 +89,55 @@
   margin-bottom: -12px;
   word-spacing:-9px;
 }
+
+.statement{
+  font-size: 18px;
+  line-height: 20px;
+  margin-top:-7px;
+  letter-spacing:0.25px;
+}
+
+.bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile {
+  font-size:36px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+  padding-top:3px;
+}
+
+.bubblePlayground, .bubbleTshirts, .bubbleEmail {
+  font-size:30px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+  padding-top:3px;
+}
+
+.bubbleIllustration {
+  font-size:24px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+  padding-top:4px;
+}
+
+.bubbleLaughingBag {
+  font-size:22px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+  padding-top:3px;
+}
+
+.bubbleCustard {
+  font-size:18px;
+  font-weight:normal;
+  letter-spacing:0px;
+  padding-top:3px;
+}
+
+.bubbleLinkedIn, .bubbleShare {
+  font-size:20px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+  padding-top:4px;
+}
+
+
 
