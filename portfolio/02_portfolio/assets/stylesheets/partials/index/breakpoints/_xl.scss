@@ -1,0 +1,70 @@
+
+// xs sizes
+
+.flex-container{            // -webkit-  is for Safari
+  // display:                  -webkit-flex; 
+  // display:                  flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+  -webkit-justify-content:  center;
+  justify-content:          center;
+  -webkit-align-items:      center;
+  align-items:              center;
+  // -webkit-flex-wrap:        wrap; 
+  // flex-wrap:                wrap;
+  // -webkit-align-content:    flex-start; 
+  // align-content:            flex-start;
+}
+
+.bubblewrap{
+  display:                  -webkit-inline-flex; /* Safari */
+  display:                  inline-flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+
+  position:relative;
+  min-width:1024px;
+  min-height:768px;
+  padding-right:0px;
+  padding-bottom:0px;
+  background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png");
+}
+
+.bubble{
+  position:absolute;
+  min-height:250px;
+  min-width:250px;
+  margin-top:20px;
+  margin-left:0px;
+}
+
+// Bubble positions ========
+.bubbleLogo{ top:120px; left:253px; min-height:290px; min-width:290px; }
+
+.bubbleStatement{ top:231px; left:533px; min-height:353px; min-width:353px; }
+
+.bubblePrint{ top:79px; left:538px; min-height:147px; min-width:147px; }
+
+.bubbleWeb{ top:338px; left:136px; min-height:147px; min-width:147px; }
+
+.bubbleClients{ top:544px; left:462px; min-height:147px; min-width:147px; }
+
+.bubbleProfile{ top:528px; left:296px; min-height:147px; min-width:147px; }
+
+.bubblePlayground{ top:425px; left:407px; min-height:112px; min-width:112px; }
+
+.bubbleIllustration{top:53px; left:690px;  min-height:88px; min-width:88px; }
+
+.bubbleCustard{top:236px; left:148px;  min-height:88px; min-width:88px; }
+
+.bubbleLaughingBag{top:493px; left:208px;  min-height:88px; min-width:88px; }
+
+.bubbleTshirts{top:424px; left:296px;  min-height:88px; min-width:88px; }
+
+.bubbleEmail{top:35px; left:450px;  min-height:88px; min-width:88px; }
+
+.bubbleLinkedIn{top:157px; left:696px;  min-height:60px; min-width:60px; }
+
+.bubbleShare{top:595px; left:626px;  min-height:60px; min-width:60px; }
+
+

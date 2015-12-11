@@ -82,7 +82,8 @@ body {
   // position: absolute;
   border-radius: 50%;
   text-align:center;
-  background-color: white;
+  // background-color: white;
+  border: solid 1px $Orange;
 }
 
 .bubbleLink{
@@ -128,6 +129,14 @@ body {
 
 // WIP RESPONSIVE
 
+// // Reference =============
+// // iPad mini  = 1024 x 768
+// // iPad       = 1024 x 768
+// // iPhone6p   = 736 x 414
+// // iPhone6    = 667 x 375
+// // iPhone5    = 568 x 320
+// // iPhone4    = 480 x 320
+
 // COMMON BREAKPOINTS
 @media (max-width:319px) // xxs - smaller than iPhone4 width 
 { @import "partials/index/breakpoints/xxs"; }
@@ -145,9 +154,11 @@ body {
 { @import "partials/index/breakpoints/sm_landscape"; }
 
 @media (min-width:768px) // lg - tablet portrait 
-{ }
+{ @import "partials/index/breakpoints/lg"; }
+
 @media (min-width:1024px) // xl - tablet lanscape 
-{ }
+{ @import "partials/index/breakpoints/xl"; }
+
 @media (min-width:1224px) // xxl - desktop 
 { }
 
