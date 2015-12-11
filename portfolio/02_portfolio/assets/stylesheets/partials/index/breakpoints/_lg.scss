@@ -23,11 +23,11 @@
   flex-flow:                column;
 
   position:relative;
-  min-width:768px;
-  min-height:1024px;
+  min-width:1024px;
+  min-height:768px;
   padding-right:0px;
   padding-bottom:0px;
-  // background-image: url("../../assets/images/index/IndexLogo_iPadMini_P.png");
+  // background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png");
 }
 
 .bubble{
@@ -38,35 +38,35 @@
   margin-left:0px;
 }
 
-// Bubble positions =============================================================
+// Bubble positions ==========================================================
 
-.bubbleLogo{ top:233px; left:335px; min-height:290px; min-width:290px; }
+.bubbleLogo{ top:145px; left:278px; min-height:262px; min-width:262px; }
 
-.bubbleStatement{ top:513px; left:162px; min-height:353px; min-width:353px; }
+.bubbleStatement{ top:245px; left:531px; min-height:318px; min-width:318px; }
 
-.bubblePrint{ top:518px; left:520px; min-height:147px; min-width:147px; }
+.bubblePrint{ top:107px; left:536px; min-height:132px; min-width:132px; }
 
-.bubbleWeb{ top:115px; left:261px; min-height:147px; min-width:147px; }
+.bubbleWeb{ top:340px; left:173px; min-height:132px; min-width:132px; }
 
-.bubbleClients{ top:441px; left:55px; min-height:147px; min-width:147px; }
+.bubbleClients{ top:526px; left:466px; min-height:132px; min-width:132px; }
 
-.bubbleProfile{ top:276px; left:70px; min-height:147px; min-width:147px; }
+.bubbleProfile{ top:512px; left:317px; min-height:132px; min-width:132px; }
 
-.bubblePlayground{ top:387px; left:209px; min-height:112px; min-width:112px; }
+.bubblePlayground{ top:419px; left:417px; min-height:101px; min-width:101px; }
 
-.bubbleIllustration{top:670px; left:605px;  min-height:88px; min-width:88px; }
+.bubbleIllustration{top:85px; left:672px;  min-height:78px; min-width:78px; }
 
-.bubbleCustard{top:128px; left:422px;  min-height:88px; min-width:88px; }
+.bubbleCustard{top:249px; left:185px;  min-height:78px; min-width:78px; }
 
-.bubbleLaughingBag{top:188px; left:165px;  min-height:88px; min-width:88px; }
+.bubbleLaughingBag{top:480px; left:240px;  min-height:78px; min-width:78px; }
 
-.bubbleTshirts{top:276px; left:235px;  min-height:88px; min-width:88px; }
+.bubbleTshirts{top:418px; left:318px;  min-height:78px; min-width:78px; }
 
-.bubbleEmail{top:430px; left:623px;  min-height:88px; min-width:88px; }
+.bubbleEmail{top:68px; left:457px;  min-height:78px; min-width:78px; }
 
-.bubbleLinkedIn{top:678px; left:530px;  min-height:60px; min-width:60px; }
+.bubbleLinkedIn{top:174px; left:678px;  min-height:60px; min-width:60px; }
 
-.bubbleShare{top:606px; left:90px;  min-height:60px; min-width:60px; }
+.bubbleShare{top:572px; left:614px;  min-height:60px; min-width:60px; }
 
 
 // TYPESTYLES ==================================================================
@@ -75,7 +75,7 @@
   display:inline-block;
   // border: 1px dotted green;
   border-left: 2px solid $Orange;
-  padding-left:6px;
+  padding-left:5px;
   text-align:left;
 
 }
@@ -83,9 +83,10 @@
 .logo h1{
   top:0px;
   left:0px;
-  font-size:64px;
-  line-height:56px;
+  font-size:58px;
+  line-height:50px;
   margin-top: 3px;
-  margin-bottom: -13px;
-  word-spacing:-10px;
+  margin-bottom: -12px;
+  word-spacing:-9px;
 }
+
