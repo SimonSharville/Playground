@@ -69,3 +69,24 @@
 .bubbleShare{top:572px; left:614px;  min-height:60px; min-width:60px; }
 
 
+// TYPESTYLES ==================================================================
+
+.logo{
+  display:inline-block;
+  // border: 1px dotted green;
+  border-left: 2px solid $Orange;
+  padding-left:5px;
+  text-align:left;
+
+}
+
+.logo h1{
+  top:0px;
+  left:0px;
+  font-size:58px;
+  line-height:50px;
+  margin-top: 3px;
+  margin-bottom: -12px;
+  word-spacing:-9px;
+}
+

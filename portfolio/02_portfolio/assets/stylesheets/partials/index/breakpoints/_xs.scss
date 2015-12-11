@@ -33,3 +33,25 @@
 }
 
 .bubbleStatement{ display:inherit; }
+
+
+// TYPESTYLES =================================================
+
+.logo{
+  display:inline-block;
+  // border: 1px dotted green;
+  border-left: 2px solid $Orange;
+  padding-left:4px;
+  text-align:left;
+
+}
+
+.logo h1{
+  top:0px;
+  left:0px;
+  font-size:54px;
+  line-height:49px;
+  margin-top: 3px;
+  margin-bottom: -14px;
+  word-spacing:-8px;
+}

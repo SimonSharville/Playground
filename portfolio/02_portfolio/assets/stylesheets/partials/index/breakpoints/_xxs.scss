@@ -34,3 +34,24 @@
 
 .bubbleStatement{ display:none; }
 
+
+// TYPESTYLES =================================================
+
+.logo{
+  display:inline-block;
+  // border: 1px dotted green;
+  border-left: 2px solid $Grey01;
+  padding-left:4px;
+  text-align:left;
+
+}
+
+.logo h1{
+  top:0px;
+  left:0px;
+  font-size:34px;
+  line-height:29px;
+  margin-top: 3px;
+  margin-bottom: -7px;
+  word-spacing:-5px;
+}
