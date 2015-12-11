@@ -67,7 +67,8 @@ table {
   font-weight: normal;
   font-style: normal; }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif; }
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  color: #2F2B2D; }
 
 .statement {
   font-family: 'Roboto Condensed', sans-serif;
@@ -118,7 +119,7 @@ body {
 .bubble {
   border-radius: 50%;
   text-align: center;
-  border: solid 1px #DC7321; }
+  background-color: white; }
 
 .bubbleStatement {
   border: solid 1px #DC7321;
@@ -299,8 +300,7 @@ body {
     min-width: 768px;
     min-height: 1024px;
     padding-right: 0px;
-    padding-bottom: 0px;
-    background-image: url("../../assets/images/index/IndexLogo_iPadMini_P.png"); }
+    padding-bottom: 0px; }
 
   .bubble {
     position: absolute;
@@ -411,8 +411,7 @@ body {
     min-width: 1024px;
     min-height: 768px;
     padding-right: 0px;
-    padding-bottom: 0px;
-    background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png"); }
+    padding-bottom: 0px; }
 
   .bubble {
     position: absolute;
@@ -504,3 +503,114 @@ body {
     left: 614px;
     min-height: 60px;
     min-width: 60px; } }
+@media (min-width: 1224px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    min-width: 1280px;
+    min-height: 900px;
+    padding-right: 0px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    position: absolute;
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleLogo {
+    top: 126px;
+    left: 316px;
+    min-height: 364px;
+    min-width: 364px; }
+
+  .bubbleStatement {
+    top: 265px;
+    left: 667px;
+    min-height: 442px;
+    min-width: 442px; }
+
+  .bubblePrint {
+    top: 74px;
+    left: 674px;
+    min-height: 184px;
+    min-width: 184px; }
+
+  .bubbleWeb {
+    top: 398px;
+    left: 170px;
+    min-height: 184px;
+    min-width: 184px; }
+
+  .bubbleClients {
+    top: 656px;
+    left: 577px;
+    min-height: 184px;
+    min-width: 184px; }
+
+  .bubbleProfile {
+    top: 636px;
+    left: 370px;
+    min-height: 184px;
+    min-width: 184px; }
+
+  .bubblePlayground {
+    top: 508px;
+    left: 510px;
+    min-height: 139px;
+    min-width: 139px; }
+
+  .bubbleIllustration {
+    top: 42px;
+    left: 862px;
+    min-height: 110px;
+    min-width: 110px; }
+
+  .bubbleCustard {
+    top: 271px;
+    left: 185px;
+    min-height: 110px;
+    min-width: 110px; }
+
+  .bubbleLaughingBag {
+    top: 592px;
+    left: 262px;
+    min-height: 110px;
+    min-width: 110px; }
+
+  .bubbleTshirts {
+    top: 505px;
+    left: 370px;
+    min-height: 110px;
+    min-width: 110px; }
+
+  .bubbleEmail {
+    top: 19px;
+    left: 563px;
+    min-height: 110px;
+    min-width: 110px; }
+
+  .bubbleLinkedIn {
+    top: 174px;
+    left: 871px;
+    min-height: 72px;
+    min-width: 72px; }
+
+  .bubbleShare {
+    top: 720px;
+    left: 783px;
+    min-height: 72px;
+    min-width: 72px; } }

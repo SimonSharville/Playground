@@ -27,7 +27,7 @@
   min-height:768px;
   padding-right:0px;
   padding-bottom:0px;
-  background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png");
+  // background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png");
 }
 
 .bubble{
@@ -38,7 +38,8 @@
   margin-left:0px;
 }
 
-// Bubble positions ========
+// Bubble positions ==========================================================
+
 .bubbleLogo{ top:145px; left:278px; min-height:262px; min-width:262px; }
 
 .bubbleStatement{ top:245px; left:531px; min-height:318px; min-width:318px; }

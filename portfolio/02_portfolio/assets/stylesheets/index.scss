@@ -82,8 +82,8 @@ body {
   // position: absolute;
   border-radius: 50%;
   text-align:center;
-  // background-color: white;
-  border: solid 1px $Orange;
+  background-color: white;
+  // border: solid 1px $Orange;
 }
 
 .bubbleLink{
@@ -160,7 +160,7 @@ body {
 { @import "partials/index/breakpoints/xl"; }
 
 @media (min-width:1224px) // xxl - desktop 
-{ }
+{ @import "partials/index/breakpoints/xxl"; }
 
 
 
