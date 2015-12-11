@@ -90,14 +90,12 @@ body {
   // background-color:yellow;
 }
 
-
-.bubbleStatement{
-  border: solid 1px $Orange;
-  background: none;
-}
-
-
 .bubble, .bubbleLink{
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -113,6 +111,11 @@ body {
 }
 
 .bubbleLink:hover{
+
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -126,6 +129,13 @@ body {
   transform: scale(1.05);
 }
 
+.bubbleStatement{
+  border: solid 2px $Orange;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
 
 // WIP RESPONSIVE
 
