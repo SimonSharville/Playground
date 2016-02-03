@@ -15,6 +15,20 @@ body{
   padding: 0px;
 }
 
+#header{
+  display:table;
+}
+#head{
+  margin-left: 110px;
+}
+ .logo{
+  width:100px;
+  height: 100px;
+  float:left;
+  margin-top: 7px;
+/  clear:both;
+ }
+
 h1 {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight:100;
@@ -34,6 +48,14 @@ h2 {
   border-top: 1px orange dotted;
 }
 
+h3 {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 1em;  /* 16x4 = 80 */
+  letter-spacing: -0.01em;
+  margin-bottom:0.25em;
+  /*padding-top:0.5em;*/
+}
 p {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight:100;
@@ -86,6 +108,8 @@ ul {
  .hidden{
   display: none;
  }
+
+
 
 /*==========  RESPONSIVE  ====================================================*/
  
